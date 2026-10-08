@@ -1,0 +1,6 @@
+{
+  "model": "google/gemma-2-2b-it",
+  "layer_index": 13,
+  "mean_resid_norm": 424.29967783877726,
+  "pool": "all positions in unsteered formatted calibration prompts"
+}
