@@ -1,0 +1,30 @@
+{
+ "hostile": [
+  "Oh, for crying out loud.",
+  "Honestly, that's ridiculous.",
+  "Are you serious right now?",
+  "That's a stupid thing to say.",
+  "Ugh, not this again.",
+  "What a pathetic complaint.",
+  "Spare me the attitude.",
+  "You're being absurd.",
+  "Frankly, that's your problem.",
+  "Give me a break.",
+  "Don't waste my time.",
+  "That's insulting nonsense."
+ ],
+ "warm": [
+  "Oh, I'm so sorry about that.",
+  "Honestly, that sounds frustrating.",
+  "I really hear you right now.",
+  "That's a fair thing to say.",
+  "Thank you for telling me.",
+  "What a reasonable concern.",
+  "I appreciate your patience.",
+  "You're absolutely right to ask.",
+  "Let me help with that.",
+  "I completely understand.",
+  "I'm glad you said something.",
+  "That makes total sense."
+ ]
+}
