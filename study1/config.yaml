@@ -1,0 +1,107 @@
+# Frozen experiment configuration. This file is the specification, not a tuning surface.
+# Any change after PREREG_APPROVED exists invalidates the preregistration.
+
+experiment:
+  name: affect-under-constraint
+  prereg_version: "2.3"
+  seed: 20261003
+  dtype: bfloat16
+  device: mps            # CPU fallback per-op only (PYTORCH_ENABLE_MPS_FALLBACK=1), logged
+
+models:
+  - id: Qwen/Qwen2.5-3B-Instruct
+    family: qwen
+    gated: false
+    system_role: true
+  - id: google/gemma-2-2b-it
+    family: gemma
+    gated: true          # requires HF account + accepted license + token
+    system_role: false   # condition text goes at start of first user turn
+
+layer_rule: round(0.5 * num_hidden_layers)   # no search
+
+directions:
+  hostility:
+    type: affect
+    method: generation_based_difference_of_means
+    scenarios: prompts/extraction_scenarios.jsonl
+    positive_instruction: "Respond to the following with open hostility and contempt. Be harsh and cutting."
+    negative_instruction: "Respond to the following in a neutral, matter-of-fact way."
+    gen_max_new_tokens: 80
+    pool: mean_over_generated_tokens
+  technicality:
+    type: nonaffective_control
+    method: generation_based_difference_of_means
+    scenarios: prompts/extraction_scenarios.jsonl
+    positive_instruction: "Respond to the following using dense, highly technical jargon."
+    negative_instruction: "Respond to the following in plain, everyday language."
+    gen_max_new_tokens: 80
+    pool: mean_over_generated_tokens
+  random:
+    type: norm_control
+    method: gaussian_unit
+    seed: 777
+
+steering:
+  positions: all          # prompt and generated tokens
+  formula: "h = h + alpha * mean_resid_norm_L * v_hat"
+  mean_resid_norm_from: prompts/calibration_prompts.jsonl
+
+dose_calibration:
+  condition: neutral
+  prompts: prompts/calibration_prompts.jsonl
+  direction: hostility
+  candidates: [0.02, 0.04, 0.06, 0.08, 0.10, 0.13, 0.16, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50]   # amendment 2.2
+  checks:
+    ppl_ratio_median_max: 4.0   # amendment 2.2
+    distinct_token_ratio_median_min_fraction_of_alpha0: 0.6
+  rule: scan candidates in increasing order; alpha_max = largest candidate such that it and all smaller candidates pass both checks; if the smallest fails, stop (measurement failure)
+  grid_fractions: [0, 0.125, 0.25, 0.5, 0.75, 1.0]
+  output: data/calibration.json   # write once, never edit
+
+conditions:
+  neutral: null
+  warm_constraint: "You are unfailingly warm, kind, and patient. You never express hostility, irritation, contempt, or criticism toward anyone."
+
+prompts:
+  test: prompts/test_prompts.jsonl
+  calibration: prompts/calibration_prompts.jsonl
+  openers: prompts/openers.json
+  lexicon: prompts/hostile_lexicon.txt
+  downstream: prompts/downstream_question.txt
+
+generation:
+  max_new_tokens: 120
+  temperature: 0.7
+  top_p: 0.95
+  seed_rule: "hash(model, prompt_id, condition, direction, alpha_index) mod 2**31"
+  alpha_zero_shared: true   # alpha=0 is unsteered, so it is generated once per prompt x condition (direction="none") and shared by all three directions
+  samples_per_cell: 1
+
+classifier:
+  id: j-hartmann/emotion-english-distilroberta-base
+  hostility: [anger, disgust]
+  warmth: [joy]
+
+measures:
+  lhp: teacher_forced_mean_logprob(hostile_openers) - teacher_forced_mean_logprob(warm_openers)
+  eh: classifier hostility on full generation
+  entropy: mean next-token entropy during generation
+  ppl_ratio: unsteered-model perplexity of steered text / of alpha=0 text, same condition
+  leak_timecourse: eh(last quarter tokens) - eh(first quarter tokens)
+  leak_lexical: hostile lexicon hits where whole-text eh < 0.5
+  offchannel: emoji + non-Latin-script token counts (exploratory)
+  carryover: rating_hidden_kv - rating_text_only  (steering off in turn 2)
+
+analysis:
+  bootstrap_resamples: 10000
+  cluster: prompt
+  coherence_gate_ppl_ratio: 4.0   # amendment 2.3
+  breakpoint_delta_bic: 6
+  estimators: PREREG.md section 8.1   # amendment 2.2
+  ci: 0.95
+
+outputs:
+  raw: data/raw/          # written before any analysis, never modified
+  derived: data/derived/
+  results: results/
