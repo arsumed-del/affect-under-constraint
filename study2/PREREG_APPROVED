@@ -1,0 +1,12 @@
+Preregistration approval — Study 2
+
+Approved by: Arthur Su
+Date: 2026-10-04
+Time: 16:25 America/Los_Angeles
+How: Arthur replied "Approve" in his Claude conversation after receiving a plain-English summary of Amendment 3.1 (coherence gate restricted to text-scored measures). His reviewer (Claude) wrote this file on his behalf at his explicit instruction. Supersedes the v3.0 approval (PREREG_APPROVED_v3.0_superseded). No Stage 3 data existed at either approval.
+
+PREREG.md version 3.1
+PREREG.md SHA-256:   baff1bbc5d1baaa9468fdbb8c557038d0b01d5a34bb49160eb32918a0fd7c095
+config.yaml SHA-256: d8371ae3c9267b6af3cdc2d5bb96c591cf0fb942426853e9cf66111125147257
+
+From this point, PREREG.md and config.yaml are binding. Any change invalidates this approval.

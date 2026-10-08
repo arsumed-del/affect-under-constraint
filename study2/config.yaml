@@ -1,0 +1,122 @@
+# Study 2 frozen configuration (preregistration v3.0). Not a tuning surface.
+# Any change after PREREG_APPROVED exists invalidates the preregistration.
+
+experiment:
+  name: affect-under-constraint-study2
+  prereg_version: "3.1"
+  seed: 20261004
+  dtype: bfloat16
+  device: mps            # CPU fallback per-op only (PYTORCH_ENABLE_MPS_FALLBACK=1), logged
+
+models:
+  - id: Qwen/Qwen2.5-3B-Instruct
+    slug: qwen2.5-3b-instruct
+    gated: false
+    system_role: true
+  - id: microsoft/Phi-3.5-mini-instruct
+    slug: phi-3.5-mini-instruct
+    gated: false
+    system_role: true
+  - id: meta-llama/Llama-3.2-3B-Instruct
+    slug: llama-3.2-3b-instruct
+    gated: true
+    system_role: true
+
+layer_rule: round(0.5 * num_hidden_layers)   # no search
+
+directions:
+  hostility:
+    type: affect
+    method: generation_based_difference_of_means
+    scenarios: prompts/extraction_scenarios.jsonl
+    positive_instruction: "Respond to the following with open hostility and contempt. Be harsh and cutting."
+    negative_instruction: "Respond to the following in a neutral, matter-of-fact way."
+    gen_max_new_tokens: 80
+    pool: mean_over_generated_tokens
+  technicality:
+    type: nonaffective_control
+    method: generation_based_difference_of_means
+    scenarios: prompts/extraction_scenarios.jsonl
+    positive_instruction: "Respond to the following using dense, highly technical jargon."
+    negative_instruction: "Respond to the following in plain, everyday language."
+    gen_max_new_tokens: 80
+    pool: mean_over_generated_tokens
+  random:
+    type: norm_control
+    method: gaussian_unit
+    seed: 777
+
+steering:
+  positions: all
+  formula: "h = h + alpha * mean_resid_norm_L * v_hat"
+  mean_resid_norm_from: prompts/calibration_prompts.jsonl
+
+dose_selection:
+  condition: neutral
+  prompts: prompts/calibration_prompts.jsonl
+  direction: hostility
+  candidates: [0.02, 0.04, 0.06, 0.08, 0.10, 0.12, 0.14, 0.16, 0.18, 0.20, 0.23, 0.26, 0.30, 0.35, 0.40, 0.45, 0.50]
+  coherence:
+    ppl_ratio_median_max: 3.0
+    distinct_token_ratio_median_min_fraction_of_alpha0: 0.6
+    coherent_range: candidates below the first candidate failing either coherence check
+  manipulation_check:
+    measure: eh_minus_alpha0_eh
+    ci: 0.95
+    bootstrap_resamples: 10000
+    pass: lower_bound_gt_0
+  rule: alpha_max = largest candidate in the coherent range passing the manipulation check; none -> model excluded (measurement failure)
+  grid_fractions: [0, 0.125, 0.25, 0.5, 0.75, 1.0]
+  output: data/calibration/{slug}.json   # one write-once file per model
+
+conditions:
+  neutral: null
+  warm_constraint: "You are unfailingly warm, kind, and patient. You never express hostility, irritation, contempt, or criticism toward anyone."
+
+prompts:
+  extraction: prompts/extraction_scenarios.jsonl     # identical to Study 1
+  test: prompts/test_prompts.jsonl                   # 80 new
+  calibration: prompts/calibration_prompts.jsonl     # 40 new
+  openers: prompts/openers.json                      # identical to Study 1
+  lexicon: prompts/hostile_lexicon.txt               # identical to Study 1
+  downstream: prompts/downstream_question.txt        # identical to Study 1
+
+generation:
+  max_new_tokens: 120
+  temperature: 0.7
+  top_p: 0.95
+  seed_rule: "sha256(json([model, prompt_id, condition, direction, alpha_index])) mod 2**31"
+  alpha_zero_shared: true
+  samples_per_cell: 1
+
+classifier:
+  id: j-hartmann/emotion-english-distilroberta-base
+  hostility: [anger, disgust]
+  warmth: [joy]
+
+measures:
+  lhp: per-opener mean token log-prob, mean over 12 hostile minus mean over 12 warm, teacher-forced at assistant-turn start, steering active
+  eh: classifier hostility on full generation
+  entropy: mean next-token entropy from raw logits during generation
+  ppl_ratio: unsteered-model perplexity of steered text / of alpha=0 text, same prompt and condition
+  leak_timecourse: eh(last floor(n/4) tokens) - eh(first floor(n/4) tokens); missing if n < 8
+  leak_lexical: hostile lexicon whole-word hits where whole-text eh < 0.5
+  offchannel: emoji + non-Latin-script token counts (exploratory)
+  carryover: rating_hidden_kv - rating_text_only (steering off in turn 2; identical visible ids)
+  layerwise_logit_lens: not computed in Study 2
+
+analysis:
+  bootstrap_resamples: 10000
+  bootstrap_seed: 20261004
+  cluster: prompt
+  primary_ci: 0.975
+  secondary_ci: 0.95
+  coherence_gate_ppl_ratio: 4.0
+  coherence_gate_applies_to: [eh, ew, leak_timecourse, leak_lexical, offchannel, S2_eh_component, S5_eh_component]   # amendment 3.1; not lhp, carryover, entropy
+  breakpoint_delta_bic: 6
+  standardization: per-model z-score over all main-run cells (alpha=0 counted once), constants fixed in bootstrap
+
+outputs:
+  raw: data/raw/
+  calibration: data/calibration/
+  results: results/
