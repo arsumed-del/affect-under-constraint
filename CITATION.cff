@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the preprint."
+title: "Affect Under Constraint: code and results"
+authors:
+  - family-names: Su
+    given-names: Arthur
+    orcid: "https://orcid.org/0009-0002-5678-4708"
+license: MIT
+repository-code: "https://github.com/arsumed-del/affect-under-constraint"
+preferred-citation:
+  type: article
+  title: "Affect Under Constraint: Persistence of a Steered Affective Representation in Instruction-Tuned Language Models"
+  authors:
+    - family-names: Su
+      given-names: Arthur
+      orcid: "https://orcid.org/0009-0002-5678-4708"
+  year: 2026
+  doi: "10.5281/zenodo.23182205"
+  status: preprint
