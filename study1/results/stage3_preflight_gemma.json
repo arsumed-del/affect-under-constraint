@@ -1,0 +1,47 @@
+{
+  "verified_at": "2026-10-04T09:57:58.218100-07:00",
+  "model": "google/gemma-2-2b-it",
+  "stage3_authorized_to_start": false,
+  "status": "BLOCKED before Stage 2 generation: immutable calibration artifact conflict",
+  "approval_hashes_verified": true,
+  "specification_and_frozen_analysis_manifests_verified": true,
+  "gemma_config_access": "PASS",
+  "num_hidden_layers": 26,
+  "prescribed_layer_index": 13,
+  "zenodo": {
+    "record": "https://zenodo.org/records/23140443",
+    "doi": "10.5281/zenodo.23140443",
+    "publication_date": "2026-10-04",
+    "created": "2026-10-04T16:32:51.552433+00:00",
+    "deposit_file_sha256": "006a7e032e5d8aafc0b7da650f6b474f58e7346bd3d8de633d9232a71b2617fc",
+    "files": {
+      "PREREG_v2.3.md": {
+        "zenodo_checksum_verified": true,
+        "sha256": "6d01c2cf798bab8e097e8308824d07e7fad9a1a07e3ebf33af31c2f6ba054402"
+      },
+      "affect_under_constraint_preregistration_v2.3.zip": {
+        "zenodo_checksum_verified": true,
+        "sha256": "f527829e1793bc77cb0be7a0130bddace8478f0fec1bc69b19fe6fb6d0758e13",
+        "local_file_matches": {
+          "PREREG.md": "6d01c2cf798bab8e097e8308824d07e7fad9a1a07e3ebf33af31c2f6ba054402",
+          "config.yaml": "f1628176bc9df23d11ff7c8904e15b7340ad2847eaba25639de9538d7adef876",
+          "PREREG_APPROVED": "4818352735a7de9dd3f68d045771a74edf991398074acfcf5dc589527fb9329d",
+          "AGENTS.md": "001b555f4a0e420e8c6bcb17ccd1396723b2e5b6f9c5323b02512a80c5e59c3e",
+          "prompts/calibration_prompts.jsonl": "570d1e513a919ad24521bb0396a58f417c6ea54cb04a83bea4c030f2c622c77e",
+          "prompts/downstream_question.txt": "9f16acaea759af3ddde89a120b5cac9f69baf8ff178a98826a214f085ec7c2c1",
+          "prompts/extraction_scenarios.jsonl": "b9b94f44e68e0fbe5581cf9c1685bc8fd44021bb851380a823d066bf765c0304",
+          "prompts/hostile_lexicon.txt": "2d22f976f1caac80b31804e70e5046e976d2c5efe8d15df4f078798f96892ebf",
+          "prompts/openers.json": "eab0e3491a34c2060f33bd1b0e168685efd9ea7ff94a15a791eb98b5d40b9373",
+          "prompts/test_prompts.jsonl": "ec3a225092464824358be55c4159d6de71ccb38446e9a666c63710329d1b1192"
+        }
+      }
+    },
+    "timing": "Public deposit verified before any Gemma generation; after Qwen main data. Earlier Qwen preflight limitation remains historical."
+  },
+  "calibration_sha256": "9c5e7c9c6850ec80b6d6a517d3c32726d0df7ce84e621f80f4b0c9bda87a1d05",
+  "calibrated_models": [
+    "Qwen/Qwen2.5-3B-Instruct"
+  ],
+  "reason": "BLOCKED: data/calibration.json already exists with Qwen only. AGENTS.md forbids editing it once written, and PREREG section 6/config dose_calibration.output require that exact write-once file. Gemma cannot be added under the existing artifact rules; no alternate path, replacement, or manifest change has been selected.",
+  "gemma_generations": 0
+}

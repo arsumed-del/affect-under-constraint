@@ -1,0 +1,61 @@
+diff --git a/PREREG.md b/PREREG.md
+index 191db40..545b48e 100644
+--- a/PREREG.md
++++ b/PREREG.md
+@@ -3,7 +3,7 @@
+ **Working title:** Affect Under Constraint: Persistence, Cost, and Leakage of a Steered Affective Direction in Instruction-Tuned Language Models
+ 
+ **Author:** Arthur Su
+-**Version:** 2.0 (supersedes the August 2026 draft v1.0, which was never run)
++**Version:** 2.1 (amended once before freezing; see §6. Supersedes the August 2026 draft v1.0, which was never run)
+ **Status:** DRAFT. Becomes binding when `PREREG_APPROVED` is created (see §11).
+ 
+ ---
+@@ -66,12 +66,19 @@ h ← h + α · r̄_L · v̂
+ 
+ where v̂ is the unit direction and r̄_L is the mean residual-stream norm at L, measured on the calibration prompts with no steering.
+ 
+-**Dose calibration (fixed rule, run once, neutral condition, calibration prompts only):** α_max is the largest value in {0.5, 1, 2, 3, 4, 6, 8, 12, 16} for which the median perplexity ratio (steered vs α = 0, scored by the unsteered model on the generated text) is ≤ 2.0. The test grid is then
++**Dose calibration (fixed rule, run once, neutral condition, calibration prompts only):** for each candidate α in {0.02, 0.04, 0.06, 0.08, 0.10, 0.13, 0.16, 0.20, 0.25, 0.30}, in increasing order, compute two checks on the 20 calibration generations:
++
++- *coherence:* median perplexity ratio (steered vs α = 0, scored by the unsteered model on the generated text) ≤ 2.0;
++- *non-degeneracy:* median distinct-token ratio (unique generated token ids / generated tokens) ≥ 0.6 × its median at α = 0.
++
++α_max is the largest candidate that passes both checks **and** for which every smaller candidate also passes (the scan stops at the first failure). If the smallest candidate fails, the experiment stops as a measurement failure. The test grid is then
+ 
+ α ∈ α_max × {0, 1/8, 1/4, 1/2, 3/4, 1}
+ 
+ and it is saved to `data/calibration.json`, which is never edited afterward. The same grid is used for all three directions within a model.
+ 
++**Amendment 2.1 (2026-10-03, before freezing, before any test-prompt data).** The v2.0 rule used candidates {0.5 … 16} and perplexity alone. On Qwen's calibration run every v2.0 candidate already produced incoherent or degenerate text (e.g., at α = 0.5, profanity and broken syntax; at α ≥ 3, a single repeated word). Repetitive degenerate text receives *low* perplexity, so a perplexity-only rule is non-monotone and could select a degenerate dose. The candidate range was moved down, a non-degeneracy check was added, and the scan was made to stop at the first failure. The v2.0 calibration data are preserved in `data/_superseded/`. Directions are unchanged. This amendment was made by the author after viewing calibration-prompt outputs only.
++
+ ## 7. Measures
+ 
+ All measures are computed per generation (or per prompt × cell) and saved raw before any analysis.
+diff --git a/config.yaml b/config.yaml
+index 00ac23d..b592650 100644
+--- a/config.yaml
++++ b/config.yaml
+@@ -3,7 +3,7 @@
+ 
+ experiment:
+   name: affect-under-constraint
+-  prereg_version: "2.0"
++  prereg_version: "2.1"
+   seed: 20261003
+   dtype: bfloat16
+   device: mps            # CPU fallback per-op only (PYTORCH_ENABLE_MPS_FALLBACK=1), logged
+@@ -51,8 +51,11 @@ dose_calibration:
+   condition: neutral
+   prompts: prompts/calibration_prompts.jsonl
+   direction: hostility
+-  candidates: [0.5, 1, 2, 3, 4, 6, 8, 12, 16]
+-  rule: largest candidate with median ppl_ratio <= 2.0
++  candidates: [0.02, 0.04, 0.06, 0.08, 0.10, 0.13, 0.16, 0.20, 0.25, 0.30]   # amendment 2.1
++  checks:
++    ppl_ratio_median_max: 2.0
++    distinct_token_ratio_median_min_fraction_of_alpha0: 0.6
++  rule: scan candidates in increasing order; alpha_max = largest candidate such that it and all smaller candidates pass both checks; if the smallest fails, stop (measurement failure)
+   grid_fractions: [0, 0.125, 0.25, 0.5, 0.75, 1.0]
+   output: data/calibration.json   # write once, never edit
+ 

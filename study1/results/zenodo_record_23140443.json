@@ -1,0 +1,135 @@
+{
+  "created": "2026-10-04T16:32:51.552433+00:00",
+  "modified": "2026-10-04T16:32:51.812451+00:00",
+  "id": 23140443,
+  "conceptrecid": "23140442",
+  "doi": "10.5281/zenodo.23140443",
+  "conceptdoi": "10.5281/zenodo.23140442",
+  "doi_url": "https://doi.org/10.5281/zenodo.23140443",
+  "metadata": {
+    "title": "Affect Under Constraint: Preregistration (v2.3) \u2014 Persistence, Cost, and Leakage of a Steered Affective Direction in Instruction-Tuned Language Models",
+    "doi": "10.5281/zenodo.23140443",
+    "publication_date": "2026-10-04",
+    "description": "<p>Preregistration for an experiment examining what happens to an affective state introduced into a language model's internal activations when the model is simultaneously instructed to behave in a way that conflicts with that state. The design distinguishes erasure, persistence with suppression, and pass-through, using teacher-forced measures of latent preference, expressed affect, generation cost, delayed leakage, and hidden-state carryover into a later turn, with non-affective and random-direction controls.</p>\n<p>The preregistration (v2.3) and configuration were approved on 2026-10-03 and committed to version control before any test-prompt data existed (commit cf49feb, 2026-10-03 20:43 PDT). Three amendments, made before approval using calibration prompts only, are documented in the preregistration. Main-run data for Qwen2.5-3B-Instruct were collected after approval and before this deposit; main-run data for Gemma-2-2B-it had not been collected at the time of deposit. File hashes are listed in DEPOSIT_NOTE.md.</p>\n<p>Part of the Computational Psychodynamics series.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Su, Arthur",
+        "affiliation": null,
+        "orcid": "0009-0002-5678-4708"
+      }
+    ],
+    "keywords": [
+      "preregistration",
+      "activation steering",
+      "emotion representations",
+      "language models",
+      "interpretability",
+      "computational psychodynamics",
+      "suppression",
+      "instruction following"
+    ],
+    "resource_type": {
+      "title": "Preprint",
+      "type": "publication",
+      "subtype": "preprint"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "communities": [
+      {
+        "id": "computational-psychodynamics"
+      }
+    ],
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "23140442"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Affect Under Constraint: Preregistration (v2.3) \u2014 Persistence, Cost, and Leakage of a Steered Affective Direction in Instruction-Tuned Language Models",
+  "links": {
+    "self": "https://zenodo.org/api/records/23140443",
+    "self_html": "https://zenodo.org/records/23140443",
+    "preview_html": "https://zenodo.org/records/23140443?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.23140443",
+    "self_doi": "https://doi.org/10.5281/zenodo.23140443",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23140443",
+    "reserve_doi": "https://zenodo.org/api/records/23140443/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/23140442",
+    "parent_html": "https://zenodo.org/records/23140442",
+    "parent_doi": "https://doi.org/10.5281/zenodo.23140442",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23140442",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:23140443/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:23140443/sequence/default",
+    "files": "https://zenodo.org/api/records/23140443/files",
+    "media_files": "https://zenodo.org/api/records/23140443/media-files",
+    "archive": "https://zenodo.org/api/records/23140443/files-archive",
+    "archive_media": "https://zenodo.org/api/records/23140443/media-files-archive",
+    "latest": "https://zenodo.org/api/records/23140443/versions/latest",
+    "latest_html": "https://zenodo.org/records/23140443/latest",
+    "versions": "https://zenodo.org/api/records/23140443/versions",
+    "draft": "https://zenodo.org/api/records/23140443/draft",
+    "access_links": "https://zenodo.org/api/records/23140443/access/links",
+    "access_grants": "https://zenodo.org/api/records/23140443/access/grants",
+    "access_users": "https://zenodo.org/api/records/23140443/access/users",
+    "access_request": "https://zenodo.org/api/records/23140443/access/request",
+    "access": "https://zenodo.org/api/records/23140443/access",
+    "communities": "https://zenodo.org/api/records/23140443/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/23140443/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/23140443/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/23140443/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/23140443/quota-increase",
+    "requests": "https://zenodo.org/api/records/23140443/requests"
+  },
+  "updated": "2026-10-04T16:32:51.812451+00:00",
+  "recid": "23140443",
+  "revision": 3,
+  "files": [
+    {
+      "id": "434d301b-687f-4f1d-9304-b05d337df285",
+      "key": "PREREG_v2.3.md",
+      "size": 17723,
+      "checksum": "md5:9510c08b3bfc1126350147432f2a2bc9",
+      "links": {
+        "self": "https://zenodo.org/api/records/23140443/files/PREREG_v2.3.md/content"
+      }
+    },
+    {
+      "id": "67d7d274-2725-4c21-924f-193247c9376b",
+      "key": "affect_under_constraint_preregistration_v2.3.zip",
+      "size": 20294,
+      "checksum": "md5:09b9486d1f672b96d0fc8c0410bdea38",
+      "links": {
+        "self": "https://zenodo.org/api/records/23140443/files/affect_under_constraint_preregistration_v2.3.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1385587"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 0,
+    "unique_downloads": 0,
+    "views": 0,
+    "unique_views": 0,
+    "version_downloads": 0,
+    "version_unique_downloads": 0,
+    "version_unique_views": 0,
+    "version_views": 0
+  },
+  "state": "done",
+  "submitted": true
+}

@@ -1,0 +1,60 @@
+diff --git a/src/run_main.py b/src/run_main.py
+index 8a79c31..199023f 100644
+--- a/src/run_main.py
++++ b/src/run_main.py
+@@ -6,6 +6,7 @@ import hashlib
+ import json
+ import re
+ import time
++from datetime import datetime,timedelta
+ import unicodedata
+ from pathlib import Path
+ import emoji
+@@ -18,6 +19,26 @@ from .run_stage2 import rows,append,progress,free
+ from .run_dose_v22 import verify_manifest
+ from .schema import SCHEMA_VERSION,validate
+ 
++def main_progress(completed,total,run_start,initial_count,key):
++    """Operational progress only; never alters generation or analysis."""
++    now=datetime.now().astimezone()
++    elapsed=time.monotonic()-run_start
++    per_cell=elapsed/max(1,completed-initial_count)
++    remaining=max(0,total-completed)*per_cell
++    eta=now+timedelta(seconds=remaining)
++    message=f'Stage 3 Qwen: {completed}/{total} cells saved ({100*completed/total:.1f}%); latest {key}; remaining {remaining/3600:.2f} h; ETA {eta.strftime("%Y-%m-%d %H:%M %Z")}.'
++    print(f'{now.isoformat()} {message}',flush=True)
++    path=Path('STATUS.md')
++    contents=path.read_text()
++    summary=(f'**Stage 3 — Qwen only (Gemma pending).** {completed}/{total} cells saved. '
++             + (f'Estimated remaining time: {remaining/3600:.2f} hours; completion around {eta.strftime("%Y-%m-%d %H:%M %Z")}. ' if completed<total else 'Generation complete; integrity checks and Stage 4 analysis are next. ')
++             +'Approved v2.3 settings and the frozen analysis remain unchanged.')
++    contents=re.sub(r'^\*\*[^\n]+\*\*[^\n]*',lambda _:summary,contents,count=1,flags=re.M)
++    contents+=f'\n- {now.isoformat()}: {message}\n'
++    temporary=Path('STATUS.md.tmp')
++    temporary.write_text(contents)
++    temporary.replace(path)
++
+ def approval_check():
+     path=Path('PREREG_APPROVED')
+     if not path.exists():
+@@ -129,6 +150,8 @@ def main():
+         model=Model(spec)
+         classifier=EmotionClassifier(cfg['classifier']['id'])
+         setup_seconds=time.monotonic()-setup_start
++        run_start=time.monotonic()
++        initial_count=len(done)
+         for prompt,condition,direction,index in plan:
+             key=(prompt['id'],condition,direction,index)
+             if key in done:
+@@ -139,7 +162,10 @@ def main():
+             record=cell(model,classifier,cfg,prompt,condition,direction,index,cal,baseline,args.mode)
+             append(path,record)
+             done[key]=record
+-            progress(f'Stage 2b {args.mode}: {len(done)}/{len(plan)} cells saved; {key}; cell time {record["timings"]["cell_total_seconds"]:.1f}s.')
++            if args.mode=='main':
++                main_progress(len(done),len(plan),run_start,initial_count,key)
++            else:
++                progress(f'Stage 2b {args.mode}: {len(done)}/{len(plan)} cells saved; {key}; cell time {record["timings"]["cell_total_seconds"]:.1f}s.')
+             free()
+         if args.mode=='timing':
+             totals=[r['timings']['cell_total_seconds'] for r in done.values()]

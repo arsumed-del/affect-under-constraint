@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-04T12:30:32.636759-07:00",
+  "model": "google/gemma-2-2b-it",
+  "stage3_authorized_to_start": false,
+  "reason": "Stage 2 validation gate failed; Stage 3 prohibited",
+  "deposit_evidence": "results/stage3_preflight_gemma.json",
+  "storage_resolution": "DEVIATIONS.md: Reviewer resolutions (post-approval, storage only)",
+  "calibration_file": "data/calibration_gemma-2-2b-it.json",
+  "calibration_sha256": "cd0dcab3b4480868f9f84a32ab1ef0899b9edc8c7508440811d464597430bf46",
+  "frozen_hashes_verified": true,
+  "validation": {
+    "passed": false,
+    "estimate": 0.027386308379936962,
+    "ci95": [
+      -0.12573303073237183,
+      0.18706261298211752
+    ]
+  }
+}

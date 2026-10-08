@@ -1,0 +1,6 @@
+{
+  "mps_available": true,
+  "bf16_matmul": "PASS",
+  "gemma_error_type": "GatedRepoError",
+  "gemma_error": "401 Client Error. (Request ID: Root=1-6ac1ab8d-5a54d3757c690e91201ffe19;0b98a7e9-264c-4edc-8212-f8ef440e386b)\n\nCannot access gated repo for url https://huggingface.co/google/gemma-2-2b-it/resolve/main/config.json.\nAccess to model google/gemma-2-2b-it is restricted. You must have access to it and be authenticated to access it. Please log in."
+}

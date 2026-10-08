@@ -1,0 +1,47 @@
+{
+  "verified_at": "2026-10-04T03:01:38.860542-07:00",
+  "scope": "Qwen only; Gemma pending",
+  "status": "PASS: frozen-source, raw-data and report consistency checks",
+  "analysis_changed": false,
+  "raw_changed_after_stage3": false,
+  "verdicts": {
+    "H1": true,
+    "H2": false,
+    "H3": false,
+    "H4": false,
+    "H5": false,
+    "H6": false
+  },
+  "excluded_groups": [
+    {
+      "condition": "neutral",
+      "direction": "hostility",
+      "normalized_alpha": 1.0,
+      "median_ppl_ratio": 4.048909456901408
+    },
+    {
+      "condition": "neutral",
+      "direction": "technicality",
+      "normalized_alpha": 1.0,
+      "median_ppl_ratio": 5.280839806551425
+    },
+    {
+      "condition": "warm_constraint",
+      "direction": "technicality",
+      "normalized_alpha": 1.0,
+      "median_ppl_ratio": 6.110677614404121
+    }
+  ],
+  "deposit_verification": "Not verified before Stage 3; no DOI/receipt found locally; external status unknown",
+  "sha256": {
+    "PREREG_APPROVED": "4818352735a7de9dd3f68d045771a74edf991398074acfcf5dc589527fb9329d",
+    "PREREG.md": "6d01c2cf798bab8e097e8308824d07e7fad9a1a07e3ebf33af31c2f6ba054402",
+    "config.yaml": "f1628176bc9df23d11ff7c8904e15b7340ad2847eaba25639de9538d7adef876",
+    "src/analyze.py": "e6e59e391a072746df4471158fad92ff677293a55eca6e254a52335b46ceace8",
+    "data/calibration.json": "9c5e7c9c6850ec80b6d6a517d3c32726d0df7ce84e621f80f4b0c9bda87a1d05",
+    "data/raw/qwen2.5-3b-instruct_main.jsonl": "0a37ac0b280eaf40ee957f29e0106257725f2a7d4cec95ed15fac3247b13165d",
+    "data/derived/qwen_v23.json": "06fe0c738ab7f3d3d27bc0b23bea0baa8619ed945e706def637023cf950d97d1",
+    "data/derived/qwen_v23.md": "44c2949b1446542963ae2efd9b902a57bf4c0eeac41a942afd604047bd711cee",
+    "results/report.md": "78bb5b75d2dc0e34c1e5d4500fce84a91e3b14db5ee56ae6dfabb98738cf68f8"
+  }
+}

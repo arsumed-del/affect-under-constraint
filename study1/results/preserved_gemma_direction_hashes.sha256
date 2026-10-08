@@ -1,0 +1,4 @@
+1b99041f13cd5b9bb227602ff693612b48320095b3b74dc3dba74e18d1bc059e  data/directions/gemma-2-2b-it_hostility.pt
+3de0276412025029f48599128b84fe4693ea8ead56c882e1b8fcaec1a5652d8c  data/directions/gemma-2-2b-it_technicality.pt
+4e1cf15896b94d203ef636db22acdafcf4f9487619d4aa3a4ad81bd7a4997cd0  data/directions/gemma-2-2b-it_random.pt
+a8f72350938bb80ed7a8934b76deea0f275d4d2f21a971dc0787f171b4c9a5b7  data/directions/gemma-2-2b-it_mean_resid_norm.json

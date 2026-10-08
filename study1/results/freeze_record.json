@@ -1,0 +1,8 @@
+{
+  "analysis_commit": "94c92b7ee453d1898034f2ef19d9ae2148c69eab",
+  "analysis_hash_manifest": "results/analysis_frozen.sha256",
+  "prereg_version": "2.2",
+  "status": "READY FOR FREEZE",
+  "stage3_started": false,
+  "stage3_estimated_hours_qwen": 5.70889616849145
+}

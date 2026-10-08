@@ -1,0 +1,21 @@
+{
+  "reusable_cells": 160,
+  "source": "data/stage2/dose_v21.jsonl",
+  "source_sha256": "14ae140d3168992958bf78825856409aa3a52cb55b3fdd1378e6b8f0e04a99d0",
+  "verified": [
+    "same prompt file hashes and IDs",
+    "same seed for every cell and same alpha index",
+    "same model, directions, residual norms, precision, device, temperature, top-p and max tokens",
+    "same inference implementation as committed v2.1"
+  ],
+  "candidates": [
+    0,
+    0.02,
+    0.04,
+    0.06,
+    0.08,
+    0.1,
+    0.13,
+    0.16
+  ]
+}

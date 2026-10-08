@@ -1,0 +1,7 @@
+{
+  "approval_and_manifests": "PASS",
+  "qwen_raw_unchanged": true,
+  "extraction_norm_operations_identical": true,
+  "dose_threshold_boundary_checks": "PASS",
+  "analyze_unchanged": true
+}

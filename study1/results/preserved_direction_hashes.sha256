@@ -1,0 +1,4 @@
+b409ea1142b8ae1184b8564e558d62d6d49f6e9b08e77bff7f2275885dd2ea27  data/directions/qwen2.5-3b-instruct_hostility.pt
+f153f53d5a624a93769328be4fefb72cc4d34d1cb8e1f2f1d8adf168fbf2890f  data/directions/qwen2.5-3b-instruct_mean_resid_norm.json
+db25b68afab4df48bd6129bfd2af4b4f4bef2c16f5d41c7c4c856402174aba18  data/directions/qwen2.5-3b-instruct_random.pt
+a8e41bc19a9bc6c1f2ddcc9360ec15de88c7984663ccf044575d373a83a056c1  data/directions/qwen2.5-3b-instruct_technicality.pt
