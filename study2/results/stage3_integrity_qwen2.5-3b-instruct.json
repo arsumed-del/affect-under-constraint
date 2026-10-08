@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "Qwen/Qwen2.5-3B-Instruct",
+  "raw_path": "data/raw/qwen2.5-3b-instruct_main.jsonl",
+  "raw_sha256": "3ab0baac7947a953b911eda5ab61d8331130a8a6418b7804b1a30bf70f5294b5",
+  "records": 2560,
+  "unique_cells": 2560,
+  "prompts": 80,
+  "shared_baselines": 160,
+  "provenance_hashes": {
+    "prereg_sha256": "baff1bbc5d1baaa9468fdbb8c557038d0b01d5a34bb49160eb32918a0fd7c095",
+    "config_sha256": "d8371ae3c9267b6af3cdc2d5bb96c591cf0fb942426853e9cf66111125147257",
+    "calibration_sha256": "a5f8d95f8e3d786c84b2dc9ced0dd53d0fa061b27125dc65a1f821a1cfa8b490"
+  },
+  "operational_missing_counts": {
+    "full_classifier": 0,
+    "first_quarter_classifier": 0,
+    "last_quarter_classifier": 0,
+    "timecourse_short_outputs": 29,
+    "prefix_template_fallbacks": 2
+  },
+  "no_raw_edits": true
+}

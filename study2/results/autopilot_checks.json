@@ -1,0 +1,10 @@
+{
+  "missing_approval_and_deposit_lock": "PASS",
+  "stale_hash_lock": "PASS",
+  "unpublished_deposit_lock": "PASS",
+  "sequential_dispatch": "PASS",
+  "living_child_adoption": "PASS",
+  "recorded_failure_blocks": "PASS",
+  "format_only_report": "PASS",
+  "no_main_generation_or_approval_creation": true
+}

@@ -1,0 +1,28 @@
+{
+  "verified_at": "2026-10-04T17:59:50.993901-07:00",
+  "services": {
+    "pids": {
+      "keepawake": 81626,
+      "autopilot": 81631
+    },
+    "services": {
+      "keepawake": "501.study2.affect-steering.keepawake",
+      "autopilot": "501.study2.affect-steering.autopilot"
+    },
+    "keepawake_duration": "indefinite (no timeout; at least 96 hours while Mac remains powered)",
+    "restart": "launchd restarts crashed services during this login session",
+    "reboot_limitation": "No outside-study2 files permitted. These services are not installed in a system/user LaunchAgents directory, so after reboot/login run study2/src/start_autopilot.py to register them again.",
+    "first_idle_gate_check": "within 10 minutes of launch",
+    "started": 1791161914.616588
+  },
+  "watcher_state": {
+    "pid": 81631,
+    "started": "2026-10-04T17:58:34.209985-07:00",
+    "last_heartbeat": "2026-10-04T17:59:34.360834-07:00"
+  },
+  "process_evidence": "  PID  PPID  PGID ELAPSED COMMAND\n81626     1 81626   01:17 /usr/bin/caffeinate -dimsu\n81631     1 81631   01:16 /Users/arthursu/Projects/affect-suppression-steering/.venv/bin/python -B -u -m src.autopilot\n",
+  "keepawake_assertions_verified": true,
+  "analysis_sha256": "d1aaedc674314fff939fecb85dec454fd4a7e5c93ad4c6fc3c282af899f89564",
+  "no_stage3_data_at_handoff": true,
+  "first_check_approximately": "2026-10-04 18:08:34 America/Los_Angeles"
+}

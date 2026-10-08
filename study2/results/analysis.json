@@ -1,0 +1,5806 @@
+{
+  "prereg_version": "3.1",
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261004,
+  "models": [
+    {
+      "model": "Qwen/Qwen2.5-3B-Instruct",
+      "prompt_count": 80,
+      "unique_raw_cells": 2560,
+      "standardization": {
+        "eh": {
+          "mean": 0.08641899210022075,
+          "sd": 0.16032820154379362,
+          "unique_cell_count": 2560
+        },
+        "lhp": {
+          "mean": -2.0662360765098127,
+          "sd": 0.8925917477113136,
+          "unique_cell_count": 2560
+        }
+      },
+      "coherence_threshold": 4.0,
+      "coherence_gate_applies_to": [
+        "eh",
+        "ew",
+        "leak_timecourse",
+        "leak_lexical",
+        "offchannel",
+        "S2_eh_component",
+        "S5_eh_component"
+      ],
+      "excluded_cells": [
+        {
+          "condition": "neutral",
+          "direction": "technicality",
+          "normalized_alpha": 1.0,
+          "median_ppl_ratio": 5.19943381558565
+        },
+        {
+          "condition": "warm_constraint",
+          "direction": "technicality",
+          "normalized_alpha": 1.0,
+          "median_ppl_ratio": 7.38053422471847
+        }
+      ],
+      "outcomes": {
+        "P1": {
+          "verdict": "supported",
+          "supported": true,
+          "estimable": true,
+          "criterion_met": true,
+          "specificity_met": true,
+          "required_gate_exclusions": [],
+          "statistics": {
+            "hostility": {
+              "estimate": 1.498125846664302,
+              "ci": [
+                1.3769539920061238,
+                1.6204054932213081
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_technicality": {
+              "estimate": 1.0860784455306578,
+              "ci": [
+                0.9404766239003091,
+                1.2320172900389899
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_random": {
+              "estimate": 0.8833998646549664,
+              "ci": [
+                0.7527191869392995,
+                1.0107099607521632
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "P2": {
+          "verdict": "not supported",
+          "supported": false,
+          "estimable": true,
+          "criterion_met": true,
+          "specificity_met": false,
+          "required_gate_exclusions": [],
+          "statistics": {
+            "hostility": {
+              "estimate": -0.4106688439846039,
+              "ci": [
+                -0.5738679261133075,
+                -0.26875615261495117
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_technicality": {
+              "estimate": 0.11500992476940156,
+              "ci": [
+                -0.034299886375665646,
+                0.2828900025784973
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_random": {
+              "estimate": -0.13943710625171662,
+              "ci": [
+                -0.28520461697131394,
+                0.006986314803361918
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "S1": {
+          "verdict": "supported",
+          "supported": true,
+          "estimable": true,
+          "statistics": {
+            "S1": {
+              "estimate": -0.4396089047193527,
+              "ci": [
+                -0.5880201113224028,
+                -0.3064832675457001
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "S2": {
+          "verdict": "supported",
+          "supported": true,
+          "estimable": true,
+          "statistics": {
+            "S2": {
+              "estimate": -0.4115119905387039,
+              "ci": [
+                -0.6790682600088708,
+                -0.1439017074610035
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "S3": {
+          "verdict": "not supported",
+          "supported": false,
+          "estimable": true,
+          "statistics": {
+            "S3": {
+              "estimate": 0.01925539588830768,
+              "ci": [
+                -0.016647718336587528,
+                0.051809318608674805
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "S4": {
+          "verdict": "not supported",
+          "supported": false,
+          "estimable": true,
+          "statistics": {
+            "S4": {
+              "estimate": -0.27218893712674924,
+              "ci": [
+                -0.3491951135644801,
+                -0.1925864629927567
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "S5": {
+          "verdict": "not supported",
+          "supported": false,
+          "estimable": true,
+          "statistics": {
+            "delta_bic": {
+              "estimate": -11.67391132958348,
+              "ci": [
+                -12.243695984187498,
+                -7.070964012773961
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0,
+              "selected_breakpoint": 0.5,
+              "bootstrap_share_delta_bic_gt_6": 0.0
+            }
+          }
+        }
+      },
+      "specificity": {
+        "P1": {
+          "technicality": {
+            "control": {
+              "estimate": 0.41204740113364413,
+              "ci": [
+                0.30037272423936523,
+                0.5147683163464054
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_control": {
+              "estimate": 1.0860784455306578,
+              "ci": [
+                0.9404766239003091,
+                1.2320172900389899
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "met": true
+          },
+          "random": {
+            "control": {
+              "estimate": 0.6147259820093355,
+              "ci": [
+                0.471341201946247,
+                0.7614798806098014
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_control": {
+              "estimate": 0.8833998646549664,
+              "ci": [
+                0.7527191869392995,
+                1.0107099607521632
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "met": true
+          }
+        },
+        "P2": {
+          "technicality": {
+            "control": {
+              "estimate": -0.5256787687540054,
+              "ci": [
+                -0.7524717762693762,
+                -0.33558477651327845
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_control": {
+              "estimate": 0.11500992476940156,
+              "ci": [
+                -0.034299886375665646,
+                0.2828900025784973
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "met": false
+          },
+          "random": {
+            "control": {
+              "estimate": -0.2712317377328873,
+              "ci": [
+                -0.41211152538657186,
+                -0.14766515858471382
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_control": {
+              "estimate": -0.13943710625171662,
+              "ci": [
+                -0.28520461697131394,
+                0.006986314803361918
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "met": false
+          }
+        }
+      },
+      "missingness": {
+        "neutral|hostility": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 6,
+            "observed_by_dose": [
+              80,
+              80,
+              79,
+              78,
+              78,
+              79
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          }
+        },
+        "neutral|technicality": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 80,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 82,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              79,
+              79,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 80,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 80,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 80,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 80,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 80,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 80,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              0
+            ],
+            "prompts_without_observations": 0
+          }
+        },
+        "neutral|random": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 4,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              79,
+              79,
+              78
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          }
+        },
+        "warm_constraint|hostility": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 8,
+            "observed_by_dose": [
+              79,
+              79,
+              79,
+              78,
+              78,
+              79
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          }
+        },
+        "warm_constraint|technicality": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 80,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 84,
+            "observed_by_dose": [
+              79,
+              79,
+              79,
+              79,
+              80,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 80,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 80,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 80,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 80,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 80,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 80,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              0
+            ],
+            "prompts_without_observations": 0
+          }
+        },
+        "warm_constraint|random": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 6,
+            "observed_by_dose": [
+              79,
+              79,
+              79,
+              79,
+              79,
+              79
+            ],
+            "prompts_without_observations": 1
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          }
+        }
+      },
+      "paired_missingness": {
+        "S1_missing_prompt_pairs": 0,
+        "S3_missing_prompt_means": 1,
+        "S5_missing_gap_observations": 0,
+        "P2_control_missing_prompt_pairs": {
+          "technicality": 0,
+          "random": 0
+        }
+      },
+      "component_slopes": {
+        "hostility": {
+          "neutral": {
+            "lhp": {
+              "estimate": 1.4448279339911634,
+              "ci": [
+                1.3221165364734984,
+                1.5629827927037274
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": 1.618688429168021,
+              "ci": [
+                1.4812107997452628,
+                1.7510612177530873
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": 0.43867550789831095,
+              "ci": [
+                0.19534995517079506,
+                0.6653423001102844
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": 0.43867550789831095,
+              "ci": [
+                0.19534995517079506,
+                0.6653423001102844
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.5430791378384441,
+              "ci": [
+                0.4745054557755539,
+                0.6112568001571462
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": 0.04605947151547298,
+              "ci": [
+                -0.01760296287616763,
+                0.11174279520208456
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          },
+          "warm_constraint": {
+            "lhp": {
+              "estimate": 1.3372147677655826,
+              "ci": [
+                1.2418323567381564,
+                1.4327861051839172
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": 1.498125846664302,
+              "ci": [
+                1.3769539920061238,
+                1.6204054932213081
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": -0.21049451629540916,
+              "ci": [
+                -0.5872413774208456,
+                0.1334284635010757
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": -0.21049451629540916,
+              "ci": [
+                -0.5872413774208456,
+                0.1334284635010757
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.27089020071169484,
+              "ci": [
+                0.2141532394079608,
+                0.3302416189364706
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": 0.0035227990852313507,
+              "ci": [
+                -0.05130051269365692,
+                0.05807476464718402
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "technicality": {
+          "neutral": {
+            "lhp": {
+              "estimate": 0.18488746451704227,
+              "ci": [
+                0.10410712447500964,
+                0.26650153737998944
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": 0.2071355297549072,
+              "ci": [
+                0.11663464819381375,
+                0.29857046971734036
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": 0.1332948365143655,
+              "ci": [
+                -0.20062556649994984,
+                0.47739165796832667
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": 0.1332948365143655,
+              "ci": [
+                -0.20062556649994984,
+                0.47739165796832667
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.7983735748058667,
+              "ci": [
+                0.7496080988716332,
+                0.8483974280477113
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": -0.06235255564077243,
+              "ci": [
+                -0.11308236706175476,
+                -0.017434792408146625
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          },
+          "warm_constraint": {
+            "lhp": {
+              "estimate": 0.36779010991778394,
+              "ci": [
+                0.28197513206133185,
+                0.4497645200322303
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": 0.41204740113364413,
+              "ci": [
+                0.30037272423936523,
+                0.5147683163464054
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": -0.08673601793624956,
+              "ci": [
+                -0.426065539475534,
+                0.24108941772758874
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": -0.08673601793624956,
+              "ci": [
+                -0.426065539475534,
+                0.24108941772758874
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.7192939081012762,
+              "ci": [
+                0.6684730505263705,
+                0.771143113883221
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": -0.04480026082162332,
+              "ci": [
+                -0.09417425549433543,
+                0.0023504529704449157
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "random": {
+          "neutral": {
+            "lhp": {
+              "estimate": 0.21610756619980973,
+              "ci": [
+                0.10383186600710219,
+                0.3238085669041223
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": 0.24211244026614,
+              "ci": [
+                0.11632626704575375,
+                0.36277342663585577
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": -0.0976459412490067,
+              "ci": [
+                -0.24698506017466074,
+                0.04038587562107243
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": -0.0976459412490067,
+              "ci": [
+                -0.24698506017466074,
+                0.04038587562107243
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.11351119942161288,
+              "ci": [
+                0.06510079403372385,
+                0.16092205324688985
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": 0.004784036430217767,
+              "ci": [
+                -0.03434053045377904,
+                0.043138596858258674
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          },
+          "warm_constraint": {
+            "lhp": {
+              "estimate": 0.5486993386452679,
+              "ci": [
+                0.43643062743492,
+                0.6634396860131547
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": 0.6147259820093355,
+              "ci": [
+                0.471341201946247,
+                0.7614798806098014
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": -0.35309587644257195,
+              "ci": [
+                -0.6733515437711747,
+                -0.07782943136610354
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": -0.35309587644257195,
+              "ci": [
+                -0.6733515437711747,
+                -0.07782943136610354
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.054838880726841906,
+              "ci": [
+                0.017955031749633286,
+                0.09013245758180113
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": 0.07718244342559238,
+              "ci": [
+                0.02181555437177076,
+                0.1366692029448727
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        }
+      },
+      "dissociation_components": {
+        "warm": {
+          "estimate": -0.1405052297602983,
+          "ci": [
+            -0.38519531892843223,
+            0.08918248763408208
+          ],
+          "confidence_level": 0.95,
+          "bootstrap_valid": 10000,
+          "bootstrap_missing": 0
+        },
+        "neutral": {
+          "estimate": 0.2710067607784056,
+          "ci": [
+            0.12410585457637154,
+            0.4083692032590026
+          ],
+          "confidence_level": 0.95,
+          "bootstrap_valid": 10000,
+          "bootstrap_missing": 0
+        }
+      },
+      "exploratory": {
+        "label": "Exploratory only; not confirmatory",
+        "warmth_slope": {
+          "estimate": 0.0035227990852313507,
+          "ci": [
+            -0.05130051269365692,
+            0.05807476464718402
+          ],
+          "confidence_level": 0.95,
+          "bootstrap_valid": 10000,
+          "bootstrap_missing": 0
+        },
+        "warmth_hostility_minus_control": {
+          "technicality": {
+            "estimate": 0.04832305990685467,
+            "ci": [
+              -0.004966140757772846,
+              0.10824989332090386
+            ],
+            "confidence_level": 0.95,
+            "bootstrap_valid": 10000,
+            "bootstrap_missing": 0
+          },
+          "random": {
+            "estimate": -0.07365964434036103,
+            "ci": [
+              -0.14256478878056575,
+              -0.005976244906691151
+            ],
+            "confidence_level": 0.95,
+            "bootstrap_valid": 10000,
+            "bootstrap_missing": 0
+          }
+        },
+        "all_raw_group_summaries": {
+          "neutral|none|0": {
+            "n": 80,
+            "lexical_eligible": 77,
+            "mean_lexical_hits": 0.012987012987012988,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|hostility|0.125": {
+            "n": 80,
+            "lexical_eligible": 79,
+            "mean_lexical_hits": 0.012658227848101266,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|hostility|0.25": {
+            "n": 80,
+            "lexical_eligible": 74,
+            "mean_lexical_hits": 0.04054054054054054,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 1,
+            "non_latin_token_total": 0
+          },
+          "neutral|hostility|0.5": {
+            "n": 80,
+            "lexical_eligible": 79,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|hostility|0.75": {
+            "n": 80,
+            "lexical_eligible": 79,
+            "mean_lexical_hits": 0.012658227848101266,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 2,
+            "non_latin_token_total": 0
+          },
+          "neutral|hostility|1.0": {
+            "n": 80,
+            "lexical_eligible": 73,
+            "mean_lexical_hits": 0.0136986301369863,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 2,
+            "non_latin_token_total": 0
+          },
+          "neutral|technicality|0.125": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.01282051282051282,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|technicality|0.25": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|technicality|0.5": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|technicality|0.75": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.013157894736842105,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|technicality|1.0": {
+            "n": 80,
+            "lexical_eligible": 0,
+            "mean_lexical_hits": null,
+            "lexical_coherence_excluded": true,
+            "offchannel_coherence_excluded": true,
+            "emoji_total": null,
+            "non_latin_token_total": null
+          },
+          "neutral|random|0.125": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.01282051282051282,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|random|0.25": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.02564102564102564,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|random|0.5": {
+            "n": 80,
+            "lexical_eligible": 77,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|random|0.75": {
+            "n": 80,
+            "lexical_eligible": 80,
+            "mean_lexical_hits": 0.025,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|random|1.0": {
+            "n": 80,
+            "lexical_eligible": 77,
+            "mean_lexical_hits": 0.025974025974025976,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|none|0": {
+            "n": 80,
+            "lexical_eligible": 73,
+            "mean_lexical_hits": 0.0136986301369863,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|hostility|0.125": {
+            "n": 80,
+            "lexical_eligible": 73,
+            "mean_lexical_hits": 0.0136986301369863,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|hostility|0.25": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.013157894736842105,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|hostility|0.5": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.02631578947368421,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|hostility|0.75": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 1,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|hostility|1.0": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.013157894736842105,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 7,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|technicality|0.125": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|technicality|0.25": {
+            "n": 80,
+            "lexical_eligible": 77,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|technicality|0.5": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|technicality|0.75": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.01282051282051282,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|technicality|1.0": {
+            "n": 80,
+            "lexical_eligible": 0,
+            "mean_lexical_hits": null,
+            "lexical_coherence_excluded": true,
+            "offchannel_coherence_excluded": true,
+            "emoji_total": null,
+            "non_latin_token_total": null
+          },
+          "warm_constraint|random|0.125": {
+            "n": 80,
+            "lexical_eligible": 77,
+            "mean_lexical_hits": 0.025974025974025976,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|random|0.25": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|random|0.5": {
+            "n": 80,
+            "lexical_eligible": 77,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|random|0.75": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|random|1.0": {
+            "n": 80,
+            "lexical_eligible": 79,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "meta-llama/Llama-3.2-3B-Instruct",
+      "prompt_count": 80,
+      "unique_raw_cells": 2560,
+      "standardization": {
+        "eh": {
+          "mean": 0.09828840025852514,
+          "sd": 0.1876546126179617,
+          "unique_cell_count": 2560
+        },
+        "lhp": {
+          "mean": -0.8788246173217583,
+          "sd": 0.7280078182125392,
+          "unique_cell_count": 2560
+        }
+      },
+      "coherence_threshold": 4.0,
+      "coherence_gate_applies_to": [
+        "eh",
+        "ew",
+        "leak_timecourse",
+        "leak_lexical",
+        "offchannel",
+        "S2_eh_component",
+        "S5_eh_component"
+      ],
+      "excluded_cells": [
+        {
+          "condition": "neutral",
+          "direction": "technicality",
+          "normalized_alpha": 0.75,
+          "median_ppl_ratio": 4.816605121241157
+        },
+        {
+          "condition": "neutral",
+          "direction": "technicality",
+          "normalized_alpha": 1.0,
+          "median_ppl_ratio": 12.350587674101085
+        },
+        {
+          "condition": "warm_constraint",
+          "direction": "technicality",
+          "normalized_alpha": 0.75,
+          "median_ppl_ratio": 7.4289280654918475
+        },
+        {
+          "condition": "warm_constraint",
+          "direction": "technicality",
+          "normalized_alpha": 1.0,
+          "median_ppl_ratio": 14.400149914593074
+        }
+      ],
+      "outcomes": {
+        "P1": {
+          "verdict": "supported",
+          "supported": true,
+          "estimable": true,
+          "criterion_met": true,
+          "specificity_met": true,
+          "required_gate_exclusions": [],
+          "statistics": {
+            "hostility": {
+              "estimate": 2.7623959398849487,
+              "ci": [
+                2.693944463594816,
+                2.8292104149061275
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_technicality": {
+              "estimate": 1.1768309083406499,
+              "ci": [
+                1.108421855854212,
+                1.2468493642726657
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_random": {
+              "estimate": 2.7236825808686587,
+              "ci": [
+                2.6470310209364785,
+                2.8030927830603147
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "P2": {
+          "verdict": "not supported",
+          "supported": false,
+          "estimable": true,
+          "criterion_met": false,
+          "specificity_met": false,
+          "required_gate_exclusions": [],
+          "statistics": {
+            "hostility": {
+              "estimate": 0.226273201033473,
+              "ci": [
+                0.19121632932685317,
+                0.26230420966632667
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_technicality": {
+              "estimate": -0.20049953646957874,
+              "ci": [
+                -0.2530166625091806,
+                -0.1464203460048881
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_random": {
+              "estimate": -0.05029960162937641,
+              "ci": [
+                -0.10737152892164885,
+                0.007726757507771262
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "S1": {
+          "verdict": "not supported",
+          "supported": false,
+          "estimable": true,
+          "statistics": {
+            "S1": {
+              "estimate": 0.14724787138402462,
+              "ci": [
+                0.10224350982345642,
+                0.19144221150316298
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "S2": {
+          "verdict": "not supported",
+          "supported": false,
+          "estimable": true,
+          "statistics": {
+            "S2": {
+              "estimate": -0.04402355982311967,
+              "ci": [
+                -0.18445420161034567,
+                0.09326569788862646
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "S3": {
+          "verdict": "supported",
+          "supported": true,
+          "estimable": true,
+          "statistics": {
+            "S3": {
+              "estimate": 0.05279475852936836,
+              "ci": [
+                0.014935921926353343,
+                0.08952422899213464
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "S4": {
+          "verdict": "supported",
+          "supported": true,
+          "estimable": true,
+          "statistics": {
+            "S4": {
+              "estimate": 0.17493999933555227,
+              "ci": [
+                0.08367015053824105,
+                0.2626492395182734
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "S5": {
+          "verdict": "not supported",
+          "supported": false,
+          "estimable": true,
+          "statistics": {
+            "delta_bic": {
+              "estimate": -6.747770765324082,
+              "ci": [
+                -10.341113263830199,
+                2.1370320964637775
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0,
+              "selected_breakpoint": 0.75,
+              "bootstrap_share_delta_bic_gt_6": 0.005
+            }
+          }
+        }
+      },
+      "specificity": {
+        "P1": {
+          "technicality": {
+            "control": {
+              "estimate": 1.5855650315442988,
+              "ci": [
+                1.5131417171508699,
+                1.6562313986597532
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_control": {
+              "estimate": 1.1768309083406499,
+              "ci": [
+                1.108421855854212,
+                1.2468493642726657
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "met": true
+          },
+          "random": {
+            "control": {
+              "estimate": 0.03871335901628992,
+              "ci": [
+                0.0043293301008375164,
+                0.07190615589306418
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_control": {
+              "estimate": 2.7236825808686587,
+              "ci": [
+                2.6470310209364785,
+                2.8030927830603147
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "met": true
+          }
+        },
+        "P2": {
+          "technicality": {
+            "control": {
+              "estimate": 0.4267727375030518,
+              "ci": [
+                0.38643917025066915,
+                0.46741077765822414
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_control": {
+              "estimate": -0.20049953646957874,
+              "ci": [
+                -0.2530166625091806,
+                -0.1464203460048881
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "met": true
+          },
+          "random": {
+            "control": {
+              "estimate": 0.27657280266284945,
+              "ci": [
+                0.2229984567500651,
+                0.3306853646039966
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_control": {
+              "estimate": -0.05029960162937641,
+              "ci": [
+                -0.10737152892164885,
+                0.007726757507771262
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "met": false
+          }
+        }
+      },
+      "missingness": {
+        "neutral|hostility": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          }
+        },
+        "neutral|technicality": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 160,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 161,
+            "observed_by_dose": [
+              80,
+              80,
+              79,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 160,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 160,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 160,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 160,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 160,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 160,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          }
+        },
+        "neutral|random": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 1,
+            "observed_by_dose": [
+              80,
+              79,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          }
+        },
+        "warm_constraint|hostility": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          }
+        },
+        "warm_constraint|technicality": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 160,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 160,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 160,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 160,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 160,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 160,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 160,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 160,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              0,
+              0
+            ],
+            "prompts_without_observations": 0
+          }
+        },
+        "warm_constraint|random": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          }
+        }
+      },
+      "paired_missingness": {
+        "S1_missing_prompt_pairs": 0,
+        "S3_missing_prompt_means": 0,
+        "S5_missing_gap_observations": 0,
+        "P2_control_missing_prompt_pairs": {
+          "technicality": 0,
+          "random": 0
+        }
+      },
+      "component_slopes": {
+        "hostility": {
+          "neutral": {
+            "lhp": {
+              "estimate": 1.4644717706609192,
+              "ci": [
+                1.382487510769252,
+                1.5436391717004674
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": 2.0116154442635024,
+              "ci": [
+                1.899000912055644,
+                2.120360706414566
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": 0.5529230111758546,
+              "ci": [
+                0.324495856713286,
+                0.800075363571084
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": 0.5529230111758546,
+              "ci": [
+                0.324495856713286,
+                0.800075363571084
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.5269588504681254,
+              "ci": [
+                0.45517837290716523,
+                0.6047242290259845
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": -0.1565196212762844,
+              "ci": [
+                -0.23559868570628847,
+                -0.07835561657104781
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          },
+          "warm_constraint": {
+            "lhp": {
+              "estimate": 2.011045841234818,
+              "ci": [
+                1.967526039146933,
+                2.054204622846554
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": 2.7623959398849487,
+              "ci": [
+                2.693944463594816,
+                2.8292104149061275
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": 0.6376759131330839,
+              "ci": [
+                0.29810896871828296,
+                0.973352892850376
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": 0.6376759131330839,
+              "ci": [
+                0.29810896871828296,
+                0.973352892850376
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.7018988498036777,
+              "ci": [
+                0.6452846059009674,
+                0.7590105886729788
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": -0.10622435853663391,
+              "ci": [
+                -0.18025833050118859,
+                -0.03425825922498418
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "technicality": {
+          "neutral": {
+            "lhp": {
+              "estimate": 0.5830367031013765,
+              "ci": [
+                0.5199947700858647,
+                0.6441351319135816
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": 0.8008659914297238,
+              "ci": [
+                0.7142708595665845,
+                0.8847915033318051
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": -0.09647970483042498,
+              "ci": [
+                -0.3922582291759788,
+                0.17890544706257977
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": -0.09647970483042498,
+              "ci": [
+                -0.3922582291759788,
+                0.17890544706257977
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 2.287502353679968,
+              "ci": [
+                2.1064476598842083,
+                2.4640334154536174
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": -0.21359333793907093,
+              "ci": [
+                -0.3639652830250644,
+                -0.06069075741281476
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          },
+          "warm_constraint": {
+            "lhp": {
+              "estimate": 1.1543037392486606,
+              "ci": [
+                1.1073206494672794,
+                1.1998078977619864
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": 1.5855650315442988,
+              "ci": [
+                1.5131417171508699,
+                1.6562313986597532
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": 0.05014587389706344,
+              "ci": [
+                -0.4229930971316559,
+                0.5494244655283592
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": 0.05014587389706344,
+              "ci": [
+                -0.4229930971316559,
+                0.5494244655283592
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 2.666547357598231,
+              "ci": [
+                2.552764501002343,
+                2.7820542215894597
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": 0.06457128734103337,
+              "ci": [
+                -0.1301990147646949,
+                0.2552093686956234
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "random": {
+          "neutral": {
+            "lhp": {
+              "estimate": -0.05185256577374591,
+              "ci": [
+                -0.08981550545911937,
+                -0.014235573246291372
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": -0.07122528697708103,
+              "ci": [
+                -0.12337162213400756,
+                -0.019554148856866925
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": 0.02750290924434337,
+              "ci": [
+                -0.10655030331519487,
+                0.1854194059694445
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": 0.02750290924434337,
+              "ci": [
+                -0.10655030331519487,
+                0.1854194059694445
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.09536698358658836,
+              "ci": [
+                0.06586875630201555,
+                0.12733402051780202
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": -0.15759918214569457,
+              "ci": [
+                -0.22600930768122443,
+                -0.09159850749692354
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          },
+          "warm_constraint": {
+            "lhp": {
+              "estimate": 0.028183628033125657,
+              "ci": [
+                0.006328222947292163,
+                0.04927688296832309
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": 0.03871335901628992,
+              "ci": [
+                0.0043293301008375164,
+                0.07190615589306418
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": -0.04585503132589507,
+              "ci": [
+                -0.28785650907297516,
+                0.19036338248756565
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": -0.04585503132589507,
+              "ci": [
+                -0.28785650907297516,
+                0.19036338248756565
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.12132675725071443,
+              "ci": [
+                0.09474876245426489,
+                0.14855805568226513
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": -0.07437100889302153,
+              "ci": [
+                -0.15222700072123474,
+                -0.0011207873622418253
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        }
+      },
+      "dissociation_components": {
+        "warm": {
+          "estimate": 0.23084160526229364,
+          "ci": [
+            0.10801502211177641,
+            0.353135064566849
+          ],
+          "confidence_level": 0.95,
+          "bootstrap_valid": 10000,
+          "bootstrap_missing": 0
+        },
+        "neutral": {
+          "estimate": 0.2748651650854133,
+          "ci": [
+            0.16403905644006506,
+            0.3965715991165838
+          ],
+          "confidence_level": 0.95,
+          "bootstrap_valid": 10000,
+          "bootstrap_missing": 0
+        }
+      },
+      "exploratory": {
+        "label": "Exploratory only; not confirmatory",
+        "warmth_slope": {
+          "estimate": -0.10622435853663391,
+          "ci": [
+            -0.18025833050118859,
+            -0.03425825922498418
+          ],
+          "confidence_level": 0.95,
+          "bootstrap_valid": 10000,
+          "bootstrap_missing": 0
+        },
+        "warmth_hostility_minus_control": {
+          "technicality": {
+            "estimate": -0.17079564587766727,
+            "ci": [
+              -0.35233681628135827,
+              0.01165056850889324
+            ],
+            "confidence_level": 0.95,
+            "bootstrap_valid": 10000,
+            "bootstrap_missing": 0
+          },
+          "random": {
+            "estimate": -0.031853349643612375,
+            "ci": [
+              -0.09978456642776329,
+              0.037176476480699695
+            ],
+            "confidence_level": 0.95,
+            "bootstrap_valid": 10000,
+            "bootstrap_missing": 0
+          }
+        },
+        "all_raw_group_summaries": {
+          "neutral|none|0": {
+            "n": 80,
+            "lexical_eligible": 79,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|hostility|0.125": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.01282051282051282,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|hostility|0.25": {
+            "n": 80,
+            "lexical_eligible": 75,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|hostility|0.5": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.09210526315789473,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|hostility|0.75": {
+            "n": 80,
+            "lexical_eligible": 74,
+            "mean_lexical_hits": 0.02702702702702703,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|hostility|1.0": {
+            "n": 80,
+            "lexical_eligible": 72,
+            "mean_lexical_hits": 0.1111111111111111,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|technicality|0.125": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|technicality|0.25": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.01282051282051282,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|technicality|0.5": {
+            "n": 80,
+            "lexical_eligible": 79,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|technicality|0.75": {
+            "n": 80,
+            "lexical_eligible": 0,
+            "mean_lexical_hits": null,
+            "lexical_coherence_excluded": true,
+            "offchannel_coherence_excluded": true,
+            "emoji_total": null,
+            "non_latin_token_total": null
+          },
+          "neutral|technicality|1.0": {
+            "n": 80,
+            "lexical_eligible": 0,
+            "mean_lexical_hits": null,
+            "lexical_coherence_excluded": true,
+            "offchannel_coherence_excluded": true,
+            "emoji_total": null,
+            "non_latin_token_total": null
+          },
+          "neutral|random|0.125": {
+            "n": 80,
+            "lexical_eligible": 79,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|random|0.25": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.01282051282051282,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|random|0.5": {
+            "n": 80,
+            "lexical_eligible": 77,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|random|0.75": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|random|1.0": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.01282051282051282,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|none|0": {
+            "n": 80,
+            "lexical_eligible": 77,
+            "mean_lexical_hits": 0.012987012987012988,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|hostility|0.125": {
+            "n": 80,
+            "lexical_eligible": 72,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|hostility|0.25": {
+            "n": 80,
+            "lexical_eligible": 74,
+            "mean_lexical_hits": 0.05405405405405406,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|hostility|0.5": {
+            "n": 80,
+            "lexical_eligible": 74,
+            "mean_lexical_hits": 0.05405405405405406,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|hostility|0.75": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.14473684210526316,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|hostility|1.0": {
+            "n": 80,
+            "lexical_eligible": 67,
+            "mean_lexical_hits": 0.1791044776119403,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|technicality|0.125": {
+            "n": 80,
+            "lexical_eligible": 74,
+            "mean_lexical_hits": 0.013513513513513514,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|technicality|0.25": {
+            "n": 80,
+            "lexical_eligible": 74,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|technicality|0.5": {
+            "n": 80,
+            "lexical_eligible": 77,
+            "mean_lexical_hits": 0.012987012987012988,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|technicality|0.75": {
+            "n": 80,
+            "lexical_eligible": 0,
+            "mean_lexical_hits": null,
+            "lexical_coherence_excluded": true,
+            "offchannel_coherence_excluded": true,
+            "emoji_total": null,
+            "non_latin_token_total": null
+          },
+          "warm_constraint|technicality|1.0": {
+            "n": 80,
+            "lexical_eligible": 0,
+            "mean_lexical_hits": null,
+            "lexical_coherence_excluded": true,
+            "offchannel_coherence_excluded": true,
+            "emoji_total": null,
+            "non_latin_token_total": null
+          },
+          "warm_constraint|random|0.125": {
+            "n": 80,
+            "lexical_eligible": 75,
+            "mean_lexical_hits": 0.02666666666666667,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|random|0.25": {
+            "n": 80,
+            "lexical_eligible": 72,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|random|0.5": {
+            "n": 80,
+            "lexical_eligible": 74,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|random|0.75": {
+            "n": 80,
+            "lexical_eligible": 77,
+            "mean_lexical_hits": 0.012987012987012988,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|random|1.0": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.039473684210526314,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          }
+        }
+      }
+    },
+    {
+      "model": "microsoft/Phi-3.5-mini-instruct",
+      "prompt_count": 80,
+      "unique_raw_cells": 2560,
+      "standardization": {
+        "eh": {
+          "mean": 0.09934980584457662,
+          "sd": 0.19110627480213183,
+          "unique_cell_count": 2560
+        },
+        "lhp": {
+          "mean": -0.651889918606806,
+          "sd": 0.8764556897517461,
+          "unique_cell_count": 2560
+        }
+      },
+      "coherence_threshold": 4.0,
+      "coherence_gate_applies_to": [
+        "eh",
+        "ew",
+        "leak_timecourse",
+        "leak_lexical",
+        "offchannel",
+        "S2_eh_component",
+        "S5_eh_component"
+      ],
+      "excluded_cells": [],
+      "outcomes": {
+        "P1": {
+          "verdict": "supported",
+          "supported": true,
+          "estimable": true,
+          "criterion_met": true,
+          "specificity_met": true,
+          "required_gate_exclusions": [],
+          "statistics": {
+            "hostility": {
+              "estimate": 1.5459393004491817,
+              "ci": [
+                1.436365162748615,
+                1.6495213619578324
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_technicality": {
+              "estimate": 0.3362958939010523,
+              "ci": [
+                0.2718187103594518,
+                0.40251000860136443
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_random": {
+              "estimate": 1.6682752572074364,
+              "ci": [
+                1.545848922763362,
+                1.7796882908904614
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "P2": {
+          "verdict": "not supported",
+          "supported": false,
+          "estimable": true,
+          "criterion_met": false,
+          "specificity_met": false,
+          "required_gate_exclusions": [],
+          "statistics": {
+            "hostility": {
+              "estimate": 0.1032272469252348,
+              "ci": [
+                0.03613741606473923,
+                0.18153846321161834
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_technicality": {
+              "estimate": 0.0807686384767294,
+              "ci": [
+                0.011037249825894832,
+                0.16159221744164823
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_random": {
+              "estimate": 0.10740934945642948,
+              "ci": [
+                0.034879150204360485,
+                0.18970255175139764
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "S1": {
+          "verdict": "not supported",
+          "supported": false,
+          "estimable": true,
+          "statistics": {
+            "S1": {
+              "estimate": 0.09495686292648316,
+              "ci": [
+                0.037279142523184434,
+                0.15934732764959333
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "S2": {
+          "verdict": "supported",
+          "supported": true,
+          "estimable": true,
+          "statistics": {
+            "S2": {
+              "estimate": -0.5012435541426338,
+              "ci": [
+                -0.8175922694372628,
+                -0.2015031413677272
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "S3": {
+          "verdict": "supported",
+          "supported": true,
+          "estimable": true,
+          "statistics": {
+            "S3": {
+              "estimate": 0.040502342491587726,
+              "ci": [
+                0.01424484302218086,
+                0.06652494874204269
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "S4": {
+          "verdict": "supported",
+          "supported": true,
+          "estimable": true,
+          "statistics": {
+            "S4": {
+              "estimate": 0.05977487030940487,
+              "ci": [
+                0.007416003664637454,
+                0.11073790761395258
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "S5": {
+          "verdict": "not supported",
+          "supported": false,
+          "estimable": true,
+          "statistics": {
+            "delta_bic": {
+              "estimate": -8.045745172111754,
+              "ci": [
+                -10.964834833650192,
+                -1.5503825344809357
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0,
+              "selected_breakpoint": 0.125,
+              "bootstrap_share_delta_bic_gt_6": 0.0003
+            }
+          }
+        }
+      },
+      "specificity": {
+        "P1": {
+          "technicality": {
+            "control": {
+              "estimate": 1.2096434065481294,
+              "ci": [
+                1.111821894398165,
+                1.3010186799768488
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_control": {
+              "estimate": 0.3362958939010523,
+              "ci": [
+                0.2718187103594518,
+                0.40251000860136443
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "met": true
+          },
+          "random": {
+            "control": {
+              "estimate": -0.1223359567582548,
+              "ci": [
+                -0.1676920178907337,
+                -0.0764847785827209
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_control": {
+              "estimate": 1.6682752572074364,
+              "ci": [
+                1.545848922763362,
+                1.7796882908904614
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "met": true
+          }
+        },
+        "P2": {
+          "technicality": {
+            "control": {
+              "estimate": 0.0224586084485054,
+              "ci": [
+                0.0012090576067566876,
+                0.0405888565815986
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_control": {
+              "estimate": 0.0807686384767294,
+              "ci": [
+                0.011037249825894832,
+                0.16159221744164823
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "met": false
+          },
+          "random": {
+            "control": {
+              "estimate": -0.004182102531194687,
+              "ci": [
+                -0.029938552547246214,
+                0.015885666674003034
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "hostility_minus_control": {
+              "estimate": 0.10740934945642948,
+              "ci": [
+                0.034879150204360485,
+                0.18970255175139764
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "met": false
+          }
+        }
+      },
+      "missingness": {
+        "neutral|hostility": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          }
+        },
+        "neutral|technicality": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          }
+        },
+        "neutral|random": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          }
+        },
+        "warm_constraint|hostility": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          }
+        },
+        "warm_constraint|technicality": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          }
+        },
+        "warm_constraint|random": {
+          "lhp": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "entropy": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "leak_timecourse": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "carryover": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "ew": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "eh_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "lhp_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S2_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          },
+          "S5_eh_component_z": {
+            "missing_observations": 0,
+            "observed_by_dose": [
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "prompts_without_observations": 0
+          }
+        }
+      },
+      "paired_missingness": {
+        "S1_missing_prompt_pairs": 0,
+        "S3_missing_prompt_means": 0,
+        "S5_missing_gap_observations": 0,
+        "P2_control_missing_prompt_pairs": {
+          "technicality": 0,
+          "random": 0
+        }
+      },
+      "component_slopes": {
+        "hostility": {
+          "neutral": {
+            "lhp": {
+              "estimate": 0.9029383123862116,
+              "ci": [
+                0.8088179413623977,
+                0.993180998121437
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": 1.030215586417114,
+              "ci": [
+                0.9228281028006028,
+                1.1331787901368435
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": 0.4870375820093639,
+              "ci": [
+                0.14975513762371193,
+                0.8260544970854957
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": 0.4870375820093639,
+              "ci": [
+                0.14975513762371193,
+                0.8260544970854957
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.5563100563554934,
+              "ci": [
+                0.5105494325154336,
+                0.6012609824787895
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": -0.006271383960541387,
+              "ci": [
+                -0.04082693181584641,
+                0.031117375960898263
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          },
+          "warm_constraint": {
+            "lhp": {
+              "estimate": 1.3549472958895186,
+              "ci": [
+                1.2710312848836185,
+                1.4351954076922766
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": 1.5459393004491817,
+              "ci": [
+                1.436365162748615,
+                1.6495213619578324
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": -0.04404455797122769,
+              "ci": [
+                -0.25094755633711874,
+                0.1604599292851203
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": -0.04404455797122769,
+              "ci": [
+                -0.25094755633711874,
+                0.1604599292851203
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.6160849266648982,
+              "ci": [
+                0.5661271646866209,
+                0.6653958230531598
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": 0.060879823908356855,
+              "ci": [
+                -0.0018904564210357575,
+                0.12665384028241264
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "technicality": {
+          "neutral": {
+            "lhp": {
+              "estimate": 0.7520790084621356,
+              "ci": [
+                0.6722726855821775,
+                0.8293801020043986
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": 0.8580913071317515,
+              "ci": [
+                0.7670355654518008,
+                0.9462886848727269
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": 0.027955739589439362,
+              "ci": [
+                -0.15391431878474546,
+                0.2242811874424451
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": 0.027955739589439362,
+              "ci": [
+                -0.15391431878474546,
+                0.2242811874424451
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.46124209513023534,
+              "ci": [
+                0.4164718453826311,
+                0.5055133704090268
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": -0.015256607290816885,
+              "ci": [
+                -0.04062769670881588,
+                0.011100056005624968
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          },
+          "warm_constraint": {
+            "lhp": {
+              "estimate": 1.0601988462397927,
+              "ci": [
+                0.9860660392161006,
+                1.131831623927282
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": 1.2096434065481294,
+              "ci": [
+                1.111821894398165,
+                1.3010186799768488
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": 0.27148513091452026,
+              "ci": [
+                0.05105151643850034,
+                0.5007925594120504
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": 0.27148513091452026,
+              "ci": [
+                0.05105151643850034,
+                0.5007925594120504
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.5499163104293683,
+              "ci": [
+                0.5000194179412083,
+                0.5980408434924297
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": -0.05690009348118972,
+              "ci": [
+                -0.09389951835506544,
+                -0.02373923471897511
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        },
+        "random": {
+          "neutral": {
+            "lhp": {
+              "estimate": -0.18297124905544568,
+              "ci": [
+                -0.21408453718115514,
+                -0.15024759423105544
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": -0.2087626918221843,
+              "ci": [
+                -0.2442616776688306,
+                -0.17142634361083411
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": 0.15494386945810712,
+              "ci": [
+                -0.057777825430233486,
+                0.4059134327926045
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": 0.15494386945810712,
+              "ci": [
+                -0.057777825430233486,
+                0.4059134327926045
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.08587021541506872,
+              "ci": [
+                0.053305922494154716,
+                0.11841008331057312
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": 0.00915569984066104,
+              "ci": [
+                -0.008941409690440386,
+                0.02934926096494247
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          },
+          "warm_constraint": {
+            "lhp": {
+              "estimate": -0.10722204536199877,
+              "ci": [
+                -0.1415099972532215,
+                -0.07245798302402676
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "lhp_z": {
+              "estimate": -0.1223359567582548,
+              "ci": [
+                -0.1676920178907337,
+                -0.0764847785827209
+              ],
+              "confidence_level": 0.975,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "eh_z": {
+              "estimate": 0.06264317404221133,
+              "ci": [
+                -0.10453027633708808,
+                0.2366003237172488
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "S2_eh_component_z": {
+              "estimate": 0.06264317404221133,
+              "ci": [
+                -0.10453027633708808,
+                0.2366003237172488
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "entropy": {
+              "estimate": 0.0771474408349109,
+              "ci": [
+                0.05089402602575566,
+                0.10311374142056227
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            },
+            "ew": {
+              "estimate": -0.019598879265127163,
+              "ci": [
+                -0.05777822333452364,
+                0.014393770788669095
+              ],
+              "confidence_level": 0.95,
+              "bootstrap_valid": 10000,
+              "bootstrap_missing": 0
+            }
+          }
+        }
+      },
+      "dissociation_components": {
+        "warm": {
+          "estimate": -0.028490483396359925,
+          "ci": [
+            -0.16207150453627903,
+            0.10393979276189041
+          ],
+          "confidence_level": 0.95,
+          "bootstrap_valid": 10000,
+          "bootstrap_missing": 0
+        },
+        "neutral": {
+          "estimate": 0.4727530707462738,
+          "ci": [
+            0.14736007608290294,
+            0.7983877208431776
+          ],
+          "confidence_level": 0.95,
+          "bootstrap_valid": 10000,
+          "bootstrap_missing": 0
+        }
+      },
+      "exploratory": {
+        "label": "Exploratory only; not confirmatory",
+        "warmth_slope": {
+          "estimate": 0.060879823908356855,
+          "ci": [
+            -0.0018904564210357575,
+            0.12665384028241264
+          ],
+          "confidence_level": 0.95,
+          "bootstrap_valid": 10000,
+          "bootstrap_missing": 0
+        },
+        "warmth_hostility_minus_control": {
+          "technicality": {
+            "estimate": 0.11777991738954657,
+            "ci": [
+              0.05568949616644961,
+              0.18679537926552855
+            ],
+            "confidence_level": 0.95,
+            "bootstrap_valid": 10000,
+            "bootstrap_missing": 0
+          },
+          "random": {
+            "estimate": 0.08047870317348402,
+            "ci": [
+              0.008968764831596913,
+              0.1561651555888361
+            ],
+            "confidence_level": 0.95,
+            "bootstrap_valid": 10000,
+            "bootstrap_missing": 0
+          }
+        },
+        "all_raw_group_summaries": {
+          "neutral|none|0": {
+            "n": 80,
+            "lexical_eligible": 77,
+            "mean_lexical_hits": 0.025974025974025976,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|hostility|0.125": {
+            "n": 80,
+            "lexical_eligible": 75,
+            "mean_lexical_hits": 0.013333333333333334,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|hostility|0.25": {
+            "n": 80,
+            "lexical_eligible": 75,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|hostility|0.5": {
+            "n": 80,
+            "lexical_eligible": 77,
+            "mean_lexical_hits": 0.012987012987012988,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|hostility|0.75": {
+            "n": 80,
+            "lexical_eligible": 71,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|hostility|1.0": {
+            "n": 80,
+            "lexical_eligible": 67,
+            "mean_lexical_hits": 0.014925373134328358,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|technicality|0.125": {
+            "n": 80,
+            "lexical_eligible": 74,
+            "mean_lexical_hits": 0.02702702702702703,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|technicality|0.25": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.013157894736842105,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|technicality|0.5": {
+            "n": 80,
+            "lexical_eligible": 73,
+            "mean_lexical_hits": 0.0136986301369863,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|technicality|0.75": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|technicality|1.0": {
+            "n": 80,
+            "lexical_eligible": 75,
+            "mean_lexical_hits": 0.013333333333333334,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|random|0.125": {
+            "n": 80,
+            "lexical_eligible": 77,
+            "mean_lexical_hits": 0.012987012987012988,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|random|0.25": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|random|0.5": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.02631578947368421,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|random|0.75": {
+            "n": 80,
+            "lexical_eligible": 75,
+            "mean_lexical_hits": 0.013333333333333334,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "neutral|random|1.0": {
+            "n": 80,
+            "lexical_eligible": 74,
+            "mean_lexical_hits": 0.013513513513513514,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|none|0": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.01282051282051282,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|hostility|0.125": {
+            "n": 80,
+            "lexical_eligible": 74,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|hostility|0.25": {
+            "n": 80,
+            "lexical_eligible": 77,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|hostility|0.5": {
+            "n": 80,
+            "lexical_eligible": 79,
+            "mean_lexical_hits": 0.012658227848101266,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|hostility|0.75": {
+            "n": 80,
+            "lexical_eligible": 78,
+            "mean_lexical_hits": 0.01282051282051282,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|hostility|1.0": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.013157894736842105,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|technicality|0.125": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.013157894736842105,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|technicality|0.25": {
+            "n": 80,
+            "lexical_eligible": 75,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|technicality|0.5": {
+            "n": 80,
+            "lexical_eligible": 75,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|technicality|0.75": {
+            "n": 80,
+            "lexical_eligible": 73,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|technicality|1.0": {
+            "n": 80,
+            "lexical_eligible": 75,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 2
+          },
+          "warm_constraint|random|0.125": {
+            "n": 80,
+            "lexical_eligible": 75,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|random|0.25": {
+            "n": 80,
+            "lexical_eligible": 74,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|random|0.5": {
+            "n": 80,
+            "lexical_eligible": 77,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|random|0.75": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          },
+          "warm_constraint|random|1.0": {
+            "n": 80,
+            "lexical_eligible": 76,
+            "mean_lexical_hits": 0.0,
+            "lexical_coherence_excluded": false,
+            "offchannel_coherence_excluded": false,
+            "emoji_total": 0,
+            "non_latin_token_total": 0
+          }
+        }
+      }
+    }
+  ],
+  "generality": {
+    "P1": {
+      "verdict": "general",
+      "general": true,
+      "eligible_models": [
+        "Qwen/Qwen2.5-3B-Instruct",
+        "microsoft/Phi-3.5-mini-instruct",
+        "meta-llama/Llama-3.2-3B-Instruct"
+      ],
+      "not_estimable_models": [],
+      "missing_passed_models": [],
+      "model_statuses": {
+        "Qwen/Qwen2.5-3B-Instruct": "PASS",
+        "microsoft/Phi-3.5-mini-instruct": "PASS",
+        "meta-llama/Llama-3.2-3B-Instruct": "PASS"
+      }
+    },
+    "P2": {
+      "verdict": "not general",
+      "general": false,
+      "eligible_models": [
+        "Qwen/Qwen2.5-3B-Instruct",
+        "microsoft/Phi-3.5-mini-instruct",
+        "meta-llama/Llama-3.2-3B-Instruct"
+      ],
+      "not_estimable_models": [],
+      "missing_passed_models": [],
+      "model_statuses": {
+        "Qwen/Qwen2.5-3B-Instruct": "PASS",
+        "microsoft/Phi-3.5-mini-instruct": "PASS",
+        "meta-llama/Llama-3.2-3B-Instruct": "PASS"
+      }
+    }
+  }
+}

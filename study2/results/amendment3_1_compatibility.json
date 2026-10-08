@@ -1,0 +1,12 @@
+{
+  "amendment": "3.1",
+  "authorized_by": "reviewer in conversation",
+  "generation_configuration_unchanged": true,
+  "old_prereg_sha256": "57658fd68d5465b8c5da462db05b365c6be81cd42ffa0f577efd477a30f1f421",
+  "old_config_sha256": "428cdea4a9e992cfdae93ec31c2fcedbe9bfa3a805266cb7ab59c92aaa29ee19",
+  "new_prereg_sha256": "baff1bbc5d1baaa9468fdbb8c557038d0b01d5a34bb49160eb32918a0fd7c095",
+  "new_config_sha256": "d8371ae3c9267b6af3cdc2d5bb96c591cf0fb942426853e9cf66111125147257",
+  "archive": "data/_superseded/20261004T162639_v3.0_analysis",
+  "existing_calibration_records": "immutable v3.0 records retained; dose rule, prompts, seeds, settings, directions and norms unchanged",
+  "timing_provenance": "Runner loaded v3.0 config once; first two Qwen cells record v3.0 hashes, remaining four cells record the externally changed v3.1 hashes. All six used identical generation/measurement settings; no rows edited."
+}

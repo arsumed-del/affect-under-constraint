@@ -1,0 +1,28 @@
+{
+  "model": "meta-llama/Llama-3.2-3B-Instruct",
+  "cells": 3,
+  "planned_main_cells": 2560,
+  "setup_seconds": 9.483862082939595,
+  "mean_cell_seconds": 15.972683930342706,
+  "estimated_main_hours": 11.36098742326674,
+  "timing_cells": [
+    [
+      "s2c00",
+      "warm_constraint",
+      "none",
+      0
+    ],
+    [
+      "s2c00",
+      "warm_constraint",
+      "hostility",
+      5
+    ],
+    [
+      "s2c00",
+      "warm_constraint",
+      "technicality",
+      5
+    ]
+  ]
+}

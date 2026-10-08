@@ -1,0 +1,30 @@
+{
+  "local": {
+    "approval_sha256": "8f9d4490d7009357493d848f6e9120c79b11b37cedbc2bf7d0c6a517ef75f94d",
+    "deposit_sha256": "a533104509e1761b8806f71912c80bbc934e116d158f902cfb3f6656f790c001",
+    "prereg_sha256": "baff1bbc5d1baaa9468fdbb8c557038d0b01d5a34bb49160eb32918a0fd7c095",
+    "config_sha256": "d8371ae3c9267b6af3cdc2d5bb96c591cf0fb942426853e9cf66111125147257",
+    "analysis_sha256": "d1aaedc674314fff939fecb85dec454fd4a7e5c93ad4c6fc3c282af899f89564",
+    "doi": "10.5281/zenodo.23147672"
+  },
+  "public": {
+    "record_id": 23147672,
+    "doi": "10.5281/zenodo.23147672",
+    "title": "Affect Under Constraint II: Preregistration (v3.1) \u2014 Persistence and Hidden Carryover of a Steered Affective Direction Across Instruction-Tuned Language Models",
+    "created": "2026-10-05T00:37:17.739547+00:00",
+    "publication_date": "2026-10-05",
+    "verified_at": "2026-10-04T17:57:19.438031-07:00",
+    "verified_specification_files": {
+      "PREREG.md": {
+        "uploaded_file": "affect_under_constraint_II_preregistration_v3.1.zip",
+        "archive_entry": "study2_prereg_v3.1/PREREG.md",
+        "sha256": "baff1bbc5d1baaa9468fdbb8c557038d0b01d5a34bb49160eb32918a0fd7c095"
+      },
+      "config.yaml": {
+        "uploaded_file": "affect_under_constraint_II_preregistration_v3.1.zip",
+        "archive_entry": "study2_prereg_v3.1/config.yaml",
+        "sha256": "d8371ae3c9267b6af3cdc2d5bb96c591cf0fb942426853e9cf66111125147257"
+      }
+    }
+  }
+}

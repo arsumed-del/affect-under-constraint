@@ -1,0 +1,28 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "cells": 3,
+  "planned_main_cells": 2560,
+  "setup_seconds": 8.77092066698242,
+  "mean_cell_seconds": 11.103281000357432,
+  "estimated_main_hours": 7.898102855995003,
+  "timing_cells": [
+    [
+      "s2c00",
+      "warm_constraint",
+      "none",
+      0
+    ],
+    [
+      "s2c00",
+      "warm_constraint",
+      "hostility",
+      5
+    ],
+    [
+      "s2c00",
+      "warm_constraint",
+      "technicality",
+      5
+    ]
+  ]
+}

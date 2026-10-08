@@ -1,0 +1,5 @@
+{
+  "complete_derived_output_adopted": "PASS",
+  "interrupted_job_same_command_resume": "PASS",
+  "no_main_data_access": true
+}

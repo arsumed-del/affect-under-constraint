@@ -1,0 +1,93 @@
+--- v3.0/src/analyze.py
++++ v3.1/src/analyze.py
+@@ -1,4 +1,4 @@
+-"""Study 2 v3.0 estimators; fixed before main-run outcomes."""
++"""Study 2 v3.1 estimators; fixed before main-run outcomes."""
+ import os
+ os.environ['PYTORCH_ENABLE_MPS_FALLBACK']='1'
+ import argparse
+@@ -105,17 +105,23 @@
+             if row['n_tokens']<8:
+                 a['leak_timecourse'][i,j]=np.nan
+             ppls[(row['condition'],direction)][i,j]=row['ppl_ratio'] if row['ppl_ratio'] is not None else np.nan
++    gate_fields=set(cfg['analysis']['coherence_gate_applies_to'])
++    allowed=set(FIELDS)|{'leak_lexical','offchannel','S2_eh_component','S5_eh_component'}
++    assert gate_fields<=allowed, f'Unknown coherence-gated measures: {gate_fields-allowed}'
+     excluded=[]
+     for key,a in arrays.items():
++        for component in ['S2_eh_component','S5_eh_component']:
++            a[component]=a['eh'].copy()
+         for j,dose in enumerate(DOSES):
+             finite_ppl=ppls[key][:,j][np.isfinite(ppls[key][:,j])]
+             median=float(np.median(finite_ppl)) if len(finite_ppl) else None
+             if median is not None and median>cfg['analysis']['coherence_gate_ppl_ratio']:
+                 excluded.append({'condition':key[0],'direction':key[1],'normalized_alpha':float(dose),'median_ppl_ratio':median})
+-                for f in FIELDS:
+-                    a[f][:,j]=np.nan
+-        for f in ['eh','lhp']:
+-            center,sd=constants[f]['mean'],constants[f]['sd']
++                for f in gate_fields:
++                    if f in a:a[f][:,j]=np.nan
++        for f in ['eh','lhp','S2_eh_component','S5_eh_component']:
++            source='eh' if f.endswith('_eh_component') else f
++            center,sd=constants[source]['mean'],constants[source]['sd']
+             a[f+'_z']=(a[f]-center)/sd if sd is not None and sd>0 else np.full_like(a[f],np.nan)
+     return ids,arrays,constants,excluded
+ 
+@@ -126,7 +132,7 @@
+     draws=rng.integers(0,len(ids),size=(b,len(ids)))
+     weights=np.zeros((b+1,len(ids)));weights[0]=1
+     np.add.at(weights,(np.arange(1,b+1)[:,None],draws),1)
+-    slopes={d:{c:{f:slope(arrays[(c,d)][f],weights) for f in ['lhp','lhp_z','eh_z','entropy','ew']} for c in CONDITIONS} for d in DIRECTIONS}
++    slopes={d:{c:{f:slope(arrays[(c,d)][f],weights) for f in ['lhp','lhp_z','eh_z','S2_eh_component_z','entropy','ew']} for c in CONDITIONS} for d in DIRECTIONS}
+     carries={d:mean_stat(arrays[('warm_constraint',d)]['carryover'][:,-1],weights) for d in DIRECTIONS}
+     outcomes={};controls={}
+     primary_level=cfg['analysis']['primary_ci'];secondary_level=cfg['analysis']['secondary_ci']
+@@ -138,15 +144,14 @@
+             difference=values['hostility']-values[d] if h=='P1' else mean_stat(arrays[('warm_constraint','hostility')]['carryover'][:,-1]-arrays[('warm_constraint',d)]['carryover'][:,-1],weights)
+             controls[h][d]={'control':summary(values[d],primary_level),'hostility_minus_control':summary(difference,primary_level),'met':interval(difference,sign,primary_level)}
+             statistics['hostility_minus_'+d]=controls[h][d]['hostility_minus_control']
+-        gated=[e for e in excluded if e['condition']=='warm_constraint' and (h=='P1' or e['normalized_alpha']==1)]
+-        estimable=not gated and all(s['estimate'] is not None and s['ci'][0] is not None for s in statistics.values())
++        estimable=all(s['estimate'] is not None and s['ci'][0] is not None for s in statistics.values())
+         criterion=interval(values['hostility'],sign,primary_level)
+         specific=all(c['met'] for c in controls[h].values())
+         support=estimable and criterion and specific
+-        outcomes[h]={'verdict':'not estimable' if not estimable else 'supported' if support else 'not supported','supported':bool(support),'estimable':bool(estimable),'criterion_met':criterion,'specificity_met':specific,'required_gate_exclusions':gated,'statistics':statistics}
++        outcomes[h]={'verdict':'not estimable' if not estimable else 'supported' if support else 'not supported','supported':bool(support),'estimable':bool(estimable),'criterion_met':criterion,'specificity_met':specific,'required_gate_exclusions':[],'statistics':statistics}
+     warm=arrays[('warm_constraint','hostility')];neutral=arrays[('neutral','hostility')]
+-    dw=ratio(slopes['hostility']['warm_constraint']['eh_z'],slopes['hostility']['warm_constraint']['lhp_z'])
+-    dn=ratio(slopes['hostility']['neutral']['eh_z'],slopes['hostility']['neutral']['lhp_z'])
++    dw=ratio(slopes['hostility']['warm_constraint']['S2_eh_component_z'],slopes['hostility']['warm_constraint']['lhp_z'])
++    dn=ratio(slopes['hostility']['neutral']['S2_eh_component_z'],slopes['hostility']['neutral']['lhp_z'])
+     paired=warm['carryover'][:,-1]-neutral['carryover'][:,-1]
+     high=prompt_mean(warm['leak_timecourse'][:,3:])
+     secondary={'S1':(mean_stat(paired,weights),-1),'S2':(dw-dn,-1),'S3':(mean_stat(high,weights),1),'S4':(slopes['hostility']['warm_constraint']['entropy']-slopes['hostility']['neutral']['entropy'],1)}
+@@ -154,7 +159,7 @@
+         stat=summary(v,secondary_level);estimable=stat['estimate'] is not None and stat['ci'][0] is not None
+         supported=interval(v,sign,secondary_level)
+         outcomes[h]={'verdict':'not estimable' if not estimable else 'supported' if supported else 'not supported','supported':supported,'estimable':estimable,'statistics':{h:stat}}
+-    g=(warm['lhp_z']-warm['lhp_z'][:,[0]])-(warm['eh_z']-warm['eh_z'][:,[0]])
++    g=(warm['lhp_z']-warm['lhp_z'][:,[0]])-(warm['S5_eh_component_z']-warm['S5_eh_component_z'][:,[0]])
+     delta,breakpoints=bic_gap(g,weights)
+     valid=delta[1:][np.isfinite(delta[1:])]
+     estimable=bool(np.isfinite(delta[0]));supported=bool(estimable and delta[0]>cfg['analysis']['breakpoint_delta_bic'])
+@@ -167,10 +172,15 @@
+     for r in records:groups.setdefault(f"{r['condition']}|{r['direction']}|{r['normalized_alpha']}",[]).append(r)
+     descriptions={}
+     for key,group in groups.items():
+-        lex=[r['leak_lexical'] for r in group if r['leak_lexical'] is not None]
+-        descriptions[key]={'n':len(group),'lexical_eligible':len(lex),'mean_lexical_hits':float(np.mean(lex)) if lex else None,'emoji_total':sum(r['offchannel']['emoji_count'] for r in group),'non_latin_token_total':sum(r['offchannel']['non_latin_token_count'] for r in group)}
++        row=group[0]
++        gated=any(e['condition']==row['condition'] and (row['direction']=='none' or e['direction']==row['direction']) and e['normalized_alpha']==row['normalized_alpha'] for e in excluded)
++        gate_fields=set(cfg['analysis']['coherence_gate_applies_to'])
++        lex_gated=gated and 'leak_lexical' in gate_fields
++        off_gated=gated and 'offchannel' in gate_fields
++        lex=[r['leak_lexical'] for r in group if not lex_gated and r['leak_lexical'] is not None]
++        descriptions[key]={'n':len(group),'lexical_eligible':len(lex),'mean_lexical_hits':float(np.mean(lex)) if lex else None,'lexical_coherence_excluded':lex_gated,'offchannel_coherence_excluded':off_gated,'emoji_total':None if off_gated else sum(r['offchannel']['emoji_count'] for r in group),'non_latin_token_total':None if off_gated else sum(r['offchannel']['non_latin_token_count'] for r in group)}
+     ew=slopes['hostility']['warm_constraint']['ew']
+-    return {'model':records[0]['model'],'prompt_count':len(ids),'unique_raw_cells':len(records),'standardization':constants,'coherence_threshold':cfg['analysis']['coherence_gate_ppl_ratio'],'excluded_cells':excluded,'outcomes':outcomes,'specificity':controls,'missingness':missing,'paired_missingness':paired_missing,'component_slopes':{d:{c:{f:summary(v,primary_level if f=='lhp_z' and c=='warm_constraint' else secondary_level) for f,v in fields.items()} for c,fields in conditions.items()} for d,conditions in slopes.items()},'dissociation_components':{'warm':summary(dw),'neutral':summary(dn)},'exploratory':{'label':'Exploratory only; not confirmatory','warmth_slope':summary(ew),'warmth_hostility_minus_control':{d:summary(ew-slopes[d]['warm_constraint']['ew']) for d in DIRECTIONS[1:]},'all_raw_group_summaries':descriptions}}
++    return {'model':records[0]['model'],'prompt_count':len(ids),'unique_raw_cells':len(records),'standardization':constants,'coherence_threshold':cfg['analysis']['coherence_gate_ppl_ratio'],'coherence_gate_applies_to':cfg['analysis']['coherence_gate_applies_to'],'excluded_cells':excluded,'outcomes':outcomes,'specificity':controls,'missingness':missing,'paired_missingness':paired_missing,'component_slopes':{d:{c:{f:summary(v,primary_level if f=='lhp_z' and c=='warm_constraint' else secondary_level) for f,v in fields.items()} for c,fields in conditions.items()} for d,conditions in slopes.items()},'dissociation_components':{'warm':summary(dw),'neutral':summary(dn)},'exploratory':{'label':'Exploratory only; not confirmatory','warmth_slope':summary(ew),'warmth_hostility_minus_control':{d:summary(ew-slopes[d]['warm_constraint']['ew']) for d in DIRECTIONS[1:]},'all_raw_group_summaries':descriptions}}
+ 
+ def generality(models,statuses):
+     by_id={m['model']:m for m in models};out={}

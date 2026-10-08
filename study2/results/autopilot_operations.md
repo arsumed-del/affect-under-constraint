@@ -1,0 +1,13 @@
+# Study 2 detached operation
+
+The watcher is launched only after the current Llama Stage 2 work and the applicable timing check finish. Live process IDs are recorded in STATUS.md and logs/services.json after launch; this document alone does not assert that services are running.
+
+- `src/autopilot.py` checks readiness every 10 minutes. Its first idle check is within 10 minutes of launch. Active workers are checked every 30 seconds; each completed main cell updates STATUS with progress and ETA.
+- Only models with immutable, hash-verified PASS calibration records enter Stage 3, in configured order: Qwen, Phi, Llama. Access-only Llama blocks can be revisited before the first main run; measurement failures are never retried. No models join after the main-run preflight is frozen.
+- The watcher verifies the local approval hashes, author/date, protected specification manifest, frozen analysis hash, deposit DOI, public publication status, and the approved PREREG/config bytes in the published files or archive. Study 1's DOI cannot satisfy the Study 2 gate. The verification is saved to results/stage3_preflight.json.
+- Each detached job uses nohup and a separate caffeinate helper. A worker lock, persistent job events and append-only cell checkpoints prevent duplicate live jobs and support resuming interrupted jobs. Recorded scientific-job failures stop dispatch and are logged; no parameter changes or result-dependent retries are allowed.
+- Main runs are followed by integrity checks. Stage 4 calls the unchanged, hash-frozen analyze.py. The report renderer formats its existing estimates, intervals, verdicts, missingness and exploratory outputs, and appends the full deviation log. It does not fit models or compute new estimates.
+- The separate persistent `caffeinate -dimsu` service has no timeout and is intended to remain active beyond 96 hours while the Mac is powered. It is not tied to a tool session or a model job.
+- Project-local launchd services restart crashed watcher/keep-awake processes within the current login session. They are not installed outside study2. After a reboot or logout, automatic registration is not available under that filesystem restriction: re-run the project-local starter from study2 with `../.venv/bin/python -B -m src.start_autopilot`. It resumes the durable watcher state. This limitation is also recorded in STATUS.md.
+
+Logs: logs/autopilot.log, logs/autopilot_state.json, logs/autopilot_job_events.jsonl, and individual detached-job logs. Persistent audit events: results/autopilot_events.jsonl. The service definitions are under services/ once launched.

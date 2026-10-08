@@ -1,0 +1,12 @@
+{
+  "audit": "PASS",
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "extraction_cells": 160,
+  "norm_prompts": 40,
+  "dose_cells": 160,
+  "classifier_cells": 120,
+  "alpha_max": 0.04,
+  "model_status": "PASS",
+  "calibration_sha256": "8bd2df66e38031d248b7c6d1b7bbe590cc2f2d70aa47970c25c7b637863a91bb",
+  "no_generations_or_data_edits": true
+}

@@ -1,0 +1,7 @@
+{
+  "text_exploratory_gate": "PASS",
+  "independent_S2_S5_component_gates": "PASS",
+  "specification_manifest": "PASS",
+  "external_approval_hashes": "PASS",
+  "deposit_present": false
+}

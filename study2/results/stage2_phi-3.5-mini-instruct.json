@@ -1,0 +1,97 @@
+{
+  "prereg_version": "3.0",
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "baseline_median_distinct_token_ratio": 0.6958333333333333,
+  "per_candidate_checks": {
+    "0.02": {
+      "median_ppl_ratio": 1.15914106739787,
+      "median_distinct_token_ratio": 0.6958333333333333,
+      "distinct_token_threshold": 0.4175,
+      "coherence_pass": true,
+      "non_degeneracy_pass": true,
+      "passed": true,
+      "manipulation_check": {
+        "mean_eh_difference": 0.043429188980371694,
+        "ci95": [
+          -0.0002356012260861445,
+          0.09803747725825815
+        ],
+        "complete_prompt_pairs": 40,
+        "bootstrap_valid": 10000,
+        "passed": false
+      }
+    },
+    "0.04": {
+      "median_ppl_ratio": 2.146402208964866,
+      "median_distinct_token_ratio": 0.7041666666666666,
+      "distinct_token_threshold": 0.4175,
+      "coherence_pass": true,
+      "non_degeneracy_pass": true,
+      "passed": true,
+      "manipulation_check": {
+        "mean_eh_difference": 0.05967969026532956,
+        "ci95": [
+          0.01921759266551817,
+          0.10688858445020742
+        ],
+        "complete_prompt_pairs": 40,
+        "bootstrap_valid": 10000,
+        "passed": true
+      }
+    },
+    "0.06": {
+      "median_ppl_ratio": 4.071134524523422,
+      "median_distinct_token_ratio": 0.7166666666666667,
+      "distinct_token_threshold": 0.4175,
+      "coherence_pass": false,
+      "non_degeneracy_pass": true,
+      "passed": false,
+      "manipulation_check": {
+        "status": "not evaluated; outside coherent range"
+      }
+    }
+  },
+  "first_failure": 0.06,
+  "unrun_candidates": [
+    0.08,
+    0.1,
+    0.12,
+    0.14,
+    0.16,
+    0.18,
+    0.2,
+    0.23,
+    0.26,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5
+  ],
+  "status": "PASS",
+  "alpha_max": 0.04,
+  "grid": [
+    0.0,
+    0.005,
+    0.01,
+    0.02,
+    0.03,
+    0.04
+  ],
+  "direction_hashes": {
+    "hostility": "4315445cc023fab878d672cbda7b1dd04d4f7a1118c6b65028ea9f58f6c5b946",
+    "technicality": "1dcd182ea0ee3a0222247ca529705862a264c72c5dbd866e31acf5a8d7629978",
+    "random": "5b2c6c7fc41a2c8cac9e84f20815b6003ed50517c58dd9142dd6684eba83f1d6"
+  },
+  "mean_resid_norm": 516.4453811215279,
+  "hostility_technicality_cosine": 0.11816529929637909,
+  "coherent_candidates": [
+    0.02,
+    0.04
+  ],
+  "manipulation_passing_candidates": [
+    0.04
+  ],
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261004
+}

@@ -1,0 +1,19 @@
+--- study2/src/model_utils.py before
++++ study2/src/model_utils.py after
+@@ -110,8 +110,15 @@
+ 
+     def rating(self, logits):
+         digits = [self.tokenizer.encode(str(i), add_special_tokens=False) for i in range(10)]
++        for i, ids in enumerate(digits):
++            if len(ids) == 2 and self.tokenizer.convert_ids_to_tokens(ids[0]) == '▁' and self.tokenizer.decode([ids[0]]) == '':
++                # SentencePiece adds a dummy prefix when encoding an isolated digit.
++                # The measure uses the literal digit token at the existing next-token position.
++                digit_id = self.tokenizer.convert_tokens_to_ids(str(i))
++                if ids[1] == digit_id and self.tokenizer.decode([digit_id]) == str(i):
++                    digits[i] = [digit_id]
+         if any(len(t) != 1 for t in digits):
+-            raise RuntimeError('A rating digit does not have a single token')
++            raise RuntimeError('A rating digit does not have a single literal token')
+         probs = logits.float()[[t[0] for t in digits]].softmax(-1)
+         return (probs * torch.arange(10, device=probs.device)).sum().item()
+ 

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "meta-llama/Llama-3.2-3B-Instruct",
+  "raw_path": "data/raw/llama-3.2-3b-instruct_main.jsonl",
+  "raw_sha256": "7450f2c456da9afd25573ea21f9c55063ac3b17c39546952bc2d76898460aef6",
+  "records": 2560,
+  "unique_cells": 2560,
+  "prompts": 80,
+  "shared_baselines": 160,
+  "provenance_hashes": {
+    "prereg_sha256": "baff1bbc5d1baaa9468fdbb8c557038d0b01d5a34bb49160eb32918a0fd7c095",
+    "config_sha256": "d8371ae3c9267b6af3cdc2d5bb96c591cf0fb942426853e9cf66111125147257",
+    "calibration_sha256": "dbc9d5d64933141c9a0aeadec1912f33ded9996cbcef2415209bb2a1bdf89c27"
+  },
+  "operational_missing_counts": {
+    "full_classifier": 0,
+    "first_quarter_classifier": 0,
+    "last_quarter_classifier": 0,
+    "timecourse_short_outputs": 2,
+    "prefix_template_fallbacks": 70
+  },
+  "no_raw_edits": true
+}

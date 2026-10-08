@@ -1,0 +1,162 @@
+[
+  {
+    "digit": "0",
+    "encode_ids": [
+      29871,
+      29900
+    ],
+    "tokens": [
+      "\u2581",
+      "0"
+    ],
+    "individual_decoded": [
+      "",
+      "0"
+    ],
+    "direct_vocab_id": 29900
+  },
+  {
+    "digit": "1",
+    "encode_ids": [
+      29871,
+      29896
+    ],
+    "tokens": [
+      "\u2581",
+      "1"
+    ],
+    "individual_decoded": [
+      "",
+      "1"
+    ],
+    "direct_vocab_id": 29896
+  },
+  {
+    "digit": "2",
+    "encode_ids": [
+      29871,
+      29906
+    ],
+    "tokens": [
+      "\u2581",
+      "2"
+    ],
+    "individual_decoded": [
+      "",
+      "2"
+    ],
+    "direct_vocab_id": 29906
+  },
+  {
+    "digit": "3",
+    "encode_ids": [
+      29871,
+      29941
+    ],
+    "tokens": [
+      "\u2581",
+      "3"
+    ],
+    "individual_decoded": [
+      "",
+      "3"
+    ],
+    "direct_vocab_id": 29941
+  },
+  {
+    "digit": "4",
+    "encode_ids": [
+      29871,
+      29946
+    ],
+    "tokens": [
+      "\u2581",
+      "4"
+    ],
+    "individual_decoded": [
+      "",
+      "4"
+    ],
+    "direct_vocab_id": 29946
+  },
+  {
+    "digit": "5",
+    "encode_ids": [
+      29871,
+      29945
+    ],
+    "tokens": [
+      "\u2581",
+      "5"
+    ],
+    "individual_decoded": [
+      "",
+      "5"
+    ],
+    "direct_vocab_id": 29945
+  },
+  {
+    "digit": "6",
+    "encode_ids": [
+      29871,
+      29953
+    ],
+    "tokens": [
+      "\u2581",
+      "6"
+    ],
+    "individual_decoded": [
+      "",
+      "6"
+    ],
+    "direct_vocab_id": 29953
+  },
+  {
+    "digit": "7",
+    "encode_ids": [
+      29871,
+      29955
+    ],
+    "tokens": [
+      "\u2581",
+      "7"
+    ],
+    "individual_decoded": [
+      "",
+      "7"
+    ],
+    "direct_vocab_id": 29955
+  },
+  {
+    "digit": "8",
+    "encode_ids": [
+      29871,
+      29947
+    ],
+    "tokens": [
+      "\u2581",
+      "8"
+    ],
+    "individual_decoded": [
+      "",
+      "8"
+    ],
+    "direct_vocab_id": 29947
+  },
+  {
+    "digit": "9",
+    "encode_ids": [
+      29871,
+      29929
+    ],
+    "tokens": [
+      "\u2581",
+      "9"
+    ],
+    "individual_decoded": [
+      "",
+      "9"
+    ],
+    "direct_vocab_id": 29929
+  }
+]

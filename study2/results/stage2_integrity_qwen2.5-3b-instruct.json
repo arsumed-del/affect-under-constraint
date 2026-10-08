@@ -1,0 +1,12 @@
+{
+  "audit": "PASS",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "extraction_cells": 160,
+  "norm_prompts": 40,
+  "dose_cells": 400,
+  "classifier_cells": 360,
+  "alpha_max": 0.16,
+  "model_status": "PASS",
+  "calibration_sha256": "a5f8d95f8e3d786c84b2dc9ced0dd53d0fa061b27125dc65a1f821a1cfa8b490",
+  "no_generations_or_data_edits": true
+}

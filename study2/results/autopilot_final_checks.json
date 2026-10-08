@@ -1,0 +1,29 @@
+{
+  "results/autopilot_checks.json": {
+    "missing_approval_and_deposit_lock": "PASS",
+    "stale_hash_lock": "PASS",
+    "unpublished_deposit_lock": "PASS",
+    "sequential_dispatch": "PASS",
+    "living_child_adoption": "PASS",
+    "recorded_failure_blocks": "PASS",
+    "format_only_report": "PASS",
+    "no_main_generation_or_approval_creation": true
+  },
+  "results/autopilot_recovery_checks.json": {
+    "complete_derived_output_adopted": "PASS",
+    "interrupted_job_same_command_resume": "PASS",
+    "no_main_data_access": true
+  },
+  "results/deposit_verification_checks.json": {
+    "matching_published_archive": "PASS",
+    "wrong_specification_rejected": "PASS",
+    "network_used": false
+  },
+  "source_hashes": {
+    "src/autopilot.py": "a6c392deabc94e1411f2b2b982822bc039faafdc2de419c35c22b067db5887d6",
+    "src/autopilot_job.py": "387b166b127f2d274bcebcd194974bb1cd0895ed3297aeb8aac4d56fd53dba68",
+    "src/render_report.py": "d8d78b68ba42cb2d338ab59c1975ea45241d98735d36745eb4a9c24766da92a2",
+    "src/run_main.py": "b32e3253be3c87663eea84479177ed494f5b88b0abad7b6a91b84f570017042c",
+    "src/start_autopilot.py": "ec2e538d2695d23d5b54a0a68f46768eaee3e024ef196ebc02885919b07b8bf2"
+  }
+}

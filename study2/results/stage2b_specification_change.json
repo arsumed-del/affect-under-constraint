@@ -1,0 +1,19 @@
+{
+  "time": "2026-10-04T16:22:56.475936-07:00",
+  "reason": "Specification hashes changed externally during Stage 2b timing; v3.0 implementation and calibration provenance do not match the new v3.1 analysis specification.",
+  "expected": {
+    "PREREG.md": "57658fd68d5465b8c5da462db05b365c6be81cd42ffa0f577efd477a30f1f421",
+    "config.yaml": "428cdea4a9e992cfdae93ec31c2fcedbe9bfa3a805266cb7ab59c92aaa29ee19"
+  },
+  "actual": {
+    "PREREG.md": "baff1bbc5d1baaa9468fdbb8c557038d0b01d5a34bb49160eb32918a0fd7c095",
+    "config.yaml": "d8371ae3c9267b6af3cdc2d5bb96c591cf0fb942426853e9cf66111125147257"
+  },
+  "action": "Timing process had already exited at the stop check; no process was signaled.",
+  "timing_cells": {
+    "qwen2.5-3b-instruct.jsonl": 3,
+    "phi-3.5-mini-instruct.jsonl": 3
+  },
+  "current_approval_exists": false,
+  "superseded_v30_approval_exists": true
+}

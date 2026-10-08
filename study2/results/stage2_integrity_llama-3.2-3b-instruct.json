@@ -1,0 +1,12 @@
+{
+  "audit": "PASS",
+  "model": "meta-llama/Llama-3.2-3B-Instruct",
+  "extraction_cells": 160,
+  "norm_prompts": 40,
+  "dose_cells": 480,
+  "classifier_cells": 440,
+  "alpha_max": 0.2,
+  "model_status": "PASS",
+  "calibration_sha256": "dbc9d5d64933141c9a0aeadec1912f33ded9996cbcef2415209bb2a1bdf89c27",
+  "no_generations_or_data_edits": true
+}
