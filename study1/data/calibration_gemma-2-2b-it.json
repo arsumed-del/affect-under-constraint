@@ -1,0 +1,119 @@
+{
+  "prereg_version": "2.3",
+  "models": {
+    "google/gemma-2-2b-it": {
+      "alpha_max": 0.2,
+      "grid": [
+        0.0,
+        0.025,
+        0.05,
+        0.1,
+        0.15000000000000002,
+        0.2
+      ],
+      "per_candidate_median_ppl_ratios": {
+        "0.02": 0.9834455562796007,
+        "0.04": 1.033995346879492,
+        "0.06": 1.0617586792474711,
+        "0.08": 1.242154820482074,
+        "0.1": 1.3569159426291606,
+        "0.13": 1.334679128932967,
+        "0.16": 2.187733059299476,
+        "0.2": 3.238625908752221,
+        "0.25": 5.266246640084417
+      },
+      "model": "google/gemma-2-2b-it",
+      "direction_hashes": {
+        "hostility": "1b99041f13cd5b9bb227602ff693612b48320095b3b74dc3dba74e18d1bc059e",
+        "technicality": "3de0276412025029f48599128b84fe4693ea8ead56c882e1b8fcaec1a5652d8c",
+        "random": "4e1cf15896b94d203ef636db22acdafcf4f9487619d4aa3a4ad81bd7a4997cd0"
+      },
+      "mean_resid_norm": 424.29967783877726,
+      "hostility_technicality_cosine": 0.025334719568490982,
+      "prereg_version": "2.3",
+      "baseline_median_distinct_token_ratio": 0.6458333333333334,
+      "per_candidate_checks": {
+        "0.02": {
+          "median_ppl_ratio": 0.9834455562796007,
+          "median_distinct_token_ratio": 0.65,
+          "distinct_token_threshold": 0.3875,
+          "coherence_pass": true,
+          "non_degeneracy_pass": true,
+          "passed": true
+        },
+        "0.04": {
+          "median_ppl_ratio": 1.033995346879492,
+          "median_distinct_token_ratio": 0.6333333333333333,
+          "distinct_token_threshold": 0.3875,
+          "coherence_pass": true,
+          "non_degeneracy_pass": true,
+          "passed": true
+        },
+        "0.06": {
+          "median_ppl_ratio": 1.0617586792474711,
+          "median_distinct_token_ratio": 0.6625,
+          "distinct_token_threshold": 0.3875,
+          "coherence_pass": true,
+          "non_degeneracy_pass": true,
+          "passed": true
+        },
+        "0.08": {
+          "median_ppl_ratio": 1.242154820482074,
+          "median_distinct_token_ratio": 0.6416666666666667,
+          "distinct_token_threshold": 0.3875,
+          "coherence_pass": true,
+          "non_degeneracy_pass": true,
+          "passed": true
+        },
+        "0.1": {
+          "median_ppl_ratio": 1.3569159426291606,
+          "median_distinct_token_ratio": 0.6702898550724637,
+          "distinct_token_threshold": 0.3875,
+          "coherence_pass": true,
+          "non_degeneracy_pass": true,
+          "passed": true
+        },
+        "0.13": {
+          "median_ppl_ratio": 1.334679128932967,
+          "median_distinct_token_ratio": 0.6607993197278912,
+          "distinct_token_threshold": 0.3875,
+          "coherence_pass": true,
+          "non_degeneracy_pass": true,
+          "passed": true
+        },
+        "0.16": {
+          "median_ppl_ratio": 2.187733059299476,
+          "median_distinct_token_ratio": 0.6617647058823529,
+          "distinct_token_threshold": 0.3875,
+          "coherence_pass": true,
+          "non_degeneracy_pass": true,
+          "passed": true
+        },
+        "0.2": {
+          "median_ppl_ratio": 3.238625908752221,
+          "median_distinct_token_ratio": 0.65,
+          "distinct_token_threshold": 0.3875,
+          "coherence_pass": true,
+          "non_degeneracy_pass": true,
+          "passed": true
+        },
+        "0.25": {
+          "median_ppl_ratio": 5.266246640084417,
+          "median_distinct_token_ratio": 0.6375,
+          "distinct_token_threshold": 0.3875,
+          "coherence_pass": false,
+          "non_degeneracy_pass": true,
+          "passed": false
+        }
+      },
+      "first_failure": 0.25,
+      "unrun_candidates": [
+        0.3,
+        0.35,
+        0.4,
+        0.45,
+        0.5
+      ]
+    }
+  }
+}
