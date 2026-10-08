@@ -1,0 +1,6 @@
+{
+  "model": "meta-llama/Llama-3.2-3B-Instruct",
+  "layer_index": 14,
+  "mean_resid_norm": 27.519607680029594,
+  "pool": "all positions in unsteered formatted calibration prompts"
+}

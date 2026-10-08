@@ -1,0 +1,6 @@
+{
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "layer_index": 16,
+  "mean_resid_norm": 516.4453811215279,
+  "pool": "all positions in unsteered formatted calibration prompts"
+}
