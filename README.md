@@ -2,7 +2,9 @@
 
 Code, specifications and results for a series of preregistered activation-steering studies on whether an instruction removes the influence of a conflicting affect-associated representation in a language model, or only masks its expression.
 
-**Paper:** Su, A. (2026). *Affect Under Constraint: Persistence of a Steered Affective Representation in Instruction-Tuned Language Models.* Preprint. [doi:10.5281/zenodo.23182205](https://doi.org/10.5281/zenodo.23182205)
+**Papers:**
+- Su, A. (2026). *Affect Under Constraint: Persistence of a Steered Affective Representation in Instruction-Tuned Language Models.* Preprint (Studies 1 and 2). [doi:10.5281/zenodo.23182205](https://doi.org/10.5281/zenodo.23182205)
+- Su, A. (2026). *Affect Under Constraint: A Steered Affective State Carries Forward Through a Language Model's Own Reasoning.* Preprint (Study 3). [doi:10.5281/zenodo.23323490](https://doi.org/10.5281/zenodo.23323490)
 
 ## Summary
 
@@ -11,6 +13,7 @@ A hostility direction, extracted by a generation-based difference-of-means proce
 - **Persistence.** Across Qwen2.5-3B-Instruct, Phi-3.5-mini-instruct and Llama-3.2-3B-Instruct, hostility steering still increased the models' preference for hostile reply openers under the warmth instruction, more than either control, meeting the preregistered criterion for generality.
 - **Dissociation.** In two of three models, expressed hostility rose more slowly than this latent preference.
 - **Carryover.** A predicted hostility-specific effect of the steered hidden state on a later judgment was not supported.
+- **Study 3: carryover through reasoning.** In Qwen3-4B, letting the model write and then read a reasoning trace increased the steered hostility's effect on a later judgment of the user by about one point on a 0–9 scale, beyond both controls. When steering was active only while the trace was written, the trace alone still carried the effect. Hostility did not surface preferentially in the trace.
 
 ![Standardized latent hostile-opener preference slopes under the warmth instruction, by model and direction](figures/fig1_persistence.png)
 
@@ -20,19 +23,22 @@ A hostility direction, extracted by a generation-based difference-of-means proce
 
 | What | DOI |
 |---|---|
-| Preprint (all versions) | [10.5281/zenodo.23182205](https://doi.org/10.5281/zenodo.23182205) |
+| Studies 1–2 preprint (all versions) | [10.5281/zenodo.23182205](https://doi.org/10.5281/zenodo.23182205) |
 | Study 1 preregistration (v2.3) | [10.5281/zenodo.23140443](https://doi.org/10.5281/zenodo.23140443) |
 | Study 2 preregistration (v3.1) | [10.5281/zenodo.23147672](https://doi.org/10.5281/zenodo.23147672) |
-| Full code and data, including raw generations | [10.5281/zenodo.23181324](https://doi.org/10.5281/zenodo.23181324) |
-| Study 3 preregistration (in progress) | [10.5281/zenodo.23247883](https://doi.org/10.5281/zenodo.23247883) |
+| Studies 1–2 code and data, including raw generations | [10.5281/zenodo.23181324](https://doi.org/10.5281/zenodo.23181324) |
+| Study 3 preregistration (v0.4) | [10.5281/zenodo.23247883](https://doi.org/10.5281/zenodo.23247883) |
+| Study 3 preprint | [10.5281/zenodo.23323490](https://doi.org/10.5281/zenodo.23323490) |
+| Study 3 code and data, including raw generations | [10.5281/zenodo.23323488](https://doi.org/10.5281/zenodo.23323488) |
 
-The Zenodo records are the archival versions. This repository mirrors the code, specifications and results for browsing; raw main-run generations (about 30 MB) are on Zenodo only.
+The Zenodo records are the archival versions. This repository mirrors the code, specifications and results for browsing; raw main-run generations are on Zenodo only.
 
 ## Layout
 
 ```
 study1/   Study 1 (Qwen2.5-3B-Instruct; Gemma-2-2B-it failed its manipulation check)
 study2/   Study 2 (Qwen2.5-3B-Instruct, Phi-3.5-mini-instruct, Llama-3.2-3B-Instruct)
+study3/   Study 3 (Qwen3-4B, reasoning on vs. off; see study3/README.md)
 figures/  Figures from the paper
 ```
 
