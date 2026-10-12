@@ -1,0 +1,6 @@
+{
+  "model": "Qwen/Qwen3-4B",
+  "layer_index": 18,
+  "mean_resid_norm": 863.1329506247774,
+  "pool": "all positions in unsteered formatted calibration prompts"
+}

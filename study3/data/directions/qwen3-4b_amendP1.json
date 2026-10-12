@@ -1,0 +1,232 @@
+{
+  "prereg_version": "feasibility-pilot-Amendment-P1",
+  "model": "Qwen/Qwen3-4B",
+  "baseline_median_distinct_token_ratio": 0.7165422885572139,
+  "per_candidate_checks": {
+    "0.0025": {
+      "median_absolute_perplexity": 1.1854402820202612,
+      "median_ppl_ratio": 1.0245152524216015,
+      "median_distinct_token_ratio": 0.7007462686567164,
+      "distinct_token_threshold": 0.4299253731343283,
+      "coherence_pass": true,
+      "non_degeneracy_pass": true,
+      "passed": true,
+      "mean_expressed_hostility": 0.08247599033929873,
+      "classifier_valid_n": 40,
+      "manipulation_check": {
+        "mean_eh_difference": -0.026822200609603896,
+        "ci95": [
+          -0.06583635083414266,
+          0.003821059271140257
+        ],
+        "complete_prompt_pairs": 40,
+        "bootstrap_valid": 10000,
+        "passed": false
+      }
+    },
+    "0.005": {
+      "median_absolute_perplexity": 1.2747608945795132,
+      "median_ppl_ratio": 1.0763388233030287,
+      "median_distinct_token_ratio": 0.7,
+      "distinct_token_threshold": 0.4299253731343283,
+      "coherence_pass": true,
+      "non_degeneracy_pass": true,
+      "passed": true,
+      "mean_expressed_hostility": 0.0750794546562247,
+      "classifier_valid_n": 40,
+      "manipulation_check": {
+        "mean_eh_difference": -0.03421873629267793,
+        "ci95": [
+          -0.07458135205117286,
+          0.00029326373660296145
+        ],
+        "complete_prompt_pairs": 40,
+        "bootstrap_valid": 10000,
+        "passed": false
+      }
+    },
+    "0.0075": {
+      "median_absolute_perplexity": 1.4208048860737101,
+      "median_ppl_ratio": 1.2215904222598897,
+      "median_distinct_token_ratio": 0.7131720430107527,
+      "distinct_token_threshold": 0.4299253731343283,
+      "coherence_pass": true,
+      "non_degeneracy_pass": true,
+      "passed": true,
+      "mean_expressed_hostility": 0.08862114044750342,
+      "classifier_valid_n": 40,
+      "manipulation_check": {
+        "mean_eh_difference": -0.02067705050139921,
+        "ci95": [
+          -0.08832666394511761,
+          0.04529287179622769
+        ],
+        "complete_prompt_pairs": 40,
+        "bootstrap_valid": 10000,
+        "passed": false
+      }
+    },
+    "0.01": {
+      "median_absolute_perplexity": 1.7253994252115734,
+      "median_ppl_ratio": 1.4272867091849015,
+      "median_distinct_token_ratio": 0.6916666666666667,
+      "distinct_token_threshold": 0.4299253731343283,
+      "coherence_pass": true,
+      "non_degeneracy_pass": true,
+      "passed": true,
+      "mean_expressed_hostility": 0.11405087978346273,
+      "classifier_valid_n": 40,
+      "manipulation_check": {
+        "mean_eh_difference": 0.004752688834560104,
+        "ci95": [
+          -0.027709558160786397,
+          0.03385502136836292
+        ],
+        "complete_prompt_pairs": 40,
+        "bootstrap_valid": 10000,
+        "passed": false
+      }
+    },
+    "0.0125": {
+      "median_absolute_perplexity": 2.072086049789054,
+      "median_ppl_ratio": 1.703843026829254,
+      "median_distinct_token_ratio": 0.6680790960451977,
+      "distinct_token_threshold": 0.4299253731343283,
+      "coherence_pass": true,
+      "non_degeneracy_pass": true,
+      "passed": true,
+      "mean_expressed_hostility": 0.15223589171655477,
+      "classifier_valid_n": 40,
+      "manipulation_check": {
+        "mean_eh_difference": 0.04293770076765213,
+        "ci95": [
+          -0.012045785958325722,
+          0.10865125426003937
+        ],
+        "complete_prompt_pairs": 40,
+        "bootstrap_valid": 10000,
+        "passed": false
+      }
+    },
+    "0.015": {
+      "median_absolute_perplexity": 2.570812431425698,
+      "median_ppl_ratio": 2.0465729800021375,
+      "median_distinct_token_ratio": 0.6458333333333333,
+      "distinct_token_threshold": 0.4299253731343283,
+      "coherence_pass": true,
+      "non_degeneracy_pass": true,
+      "passed": true,
+      "mean_expressed_hostility": 0.1979608358524274,
+      "classifier_valid_n": 40,
+      "manipulation_check": {
+        "mean_eh_difference": 0.08866264490352478,
+        "ci95": [
+          0.02922122797841439,
+          0.15595961484934373
+        ],
+        "complete_prompt_pairs": 40,
+        "bootstrap_valid": 10000,
+        "passed": true
+      }
+    },
+    "0.0175": {
+      "median_absolute_perplexity": 3.421912104904746,
+      "median_ppl_ratio": 2.8747177135221245,
+      "median_distinct_token_ratio": 0.6416666666666667,
+      "distinct_token_threshold": 0.4299253731343283,
+      "coherence_pass": true,
+      "non_degeneracy_pass": true,
+      "passed": true,
+      "mean_expressed_hostility": 0.20942139147082345,
+      "classifier_valid_n": 40,
+      "manipulation_check": {
+        "mean_eh_difference": 0.10012320052192081,
+        "ci95": [
+          0.05037706750779762,
+          0.1563540696689597
+        ],
+        "complete_prompt_pairs": 40,
+        "bootstrap_valid": 10000,
+        "passed": true
+      }
+    },
+    "0.02": {
+      "median_absolute_perplexity": 4.5902197469123465,
+      "median_ppl_ratio": 3.9469825913167274,
+      "median_distinct_token_ratio": 0.6083333333333333,
+      "distinct_token_threshold": 0.4299253731343283,
+      "coherence_pass": true,
+      "non_degeneracy_pass": true,
+      "passed": true,
+      "mean_expressed_hostility": 0.2768046633922495,
+      "classifier_valid_n": 40,
+      "manipulation_check": {
+        "mean_eh_difference": 0.16750647244334688,
+        "ci95": [
+          0.09826886447546712,
+          0.23925021477931294
+        ],
+        "complete_prompt_pairs": 40,
+        "bootstrap_valid": 10000,
+        "passed": true
+      }
+    },
+    "0.025": {
+      "median_absolute_perplexity": 5.781759893291522,
+      "median_ppl_ratio": 4.899969552330537,
+      "median_distinct_token_ratio": 0.5583333333333333,
+      "distinct_token_threshold": 0.4299253731343283,
+      "coherence_pass": false,
+      "non_degeneracy_pass": true,
+      "passed": false,
+      "mean_expressed_hostility": 0.3454750313423574,
+      "classifier_valid_n": 40,
+      "manipulation_check": {
+        "status": "not evaluated; outside coherent range"
+      }
+    }
+  },
+  "first_failure": 0.025,
+  "unrun_candidates": [
+    0.03,
+    0.04,
+    0.05,
+    0.06,
+    0.08,
+    0.1
+  ],
+  "status": "PASS",
+  "alpha_max": 0.02,
+  "grid": [
+    0.0,
+    0.0025,
+    0.005,
+    0.01,
+    0.015,
+    0.02
+  ],
+  "direction_hashes": {
+    "hostility": "acd1560e0ecc21853010c887a960d37d1fe115ffb7726255f0e0e4a76f27a760",
+    "technicality": "a599f6572ccb3144a23bf61ae68b89311a44c1b77261ee46df403027fbe97b0a",
+    "random": "c43c5d34c9721bca8f6d0f12eaab9125ea3573d01dde08fb05cc97e939bb32d3"
+  },
+  "mean_resid_norm": 863.1329506247774,
+  "hostility_technicality_cosine": 0.08784855902194977,
+  "coherent_candidates": [
+    0.0025,
+    0.005,
+    0.0075,
+    0.01,
+    0.0125,
+    0.015,
+    0.0175,
+    0.02
+  ],
+  "manipulation_passing_candidates": [
+    0.015,
+    0.0175,
+    0.02
+  ],
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261004
+}
