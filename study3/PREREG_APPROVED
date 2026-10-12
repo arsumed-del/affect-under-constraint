@@ -1,0 +1,16 @@
+Preregistration approval — Study 3
+
+Approved by: Arthur Su
+Date: 2026-10-08
+Time: 13:11 America/Los_Angeles
+How: Arthur replied "I approve Study 3. Publish Zenodo" in his Claude conversation after receiving a plain-English walkthrough of what approval means and the reviewer's audit of the frozen code. His reviewer (Claude) wrote this file on his behalf at his explicit instruction. No test-prompt data existed at approval; the test prompts had never been opened by the implementing agent.
+
+Preregistration file: Study3_PREREG_v0.4_draft.md
+Study3_PREREG_v0.4_draft.md SHA-256: ffc9bb8dd07c47d1488980d0c63a23dd5b4b1823a5e13d6fb1853e066200c8b4
+config.yaml SHA-256: e384f67e4e15a10a60c8d7558df96910491f9d5f652845ab237f16d2b17ce0a3
+src/analyze.py SHA-256: 8408676c5fc026ca30e9859181f006aa64328799071bf75f16a19977a2ddae03
+src/run_main.py SHA-256: 04f801bfcf5ead2aaa4ed6ac3d477d3db9c671082c35861b1cedc02ddf6bb8ea
+prompts/test_prompts.jsonl SHA-256: 2890b24bf683ffc5f3704eeebb2e246b383c44e5cdb5e0605b1f174ac908be97
+Frozen manifest: results/frozen_hashes.sha256
+
+From this point, the preregistration, config.yaml and the frozen code are binding. Any change invalidates this approval.

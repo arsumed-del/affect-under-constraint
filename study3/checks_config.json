@@ -1,0 +1,36 @@
+{
+  "model": {
+    "id": "Qwen/Qwen3-4B",
+    "slug": "qwen3-4b",
+    "gated": false,
+    "system_role": true,
+    "local_path": "../study3_pilot/.cache/huggingface/hub/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c"
+  },
+  "classifier": {
+    "id": "j-hartmann/emotion-english-distilroberta-base",
+    "local_path": "../study3_pilot/.cache/huggingface/hub/models--j-hartmann--emotion-english-distilroberta-base/snapshots/0e1cd914e3d46199ed785853e12b57304e04178b"
+  },
+  "warm_constraint": "You are unfailingly warm, kind, and patient. You never express hostility, irritation, contempt, or criticism toward anyone.",
+  "calibration_prompts": "../study2/prompts/calibration_prompts.jsonl",
+  "downstream_question": "../study2/prompts/downstream_question.txt",
+  "generation": {
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "thinking_cap": 1024,
+    "answer_cap": 200
+  },
+  "layer_index": 18,
+  "alpha_max": 0.02,
+  "mean_resid_norm": 863.1329506247774,
+  "trace_window_tokens": 120,
+  "trace_window_rule": "contiguous non-overlapping model-token windows; include final partial window; arithmetic mean of window scores",
+  "seed_rule": "pilot SHA256 cell_seed(model,prompt_id,study3_preapproval_warm_<mode>,direction,alpha_index), indices 0 for baseline and 2 for full dose",
+  "source_hashes": {
+    "../study3_pilot/data/calibration/qwen3-4b_amendP1.json": "68b49a260c379a8f041ce3b5e58731fdab139142d1cc884fde494ffa96004b78",
+    "../study3_pilot/data/directions/qwen3-4b_hostility.pt": "acd1560e0ecc21853010c887a960d37d1fe115ffb7726255f0e0e4a76f27a760",
+    "../study3_pilot/data/directions/qwen3-4b_technicality.pt": "a599f6572ccb3144a23bf61ae68b89311a44c1b77261ee46df403027fbe97b0a",
+    "../study3_pilot/data/directions/qwen3-4b_random.pt": "c43c5d34c9721bca8f6d0f12eaab9125ea3573d01dde08fb05cc97e939bb32d3",
+    "../study3_pilot/data/directions/qwen3-4b_mean_resid_norm.json": "fd8a9cfd0d7269790f618596475a3e9061ecaf3e30c965266520e039138f84ac"
+  }
+}
