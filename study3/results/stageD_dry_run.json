@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "cells": 34,
+  "regular_cells": 28,
+  "pulse_cells": 6,
+  "prompt_ids": [
+    "s2c00",
+    "s2c01"
+  ],
+  "maximum_zero_rating_difference": 0.0,
+  "maximum_repeated_baseline_rating_difference": 0.0,
+  "raw_sha256": "87e7101a4a149a50edb21dc557cebc55c9e21a6d27550ec1a81116f51e983253",
+  "test_file_accessed": false,
+  "total_measured_seconds": 2179.3250263760565
+}

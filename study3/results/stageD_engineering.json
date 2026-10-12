@@ -1,0 +1,354 @@
+{
+  "pulse_cases": [
+    {
+      "forced": false,
+      "pulse": false,
+      "events": [
+        {
+          "ids": [
+            1,
+            2
+          ],
+          "fresh": true,
+          "steering": true
+        },
+        {
+          "ids": [
+            3
+          ],
+          "fresh": false,
+          "steering": true
+        },
+        {
+          "ids": [
+            6
+          ],
+          "fresh": false,
+          "steering": true
+        },
+        {
+          "ids": [
+            4
+          ],
+          "fresh": false,
+          "steering": true
+        },
+        {
+          "ids": [
+            7
+          ],
+          "fresh": false,
+          "steering": true
+        },
+        {
+          "ids": [
+            9
+          ],
+          "fresh": false,
+          "steering": true
+        }
+      ],
+      "sampled_tokens": 5,
+      "status": "PASS"
+    },
+    {
+      "forced": false,
+      "pulse": true,
+      "events": [
+        {
+          "ids": [
+            1,
+            2
+          ],
+          "fresh": true,
+          "steering": true
+        },
+        {
+          "ids": [
+            3
+          ],
+          "fresh": false,
+          "steering": true
+        },
+        {
+          "ids": [
+            6
+          ],
+          "fresh": false,
+          "steering": true
+        },
+        {
+          "ids": [
+            4
+          ],
+          "fresh": false,
+          "steering": true
+        },
+        {
+          "ids": [
+            1,
+            2,
+            3,
+            6,
+            4,
+            8
+          ],
+          "fresh": true,
+          "steering": false
+        },
+        {
+          "ids": [
+            7
+          ],
+          "fresh": false,
+          "steering": false
+        },
+        {
+          "ids": [
+            9
+          ],
+          "fresh": false,
+          "steering": false
+        }
+      ],
+      "sampled_tokens": 5,
+      "status": "PASS"
+    },
+    {
+      "forced": true,
+      "pulse": false,
+      "events": [
+        {
+          "ids": [
+            1,
+            2
+          ],
+          "fresh": true,
+          "steering": true
+        },
+        {
+          "ids": [
+            3
+          ],
+          "fresh": false,
+          "steering": true
+        },
+        {
+          "ids": [
+            6
+          ],
+          "fresh": false,
+          "steering": true
+        },
+        {
+          "ids": [
+            4
+          ],
+          "fresh": false,
+          "steering": true
+        },
+        {
+          "ids": [
+            8
+          ],
+          "fresh": false,
+          "steering": true
+        },
+        {
+          "ids": [
+            7
+          ],
+          "fresh": false,
+          "steering": true
+        },
+        {
+          "ids": [
+            9
+          ],
+          "fresh": false,
+          "steering": true
+        }
+      ],
+      "sampled_tokens": 4,
+      "status": "PASS"
+    },
+    {
+      "forced": true,
+      "pulse": true,
+      "events": [
+        {
+          "ids": [
+            1,
+            2
+          ],
+          "fresh": true,
+          "steering": true
+        },
+        {
+          "ids": [
+            3
+          ],
+          "fresh": false,
+          "steering": true
+        },
+        {
+          "ids": [
+            6
+          ],
+          "fresh": false,
+          "steering": true
+        },
+        {
+          "ids": [
+            4
+          ],
+          "fresh": false,
+          "steering": true
+        },
+        {
+          "ids": [
+            1,
+            2,
+            3,
+            6,
+            4,
+            8
+          ],
+          "fresh": true,
+          "steering": false
+        },
+        {
+          "ids": [
+            7
+          ],
+          "fresh": false,
+          "steering": false
+        },
+        {
+          "ids": [
+            9
+          ],
+          "fresh": false,
+          "steering": false
+        }
+      ],
+      "sampled_tokens": 4,
+      "status": "PASS"
+    }
+  ],
+  "guards": {
+    "cases": {
+      "missing approval": "PASS",
+      "wrong hash": "PASS",
+      "missing deposit": "PASS",
+      "missing DOI": "PASS",
+      "valid guard": "PASS"
+    },
+    "all_accesses": [
+      [
+        "exists",
+        "PREREG_APPROVED"
+      ],
+      [
+        "exists",
+        "PREREG_APPROVED"
+      ],
+      [
+        "read",
+        "PREREG_APPROVED"
+      ],
+      [
+        "hash",
+        "Study3_PREREG_v0.4_draft.md"
+      ],
+      [
+        "exists",
+        "PREREG_APPROVED"
+      ],
+      [
+        "read",
+        "PREREG_APPROVED"
+      ],
+      [
+        "hash",
+        "Study3_PREREG_v0.4_draft.md"
+      ],
+      [
+        "hash",
+        "config.yaml"
+      ],
+      [
+        "exists",
+        "ZENODO_DEPOSIT.md"
+      ],
+      [
+        "exists",
+        "PREREG_APPROVED"
+      ],
+      [
+        "read",
+        "PREREG_APPROVED"
+      ],
+      [
+        "hash",
+        "Study3_PREREG_v0.4_draft.md"
+      ],
+      [
+        "hash",
+        "config.yaml"
+      ],
+      [
+        "exists",
+        "ZENODO_DEPOSIT.md"
+      ],
+      [
+        "read",
+        "ZENODO_DEPOSIT.md"
+      ],
+      [
+        "exists",
+        "PREREG_APPROVED"
+      ],
+      [
+        "read",
+        "PREREG_APPROVED"
+      ],
+      [
+        "hash",
+        "Study3_PREREG_v0.4_draft.md"
+      ],
+      [
+        "hash",
+        "config.yaml"
+      ],
+      [
+        "exists",
+        "ZENODO_DEPOSIT.md"
+      ],
+      [
+        "read",
+        "ZENODO_DEPOSIT.md"
+      ],
+      [
+        "hash",
+        "PREREG_APPROVED"
+      ],
+      [
+        "hash",
+        "ZENODO_DEPOSIT.md"
+      ],
+      [
+        "hash",
+        "Study3_PREREG_v0.4_draft.md"
+      ],
+      [
+        "hash",
+        "config.yaml"
+      ]
+    ],
+    "files_created": false,
+    "test_file_touched": false
+  },
+  "plan_main_cells": 1360,
+  "plan_dry_cells": 34
+}

@@ -1,0 +1,11 @@
+--- analyze.py before S4 dependency fix
++++ analyze.py after S4 dependency fix
+@@ -35,7 +35,7 @@
+             if not r:return None
+             if measure in ['C','X','H']:
+                 z=row(p,m,d,0)
+-                if not z or not finite(z.get('R_zero')):return None
++                if measure!='H' and (not z or not finite(z.get('R_zero'))):return None
+                 left=r.get('R_full' if measure in ['C','H'] else 'R_text')
+                 right=r.get('R_text') if measure=='H' else z['R_zero']
+                 if not finite(left) or not finite(right):return None

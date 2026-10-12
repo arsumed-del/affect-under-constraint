@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "analysis_sha256": "8408676c5fc026ca30e9859181f006aa64328799071bf75f16a19977a2ddae03",
+  "config_sha256": "e384f67e4e15a10a60c8d7558df96910491f9d5f652845ab237f16d2b17ce0a3",
+  "scenarios_exactly_reproduced": [
+    "P1_analysis",
+    "P2_analysis",
+    "S5_analysis",
+    "floor20_analysis",
+    "gate_analysis",
+    "hidden_only_analysis",
+    "missing_analysis",
+    "missing_baseline_analysis",
+    "missing_prompt_analysis",
+    "null_analysis",
+    "truncation_analysis"
+  ],
+  "null_replicates_exactly_reproduced": 200,
+  "empty_case_exactly_reproduced": true,
+  "test_prompts_accessed": false
+}

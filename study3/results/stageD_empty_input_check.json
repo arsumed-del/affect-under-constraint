@@ -1,0 +1,309 @@
+{
+  "schema_version": "study3-analysis-v0.4",
+  "n_prompts": 0,
+  "missing_prompt_count": 80,
+  "observed_cells": 0,
+  "expected_cells": 1360,
+  "missing_cells": [],
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261004,
+  "hypotheses": {
+    "P1": {
+      "verdict": "not estimable",
+      "components": {
+        "hostility": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "hostility-minus-technicality": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "hostility-minus-random": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        }
+      }
+    },
+    "P2": {
+      "verdict": "not estimable",
+      "components": {
+        "hostility": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "hostility-minus-technicality": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "hostility-minus-random": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        }
+      }
+    },
+    "S1": {
+      "verdict": "not estimable",
+      "components": {
+        "X_think": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        }
+      }
+    },
+    "S2": {
+      "verdict": "not estimable",
+      "components": {
+        "delta_X": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        }
+      }
+    },
+    "S3": {
+      "verdict": "not estimable",
+      "components": {
+        "direct:hostility": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "direct:hostility-minus-technicality": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "direct:hostility-minus-random": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "think:hostility": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "think:hostility-minus-technicality": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "think:hostility-minus-random": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        }
+      }
+    },
+    "S4": {
+      "verdict": "not estimable",
+      "components": {
+        "hostility": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "hostility-minus-technicality": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "hostility-minus-random": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        }
+      }
+    },
+    "S5": {
+      "verdict": "not estimable",
+      "components": {
+        "hostility": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "hostility-minus-technicality": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "hostility-minus-random": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        }
+      }
+    }
+  },
+  "lhp_standardization_scale": null,
+  "gate_groups": [],
+  "exploratory": {
+    "label": "Exploratory; no confirmatory verdicts",
+    "E1": {
+      "hostility": {
+        "estimate": null,
+        "ci": null,
+        "n_prompts": 0,
+        "status": "not estimable",
+        "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+      },
+      "technicality": {
+        "estimate": null,
+        "ci": null,
+        "n_prompts": 0,
+        "status": "not estimable",
+        "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+      },
+      "random": {
+        "estimate": null,
+        "ci": null,
+        "n_prompts": 0,
+        "status": "not estimable",
+        "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+      }
+    },
+    "pulse_routes": {
+      "hostility": {
+        "C": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "H": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "LHP": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        }
+      },
+      "technicality": {
+        "C": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "H": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "LHP": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        }
+      },
+      "random": {
+        "C": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "H": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        },
+        "LHP": {
+          "estimate": null,
+          "ci": null,
+          "n_prompts": 0,
+          "status": "not estimable",
+          "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+        }
+      }
+    },
+    "E2": [],
+    "E3": {
+      "P1": {
+        "prompt_ids": [],
+        "n_prompts": 0,
+        "result": {
+          "verdict": "not estimable",
+          "reason": "Fewer than 20 common naturally closed prompts"
+        }
+      },
+      "P2": {
+        "prompt_ids": [],
+        "n_prompts": 0,
+        "result": {
+          "verdict": "not estimable",
+          "reason": "Fewer than 20 common naturally closed prompts"
+        }
+      }
+    },
+    "truncation_counts": [],
+    "E4": [],
+    "E4_stageC_reference": "results/stageC_samples.md",
+    "E4_expected_samples": 10
+  }
+}

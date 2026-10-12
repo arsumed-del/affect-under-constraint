@@ -1,0 +1,11 @@
+{
+  "automation_id": "study-3-stage-e-follow-through",
+  "status": "PAUSED",
+  "frequency": "hourly",
+  "main_pid": 17388,
+  "caffeinate_pid": 17389,
+  "monitor_pid": 17447,
+  "monitor_caffeinate_pid": 17448,
+  "purpose": "Continue Stage E through integrity, unchanged analysis, and final report; pause on completion or block.",
+  "reason": "Study 3 completed; no further automated work."
+}

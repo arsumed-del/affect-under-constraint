@@ -1,0 +1,30 @@
+--- analyze.py before ID robustness fix
++++ analyze.py after ID robustness fix
+@@ -8,7 +8,9 @@
+ 
+ def finite(x):return isinstance(x,(float,int)) and math.isfinite(x)
+ def analyze(data,cfg,prompt_ids=None,resamples=None,seed=None,exploratory=True):
+-    ids=list(prompt_ids) if prompt_ids is not None else [f's3t{i:02}' for i in range(cfg['prompts']['test']['count'])]
++    ids=list(prompt_ids) if prompt_ids is not None else sorted({r['prompt_id'] for r in data})
++    missing_prompt_count=max(0,cfg['prompts']['test']['count']-len(ids)) if prompt_ids is None else 0
++    population_incomplete=prompt_ids is None and len(ids)!=cfg['prompts']['test']['count']
+     assert len(set(ids))==len(ids)
+     n=len(ids);lookup={key(r):r for r in data};assert len(lookup)==len(data),'Duplicate cell'
+     expected=set(plan(ids));assert set(lookup)<=expected,'Unexpected cell key'
+@@ -28,6 +30,7 @@
+         g=gates[(m,route,d if a else 'none',float(a),seg)]
+         return not g['excluded'] and not g['missing']
+     def values(m,d,a,measure,route='regular',gate=None):
++        if population_incomplete:return None
+         if gate and not eligible(m,d,a,gate,route):return None
+         result=[]
+         for p in ids:
+@@ -82,7 +85,7 @@
+     hyp['S3']=hypothesis(components,secondary,'positive')
+     hyp['S4']=hypothesis(contrasts({d:values('direct',d,1,'H') for d in DIRECTIONS}),secondary,'negative')
+     hyp['S5']=hypothesis(contrasts({d:values('think',d,1,'X','pulse') for d in DIRECTIONS}),secondary,'negative')
+-    result={'schema_version':'study3-analysis-v0.4','n_prompts':n,'observed_cells':len(data),'expected_cells':len(expected),'missing_cells':[list(k) for k in sorted(expected-set(lookup))],'bootstrap_resamples':B,'bootstrap_seed':settings['bootstrap_seed'] if seed is None else seed,'hypotheses':hyp,'lhp_standardization_scale':scale,'gate_groups':[{'mode':k[0],'route':k[1],'direction':k[2],'dose_fraction':k[3],'segment':k[4],**v} for k,v in gates.items()]}
++    result={'schema_version':'study3-analysis-v0.4','n_prompts':n,'missing_prompt_count':missing_prompt_count,'observed_cells':len(data),'expected_cells':17*(cfg['prompts']['test']['count'] if prompt_ids is None else n),'missing_cells':[list(k) for k in sorted(expected-set(lookup))],'bootstrap_resamples':B,'bootstrap_seed':settings['bootstrap_seed'] if seed is None else seed,'hypotheses':hyp,'lhp_standardization_scale':scale,'gate_groups':[{'mode':k[0],'route':k[1],'direction':k[2],'dose_fraction':k[3],'segment':k[4],**v} for k,v in gates.items()]}
+     if exploratory:
+         ex={'label':'Exploratory; no confirmatory verdicts'}
+         ex['E1']={d:stat(minus(values('think',d,1,'EH_answer','pulse','answer'),values('think',d,0,'EH_answer',gate='answer')),secondary,None) for d in DIRECTIONS}

@@ -1,0 +1,488 @@
+{
+  "status": "PASS",
+  "S3_S4_planted": {
+    "P1": {
+      "verdict": "not supported",
+      "components": {
+        "hostility": {
+          "estimate": 1.0117345645241596,
+          "ci": [
+            0.9827499105434315,
+            1.041197172432544
+          ],
+          "confidence": 0.975,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "hostility-minus-technicality": {
+          "estimate": 1.026221190587385,
+          "ci": [
+            0.9849338570554709,
+            1.0680841077431797
+          ],
+          "confidence": 0.975,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "hostility-minus-random": {
+          "estimate": 1.02565844369725,
+          "ci": [
+            0.9800375255036311,
+            1.070933253323398
+          ],
+          "confidence": 0.975,
+          "n_prompts": 80,
+          "status": "not supported"
+        }
+      }
+    },
+    "P2": {
+      "verdict": "not supported",
+      "components": {
+        "hostility": {
+          "estimate": -0.002913787621966027,
+          "ci": [
+            -0.012982143437936145,
+            0.007388616742911662
+          ],
+          "confidence": 0.975,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "hostility-minus-technicality": {
+          "estimate": -0.006066095089326909,
+          "ci": [
+            -0.018678394388707303,
+            0.007074305194734056
+          ],
+          "confidence": 0.975,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "hostility-minus-random": {
+          "estimate": 0.0008160635019739508,
+          "ci": [
+            -0.00996634733447799,
+            0.01159486136763216
+          ],
+          "confidence": 0.975,
+          "n_prompts": 80,
+          "status": "not supported"
+        }
+      }
+    },
+    "S1": {
+      "verdict": "not supported",
+      "components": {
+        "X_think": {
+          "estimate": 0.0012007013280097012,
+          "ci": [
+            -0.015045166628646637,
+            0.016978274500190745
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        }
+      }
+    },
+    "S2": {
+      "verdict": "not supported",
+      "components": {
+        "delta_X": {
+          "estimate": 0.01001209673911455,
+          "ci": [
+            -0.012656357859934773,
+            0.03302140386935684
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        }
+      }
+    },
+    "S3": {
+      "verdict": "supported",
+      "components": {
+        "direct:hostility": {
+          "estimate": 2.854361493048044,
+          "ci": [
+            2.8099644317711086,
+            2.898917353701164
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "supported"
+        },
+        "direct:hostility-minus-technicality": {
+          "estimate": 2.8772961746520713,
+          "ci": [
+            2.8386059581264287,
+            2.9150950753798863
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "supported"
+        },
+        "direct:hostility-minus-random": {
+          "estimate": 2.894823581392314,
+          "ci": [
+            2.8496217855722548,
+            2.9400565514231056
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "supported"
+        },
+        "think:hostility": {
+          "estimate": 2.9387932849663674,
+          "ci": [
+            2.9010201486221616,
+            2.9753541941503907
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "supported"
+        },
+        "think:hostility-minus-technicality": {
+          "estimate": 2.9435905567349687,
+          "ci": [
+            2.899691828723745,
+            2.9852914632687564
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "supported"
+        },
+        "think:hostility-minus-random": {
+          "estimate": 2.9529485557867483,
+          "ci": [
+            2.909391271782683,
+            2.995749428448574
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "supported"
+        }
+      }
+    },
+    "S4": {
+      "verdict": "supported",
+      "components": {
+        "hostility": {
+          "estimate": -1.0,
+          "ci": [
+            -1.0000000000000002,
+            -0.9999999999999999
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "supported"
+        },
+        "hostility-minus-technicality": {
+          "estimate": -0.999458566309352,
+          "ci": [
+            -1.011657653742109,
+            -0.9870982835564068
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "supported"
+        },
+        "hostility-minus-random": {
+          "estimate": -1.000592262975729,
+          "ci": [
+            -1.012017028084631,
+            -0.9885033630005561
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "supported"
+        }
+      }
+    },
+    "S5": {
+      "verdict": "not supported",
+      "components": {
+        "hostility": {
+          "estimate": 0.015021725095240423,
+          "ci": [
+            -0.0023385564376939955,
+            0.03259509117675468
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "hostility-minus-technicality": {
+          "estimate": 0.014839217535035564,
+          "ci": [
+            -0.011495797176330926,
+            0.0407864300122842
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "hostility-minus-random": {
+          "estimate": 0.034057537746976854,
+          "ci": [
+            0.0087901735256047,
+            0.059174799925763785
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        }
+      }
+    }
+  },
+  "pulse_answer_gate": {
+    "P1": {
+      "verdict": "not supported",
+      "components": {
+        "hostility": {
+          "estimate": 0.02516313314752052,
+          "ci": [
+            -0.0064382428862350405,
+            0.05645357030152927
+          ],
+          "confidence": 0.975,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "hostility-minus-technicality": {
+          "estimate": 0.03508434914482568,
+          "ci": [
+            -0.012676227897988277,
+            0.08402404469714254
+          ],
+          "confidence": 0.975,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "hostility-minus-random": {
+          "estimate": 0.01737828832980426,
+          "ci": [
+            -0.029789502656574162,
+            0.06257746043851559
+          ],
+          "confidence": 0.975,
+          "n_prompts": 80,
+          "status": "not supported"
+        }
+      }
+    },
+    "P2": {
+      "verdict": "not supported",
+      "components": {
+        "hostility": {
+          "estimate": 0.00010859122725939834,
+          "ci": [
+            -0.014001378925522652,
+            0.013745290686694762
+          ],
+          "confidence": 0.975,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "hostility-minus-technicality": {
+          "estimate": -0.0017611433705277061,
+          "ci": [
+            -0.013592705719587104,
+            0.010260597245440458
+          ],
+          "confidence": 0.975,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "hostility-minus-random": {
+          "estimate": 0.00870540663970373,
+          "ci": [
+            -0.002814438388963582,
+            0.02013719874589733
+          ],
+          "confidence": 0.975,
+          "n_prompts": 80,
+          "status": "not supported"
+        }
+      }
+    },
+    "S1": {
+      "verdict": "not supported",
+      "components": {
+        "X_think": {
+          "estimate": 0.00914918854056015,
+          "ci": [
+            -0.008334037865963472,
+            0.02621937538654165
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        }
+      }
+    },
+    "S2": {
+      "verdict": "not supported",
+      "components": {
+        "delta_X": {
+          "estimate": 0.012523425072644267,
+          "ci": [
+            -0.011076969301508734,
+            0.03638455091673495
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        }
+      }
+    },
+    "S3": {
+      "verdict": "not supported",
+      "components": {
+        "direct:hostility": {
+          "estimate": 0.1302106657016347,
+          "ci": [
+            -0.20711088045401857,
+            0.4612245046196846
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "direct:hostility-minus-technicality": {
+          "estimate": 0.058256573013236654,
+          "ci": [
+            -0.26173450821505356,
+            0.3742603518335923
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "direct:hostility-minus-random": {
+          "estimate": -0.012535425306896723,
+          "ci": [
+            -0.306519125881637,
+            0.28050297486039705
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "think:hostility": {
+          "estimate": 0.17195082695924452,
+          "ci": [
+            -0.09152407503971388,
+            0.4312074888415554
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "think:hostility-minus-technicality": {
+          "estimate": -0.019728388115379313,
+          "ci": [
+            -0.34481409105618005,
+            0.30883348946519085
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "think:hostility-minus-random": {
+          "estimate": -0.15006901548027168,
+          "ci": [
+            -0.42457558974074044,
+            0.11763582082236412
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        }
+      }
+    },
+    "S4": {
+      "verdict": "not supported",
+      "components": {
+        "hostility": {
+          "estimate": -0.0016719027899135374,
+          "ci": [
+            -0.012733210451873327,
+            0.009826673351979506
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "hostility-minus-technicality": {
+          "estimate": -0.008591635967361478,
+          "ci": [
+            -0.024436494614886655,
+            0.008042131675283951
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        },
+        "hostility-minus-random": {
+          "estimate": 0.0034182062140149737,
+          "ci": [
+            -0.011694198614685576,
+            0.018600613206041543
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "not supported"
+        }
+      }
+    },
+    "S5": {
+      "verdict": "supported",
+      "components": {
+        "hostility": {
+          "estimate": -1.1917136816464382,
+          "ci": [
+            -1.2112789228959522,
+            -1.1723776781058948
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "supported"
+        },
+        "hostility-minus-technicality": {
+          "estimate": -1.1889980453284594,
+          "ci": [
+            -1.2178368124836614,
+            -1.1608423498802807
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "supported"
+        },
+        "hostility-minus-random": {
+          "estimate": -1.180192696161962,
+          "ci": [
+            -1.2070207766383143,
+            -1.1541828095457192
+          ],
+          "confidence": 0.95,
+          "n_prompts": 80,
+          "status": "supported"
+        }
+      }
+    }
+  },
+  "E1_hostility": {
+    "estimate": null,
+    "ci": null,
+    "n_prompts": 80,
+    "status": "not estimable",
+    "reason": "Missing required cell/measure, gated required group, or unavailable standardization"
+  },
+  "seeds": [
+    20261101,
+    20261102
+  ]
+}

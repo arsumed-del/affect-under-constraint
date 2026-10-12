@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "seed": 20261008,
+  "replicates": 200,
+  "null_rates": {
+    "P1": 0.0,
+    "P2": 0.0
+  },
+  "nominal": 0.025000000000000022,
+  "checks": {
+    "ols_reference_error": 5.551115123125783e-17,
+    "strict_greater_than_six": true,
+    "median_not_single_outlier": true
+  },
+  "scenario_verdicts": {
+    "P1": {
+      "P1": "supported",
+      "P2": "not supported",
+      "S1": "supported",
+      "S2": "supported",
+      "S3": "not supported",
+      "S4": "not supported",
+      "S5": "not supported"
+    },
+    "P2": {
+      "P1": "not supported",
+      "P2": "supported",
+      "S1": "not supported",
+      "S2": "not supported",
+      "S3": "not supported",
+      "S4": "not supported",
+      "S5": "not supported"
+    },
+    "S5": {
+      "P1": "not supported",
+      "P2": "not supported",
+      "S1": "not supported",
+      "S2": "not supported",
+      "S3": "not supported",
+      "S4": "not supported",
+      "S5": "supported"
+    },
+    "null": {
+      "P1": "not supported",
+      "P2": "not supported",
+      "S1": "not supported",
+      "S2": "not supported",
+      "S3": "not supported",
+      "S4": "not supported",
+      "S5": "not supported"
+    },
+    "truncation": {
+      "P1": "supported",
+      "P2": "not supported",
+      "S1": "supported",
+      "S2": "supported",
+      "S3": "not supported",
+      "S4": "not supported",
+      "S5": "not supported"
+    },
+    "floor20": {
+      "P1": "supported",
+      "P2": "not supported",
+      "S1": "supported",
+      "S2": "supported",
+      "S3": "not supported",
+      "S4": "not supported",
+      "S5": "not supported"
+    },
+    "hidden_only": {
+      "P1": "not supported",
+      "P2": "not supported",
+      "S1": "not supported",
+      "S2": "not supported",
+      "S3": "not supported",
+      "S4": "not supported",
+      "S5": "not supported"
+    },
+    "missing": {
+      "P1": "not estimable",
+      "P2": "not estimable",
+      "S1": "not estimable",
+      "S2": "not estimable",
+      "S3": "not estimable",
+      "S4": "not supported",
+      "S5": "not supported"
+    },
+    "missing_baseline": {
+      "P1": "not estimable",
+      "P2": "not supported",
+      "S1": "not supported",
+      "S2": "not estimable",
+      "S3": "not estimable",
+      "S4": "not supported",
+      "S5": "not supported"
+    },
+    "missing_prompt": {
+      "P1": "not estimable",
+      "P2": "not estimable",
+      "S1": "not estimable",
+      "S2": "not estimable",
+      "S3": "not estimable",
+      "S4": "not estimable",
+      "S5": "not estimable"
+    },
+    "gate": {
+      "P1": "not supported",
+      "P2": "not estimable",
+      "S1": "not supported",
+      "S2": "not supported",
+      "S3": "not supported",
+      "S4": "not supported",
+      "S5": "not supported"
+    }
+  }
+}

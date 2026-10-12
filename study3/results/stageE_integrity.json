@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "cells": 1360,
+  "prompts": 80,
+  "zero_max_difference": 0.0,
+  "repeated_baseline_max_difference": 0.0,
+  "raw_sha256": "e258f14ad0efef58d3d9d59902f0b5cd9dad848904e599282340ba689bfc8b30",
+  "approval": {
+    "approved_sha256": "e5d498bb83e301dba09452fff720dad2d3a65120610dc5655cba6893449913b7",
+    "deposit_sha256": "020f3c3994a0f3accc060fca954cd532e81aadb962bbc4e1939738d1c03c2dcb",
+    "verified_prereg_sha256": "ffc9bb8dd07c47d1488980d0c63a23dd5b4b1823a5e13d6fb1853e066200c8b4",
+    "verified_config_sha256": "e384f67e4e15a10a60c8d7558df96910491f9d5f652845ab237f16d2b17ce0a3"
+  },
+  "frozen_manifest_sha256": "c78c0cb7fa01daef14f107bab22ce1d0d508eb4c20b411474a9e681c7e3fb619"
+}
