@@ -2,7 +2,7 @@
 
 Qwen3-4B, reasoning ("thinking") mode on versus off in the same weights, under the warmth instruction; hostility, technicality and random directions at layer 18; a pulse condition in which steering is active only while the reasoning trace is written. 80 prompts, 1,360 cells.
 
-**Paper:** [doi:10.5281/zenodo.23323490](https://doi.org/10.5281/zenodo.23323490) · **Preregistration (v0.4):** [doi:10.5281/zenodo.23247883](https://doi.org/10.5281/zenodo.23247883) · **Code and raw data:** [doi:10.5281/zenodo.23323488](https://doi.org/10.5281/zenodo.23323488)
+**Paper (all versions):** [doi:10.5281/zenodo.23323489](https://doi.org/10.5281/zenodo.23323489), current v2 [10.5281/zenodo.23354704](https://doi.org/10.5281/zenodo.23354704) · **Preregistration (v0.4):** [doi:10.5281/zenodo.23247883](https://doi.org/10.5281/zenodo.23247883) · **Code and raw data:** [doi:10.5281/zenodo.23323488](https://doi.org/10.5281/zenodo.23323488)
 
 | Hypothesis | Result |
 |---|---|

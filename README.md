@@ -4,7 +4,7 @@ Code, specifications and results for a series of preregistered activation-steeri
 
 **Papers:**
 - Su, A. (2026). *Affect Under Constraint: Persistence of a Steered Affective Representation in Instruction-Tuned Language Models.* Preprint (Studies 1 and 2). [doi:10.5281/zenodo.23182205](https://doi.org/10.5281/zenodo.23182205)
-- Su, A. (2026). *Affect Under Constraint: A Steered Affective State Carries Forward Through a Language Model's Own Reasoning.* Preprint (Study 3). [doi:10.5281/zenodo.23323490](https://doi.org/10.5281/zenodo.23323490)
+- Su, A. (2026). *Affect Under Constraint: A Steered Affective State Carries Forward Through a Language Model's Own Reasoning.* Preprint (Study 3). [doi:10.5281/zenodo.23323489](https://doi.org/10.5281/zenodo.23323489) (all versions; current v2: [10.5281/zenodo.23354704](https://doi.org/10.5281/zenodo.23354704))
 
 ## Summary
 
@@ -28,7 +28,8 @@ A hostility direction, extracted by a generation-based difference-of-means proce
 | Study 2 preregistration (v3.1) | [10.5281/zenodo.23147672](https://doi.org/10.5281/zenodo.23147672) |
 | Studies 1–2 code and data, including raw generations | [10.5281/zenodo.23181324](https://doi.org/10.5281/zenodo.23181324) |
 | Study 3 preregistration (v0.4) | [10.5281/zenodo.23247883](https://doi.org/10.5281/zenodo.23247883) |
-| Study 3 preprint | [10.5281/zenodo.23323490](https://doi.org/10.5281/zenodo.23323490) |
+| Study 3 preprint (all versions) | [10.5281/zenodo.23323489](https://doi.org/10.5281/zenodo.23323489) |
+| Study 3 preprint v2 (adds Discussion §5.2; results unchanged) | [10.5281/zenodo.23354704](https://doi.org/10.5281/zenodo.23354704) |
 | Study 3 code and data, including raw generations | [10.5281/zenodo.23323488](https://doi.org/10.5281/zenodo.23323488) |
 
 The Zenodo records are the archival versions. This repository mirrors the code, specifications and results for browsing; raw main-run generations are on Zenodo only.
