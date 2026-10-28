@@ -5,6 +5,7 @@ Code, specifications and results for a series of preregistered activation-steeri
 **Papers:**
 - Su, A. (2026). *Affect Under Constraint: Persistence of a Steered Affective Representation in Instruction-Tuned Language Models.* Preprint (Studies 1 and 2). [doi:10.5281/zenodo.23182205](https://doi.org/10.5281/zenodo.23182205)
 - Su, A. (2026). *Affect Under Constraint: A Steered Affective State Carries Forward Through a Language Model's Own Reasoning.* Preprint (Study 3). [doi:10.5281/zenodo.23323489](https://doi.org/10.5281/zenodo.23323489) (all versions; current v2: [10.5281/zenodo.23354704](https://doi.org/10.5281/zenodo.23354704))
+- Su, A. (2026). *Affect Under Constraint: Conversational Placement and Fixed-Answer Tests of Hostility-Related Carryover Through a Language Model's Reasoning.* Preprint (Studies 4–6). [doi:10.5281/zenodo.23747766](https://doi.org/10.5281/zenodo.23747766)
 
 ## Summary
 
@@ -15,7 +16,7 @@ A hostility direction, extracted by a generation-based difference-of-means proce
 - **Carryover.** A predicted hostility-specific effect of the steered hidden state on a later judgment was not supported.
 - **Study 3: carryover through reasoning.** In Qwen3-4B, letting the model write and then read a reasoning trace increased the steered hostility's effect on a later judgment of the user by about one point on a 0–9 scale, beyond both controls. When steering was active only while the trace was written, the trace alone still carried the effect. Hostility did not surface preferentially in the trace.
 
-- **Studies 4–6: whose words, where, and how.** Replaying the same stored traces, the hostility effect on the later judgment appeared only when the trace sat in the model's own turn, not when quoted by the user (Study 4); persisted, attenuated, when moved into a previous assistant turn, whether as visible reply or retained thinking (Study 5); and was unchanged when the answer was held fixed, so it did not run through the answer the trace produced (Study 6). Results papers to follow.
+- **Studies 4–6: whose words, where, and how.** Replaying the same stored traces, the hostility effect on the later judgment appeared only when the trace sat in the model's own turn, not when quoted by the user (Study 4); persisted, attenuated, when moved into a previous assistant turn, whether as visible reply or retained thinking (Study 5); and was unchanged when the answer was held fixed, so it did not run through the answer the trace produced (Study 6). See the Studies 4–6 preprint.
 
 ![Standardized latent hostile-opener preference slopes under the warmth instruction, by model and direction](figures/fig1_persistence.png)
 
@@ -36,8 +37,10 @@ A hostility direction, extracted by a generation-based difference-of-means proce
 | Study 4 preregistration (v0.6) | [10.5281/zenodo.23629525](https://doi.org/10.5281/zenodo.23629525) |
 | Study 5 preregistration (v0.3) | [10.5281/zenodo.23674222](https://doi.org/10.5281/zenodo.23674222) |
 | Study 6 preregistration (v0.2) | [10.5281/zenodo.23737377](https://doi.org/10.5281/zenodo.23737377) |
+| Studies 4–6 preprint | [10.5281/zenodo.23747766](https://doi.org/10.5281/zenodo.23747766) |
+| Studies 4–6 code and data, including raw cells | [10.5281/zenodo.23747764](https://doi.org/10.5281/zenodo.23747764) |
 
-The Zenodo records are the archival versions. This repository mirrors the code, specifications and results for browsing; raw main-run generations are on Zenodo only (Studies 4–6: to be deposited with their paper).
+The Zenodo records are the archival versions. This repository mirrors the code, specifications and results for browsing; raw main-run generations are on Zenodo only.
 
 ## Layout
 
