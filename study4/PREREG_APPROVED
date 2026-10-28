@@ -1,0 +1,19 @@
+{
+  "name": "Arthur Su",
+  "date": "2026-10-24",
+  "time": "11:47 America/Los_Angeles",
+  "how": "Arthur replied \"Ok I approve let’s just move forward\" in his Claude conversation after receiving the v0.6 change summary. His reviewer (Claude) wrote this file on his behalf at his explicit instruction. No test-prompt model data existed at approval.",
+  "sha256": {
+    "Study4_Authorship_PREREG_v0.6_draft.md": "35f3256c5ba30e65a851e53491ad0fce7098c2d6b4e5705fd290f4eb06f04769",
+    "framings.json": "6749c73745a2f4f5340321ec41176f21f37f9dbba47dae08130e00b6d526f9ba",
+    "config.yaml": "3bdef083f772102fd161a75839072f7c068083cf60520a9211edbe24b5ee10f0",
+    "prompts/test_prompts.jsonl": "14ac0de7f734b42a2208c39b39877abe79110c67a7892e9465fc82a6644e01d5",
+    "src/runner.py": "69591683bee9a911816aaea4935b9ddcf6df98ee4fd9133a65b95395b06dd0e1",
+    "src/common.py": "f9b5d3c3994c0773e691d4853e98e5384c1e6abe13a482bcfe4e4809269651bd",
+    "src/approval.py": "44b5177050faf698d141a7ffb6304710350158e6facb12cd4618fbd5f23b4981",
+    "analysis/analyze.py": "db52dfbde8699b2b967313c87a68bbe409f8acd5b67d26d6360b261ed4b99705",
+    "analysis/validity.py": "0a024c6f93a62ebdb6f34b3aa75bcd250062b9249c1223f709720666d09a0d3f",
+    "analysis/audit_rubric.json": "831a646bd87e64b2685c50da5be735be858d65ec2ccf1c52fc03b7d479e2c913"
+  },
+  "binding": "From this point the preregistration, framings.json, config.yaml, test prompts and frozen code are binding. Any change invalidates this approval."
+}

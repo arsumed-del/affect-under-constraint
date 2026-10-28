@@ -1,0 +1,446 @@
+{
+  "pass": true,
+  "numerical_replay_pass": true,
+  "manifest_sha256": "bdd78f8ce6db10a286fa58b8e390b4601ad506deeb1d17d0c3719076e45fb6fe",
+  "numerical_tolerance": 0.01,
+  "first_cells": 212,
+  "second_sham_cells": 80,
+  "mass": {
+    "groups": {
+      "R1/unsteered": {
+        "n": 20,
+        "mean_valid_mass": 0.9999968439340592,
+        "pass": true
+      },
+      "R1/hostility": {
+        "n": 16,
+        "mean_valid_mass": 0.9999990053474903,
+        "pass": true
+      },
+      "R1/technicality": {
+        "n": 16,
+        "mean_valid_mass": 0.9999912679195404,
+        "pass": true
+      },
+      "R1/random": {
+        "n": 16,
+        "mean_valid_mass": 0.9999972283840179,
+        "pass": true
+      },
+      "R1-M/unsteered": {
+        "n": 16,
+        "mean_valid_mass": 0.9999989308416843,
+        "pass": true
+      },
+      "R1-M/hostility": {
+        "n": 12,
+        "mean_valid_mass": 0.9999996076027552,
+        "pass": true
+      },
+      "R1-M/technicality": {
+        "n": 12,
+        "mean_valid_mass": 0.999992623925209,
+        "pass": true
+      },
+      "R1-M/random": {
+        "n": 12,
+        "mean_valid_mass": 0.999999021490415,
+        "pass": true
+      },
+      "R2/unsteered": {
+        "n": 16,
+        "mean_valid_mass": 0.9999997764825821,
+        "pass": true
+      },
+      "R2/hostility": {
+        "n": 12,
+        "mean_valid_mass": 0.999999945362409,
+        "pass": true
+      },
+      "R2/technicality": {
+        "n": 12,
+        "mean_valid_mass": 0.9999989370505015,
+        "pass": true
+      },
+      "R2/random": {
+        "n": 12,
+        "mean_valid_mass": 0.9999999105930328,
+        "pass": true
+      },
+      "R3/unsteered": {
+        "n": 20,
+        "mean_valid_mass": 0.9999992400407791,
+        "pass": true
+      },
+      "R3/hostility": {
+        "n": 16,
+        "mean_valid_mass": 0.9999999701976776,
+        "pass": true
+      },
+      "R3/technicality": {
+        "n": 16,
+        "mean_valid_mass": 0.9999973587691784,
+        "pass": true
+      },
+      "R3/random": {
+        "n": 16,
+        "mean_valid_mass": 0.9999997466802597,
+        "pass": true
+      },
+      "R4/unsteered": {
+        "n": 16,
+        "mean_valid_mass": 0.9999999366700649,
+        "pass": true
+      },
+      "R4/hostility": {
+        "n": 12,
+        "mean_valid_mass": 0.9999999503294627,
+        "pass": true
+      },
+      "R4/technicality": {
+        "n": 12,
+        "mean_valid_mass": 0.999999980131785,
+        "pass": true
+      },
+      "R4/random": {
+        "n": 12,
+        "mean_valid_mass": 0.9999998261531194,
+        "pass": true
+      }
+    },
+    "per_arm_groups": {
+      "clamp/R1/unsteered": {
+        "n": 4,
+        "mean_valid_mass": 0.999999150633812
+      },
+      "clamp/R1/hostility": {
+        "n": 4,
+        "mean_valid_mass": 0.9999995082616806
+      },
+      "clamp/R1/technicality": {
+        "n": 4,
+        "mean_valid_mass": 0.9999946504831314
+      },
+      "clamp/R1/random": {
+        "n": 4,
+        "mean_valid_mass": 0.9999996423721313
+      },
+      "clamp/R1-M/unsteered": {
+        "n": 4,
+        "mean_valid_mass": 0.9999992102384567
+      },
+      "clamp/R1-M/hostility": {
+        "n": 4,
+        "mean_valid_mass": 0.9999998360872269
+      },
+      "clamp/R1-M/technicality": {
+        "n": 4,
+        "mean_valid_mass": 0.9999997168779373
+      },
+      "clamp/R1-M/random": {
+        "n": 4,
+        "mean_valid_mass": 0.9999985545873642
+      },
+      "clamp/R2/unsteered": {
+        "n": 4,
+        "mean_valid_mass": 0.9999998658895493
+      },
+      "clamp/R2/hostility": {
+        "n": 4,
+        "mean_valid_mass": 0.9999999552965164
+      },
+      "clamp/R2/technicality": {
+        "n": 4,
+        "mean_valid_mass": 0.9999997317790985
+      },
+      "clamp/R2/random": {
+        "n": 4,
+        "mean_valid_mass": 0.9999997913837433
+      },
+      "clamp/R3/unsteered": {
+        "n": 4,
+        "mean_valid_mass": 1.0000000298023224
+      },
+      "clamp/R3/hostility": {
+        "n": 4,
+        "mean_valid_mass": 1.0
+      },
+      "clamp/R3/technicality": {
+        "n": 4,
+        "mean_valid_mass": 0.9999999701976776
+      },
+      "clamp/R3/random": {
+        "n": 4,
+        "mean_valid_mass": 0.9999999850988388
+      },
+      "clamp/R4/unsteered": {
+        "n": 4,
+        "mean_valid_mass": 0.999999925494194
+      },
+      "clamp/R4/hostility": {
+        "n": 4,
+        "mean_valid_mass": 0.9999999701976776
+      },
+      "clamp/R4/technicality": {
+        "n": 4,
+        "mean_valid_mass": 0.9999999403953552
+      },
+      "clamp/R4/random": {
+        "n": 4,
+        "mean_valid_mass": 0.9999998956918716
+      },
+      "generic/R1/unsteered": {
+        "n": 4,
+        "mean_valid_mass": 0.9999949187040329
+      },
+      "generic/R1/hostility": {
+        "n": 4,
+        "mean_valid_mass": 0.9999994933605194
+      },
+      "generic/R1/technicality": {
+        "n": 4,
+        "mean_valid_mass": 0.9999992996454239
+      },
+      "generic/R1/random": {
+        "n": 4,
+        "mean_valid_mass": 0.99999138712883
+      },
+      "generic/R3/unsteered": {
+        "n": 4,
+        "mean_valid_mass": 0.9999972432851791
+      },
+      "generic/R3/hostility": {
+        "n": 4,
+        "mean_valid_mass": 0.9999999403953552
+      },
+      "generic/R3/technicality": {
+        "n": 4,
+        "mean_valid_mass": 0.999995157122612
+      },
+      "generic/R3/random": {
+        "n": 4,
+        "mean_valid_mass": 0.9999991804361343
+      },
+      "sham/R1/unsteered": {
+        "n": 8,
+        "mean_valid_mass": 0.999999150633812
+      },
+      "sham/R1/hostility": {
+        "n": 8,
+        "mean_valid_mass": 0.9999985098838806
+      },
+      "sham/R1/technicality": {
+        "n": 8,
+        "mean_valid_mass": 0.9999855607748032
+      },
+      "sham/R1/random": {
+        "n": 8,
+        "mean_valid_mass": 0.9999989420175552
+      },
+      "sham/R1-M/unsteered": {
+        "n": 8,
+        "mean_valid_mass": 0.9999992102384567
+      },
+      "sham/R1-M/hostility": {
+        "n": 8,
+        "mean_valid_mass": 0.9999994933605194
+      },
+      "sham/R1-M/technicality": {
+        "n": 8,
+        "mean_valid_mass": 0.9999890774488449
+      },
+      "sham/R1-M/random": {
+        "n": 8,
+        "mean_valid_mass": 0.9999992549419403
+      },
+      "sham/R2/unsteered": {
+        "n": 8,
+        "mean_valid_mass": 0.9999998658895493
+      },
+      "sham/R2/hostility": {
+        "n": 8,
+        "mean_valid_mass": 0.9999999403953552
+      },
+      "sham/R2/technicality": {
+        "n": 8,
+        "mean_valid_mass": 0.999998539686203
+      },
+      "sham/R2/random": {
+        "n": 8,
+        "mean_valid_mass": 0.9999999701976776
+      },
+      "sham/R3/unsteered": {
+        "n": 8,
+        "mean_valid_mass": 1.0000000298023224
+      },
+      "sham/R3/hostility": {
+        "n": 8,
+        "mean_valid_mass": 0.9999999701976776
+      },
+      "sham/R3/technicality": {
+        "n": 8,
+        "mean_valid_mass": 0.999997153878212
+      },
+      "sham/R3/random": {
+        "n": 8,
+        "mean_valid_mass": 0.9999999105930328
+      },
+      "sham/R4/unsteered": {
+        "n": 8,
+        "mean_valid_mass": 0.999999925494194
+      },
+      "sham/R4/hostility": {
+        "n": 8,
+        "mean_valid_mass": 0.9999999403953552
+      },
+      "sham/R4/technicality": {
+        "n": 8,
+        "mean_valid_mass": 1.0
+      },
+      "sham/R4/random": {
+        "n": 8,
+        "mean_valid_mass": 0.9999997913837433
+      },
+      "swap/R1/unsteered": {
+        "n": 4,
+        "mean_valid_mass": 0.999991849064827
+      },
+      "swap/R1-M/unsteered": {
+        "n": 4,
+        "mean_valid_mass": 0.9999980926513672
+      },
+      "swap/R2/unsteered": {
+        "n": 4,
+        "mean_valid_mass": 0.9999995082616806
+      },
+      "swap/R3/unsteered": {
+        "n": 4,
+        "mean_valid_mass": 0.9999988675117493
+      },
+      "swap/R4/unsteered": {
+        "n": 4,
+        "mean_valid_mass": 0.9999999701976776
+      }
+    },
+    "dropped_placements": [],
+    "rule": "Mean valid-digit mass >= 0.8 by placement x source; failure drops entire placement from all estimands."
+  },
+  "seconds_per_arm_cell": 2.3958546051677936,
+  "estimated_main_hours": 1.7569600437897155,
+  "longest_prefix_timings": [
+    {
+      "cell_key": [
+        "s3t60",
+        "hostility",
+        "R2",
+        "clamp"
+      ],
+      "input_length": 1365,
+      "seconds": 4.611989666998852,
+      "peak_driver_memory_bytes": 9500835840
+    },
+    {
+      "cell_key": [
+        "s3t60",
+        "hostility",
+        "R3",
+        "clamp"
+      ],
+      "input_length": 1365,
+      "seconds": 4.627144249971025,
+      "peak_driver_memory_bytes": 9471475712
+    },
+    {
+      "cell_key": [
+        "s3t60",
+        "hostility",
+        "R1-M",
+        "clamp"
+      ],
+      "input_length": 1364,
+      "seconds": 4.569998624967411,
+      "peak_driver_memory_bytes": 9473572864
+    },
+    {
+      "cell_key": [
+        "s3t02",
+        "hostility",
+        "R3",
+        "clamp"
+      ],
+      "input_length": 1363,
+      "seconds": 4.569333041959908,
+      "peak_driver_memory_bytes": 9488252928
+    },
+    {
+      "cell_key": [
+        "s3t02",
+        "hostility",
+        "R1-M",
+        "clamp"
+      ],
+      "input_length": 1362,
+      "seconds": 4.61743604100775,
+      "peak_driver_memory_bytes": 9473572864
+    },
+    {
+      "cell_key": [
+        "s3t60",
+        "hostility",
+        "R4",
+        "clamp"
+      ],
+      "input_length": 1362,
+      "seconds": 4.564571082999464,
+      "peak_driver_memory_bytes": 9509224448
+    },
+    {
+      "cell_key": [
+        "s3t60",
+        "hostility",
+        "R1",
+        "clamp"
+      ],
+      "input_length": 1331,
+      "seconds": 4.456276166951284,
+      "peak_driver_memory_bytes": 9509224448
+    },
+    {
+      "cell_key": [
+        "s3t01",
+        "hostility",
+        "R2",
+        "clamp"
+      ],
+      "input_length": 1319,
+      "seconds": 4.421602250018623,
+      "peak_driver_memory_bytes": 9502932992
+    },
+    {
+      "cell_key": [
+        "s3t02",
+        "hostility",
+        "R2",
+        "clamp"
+      ],
+      "input_length": 1311,
+      "seconds": 4.417762041965034,
+      "peak_driver_memory_bytes": 9463087104
+    },
+    {
+      "cell_key": [
+        "s3t01",
+        "hostility",
+        "R3",
+        "clamp"
+      ],
+      "input_length": 1287,
+      "seconds": 4.3822310420218855,
+      "peak_driver_memory_bytes": 9454698496
+    }
+  ],
+  "peak_driver_memory_bytes": 9509224448,
+  "first_sha256": "5c32ee47f0ad58d8bb71a3c8bbf8dd9c7a662949cf9661b5e9d69e87dd7f8dfb",
+  "second_sha256": "fd5186c4bc1b6eb76458cf7f787bca755fe1776c106d60e7d6ce37941231d7b8",
+  "second_replay_path": "data/pilot/sham_restart_ba0fe9e1-987e-4e4e-bd21-7320a56258b8.jsonl"
+}

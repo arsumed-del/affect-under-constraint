@@ -1,0 +1,5 @@
+# ChatGPT second-opinion review of Study 5 v0.1 (2026-10-25)
+Chat: https://chatgpt.com/g/g-p-6ad7c80924048191a439d27a5a4bcd9b-auc/c/6ade4a07-b774-83e8-975e-41727400a7be
+Verdict: approve direction, revise before preregistration.
+Must-fix: (1) relabel P1/P2 as historical-persistence tests; direct contrasts required for comparative claims; reading table not uniquely mechanistic. (2) R2/R3 empty-reply confound: give both the same neutral, nonempty visible conclusion. (3) Continuation turn ambiguous: make it explicit; add matched-history current-thinking control (R1-M). (4) R3 is artificially retained historical reasoning (Qwen3 normally strips it); say so. (5) Report hostility-vs-unsteered separately from hostility-vs-control (baseline cancels in A_r); define equivalence; document rating-branch context; replace ownership language with placement-dependent carryover.
+Optional: co-primary channel contrast A_R3−A_R2; R3-standard stripping control; user-role historical comparator; replace diagnostic with structural-recognition and source-attribution questions; R1/R4 as within-stimulus reproducibility checks; token-distance manipulation as a later study.

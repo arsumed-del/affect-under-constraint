@@ -15,6 +15,8 @@ A hostility direction, extracted by a generation-based difference-of-means proce
 - **Carryover.** A predicted hostility-specific effect of the steered hidden state on a later judgment was not supported.
 - **Study 3: carryover through reasoning.** In Qwen3-4B, letting the model write and then read a reasoning trace increased the steered hostility's effect on a later judgment of the user by about one point on a 0–9 scale, beyond both controls. When steering was active only while the trace was written, the trace alone still carried the effect. Hostility did not surface preferentially in the trace.
 
+- **Studies 4–6: whose words, where, and how.** Replaying the same stored traces, the hostility effect on the later judgment appeared only when the trace sat in the model's own turn, not when quoted by the user (Study 4); persisted, attenuated, when moved into a previous assistant turn, whether as visible reply or retained thinking (Study 5); and was unchanged when the answer was held fixed, so it did not run through the answer the trace produced (Study 6). Results papers to follow.
+
 ![Standardized latent hostile-opener preference slopes under the warmth instruction, by model and direction](figures/fig1_persistence.png)
 
 *Figure 1. Dose–response slopes of latent hostile-opener preference (LHP) under the warmth instruction, with 97.5% prompt-cluster bootstrap intervals.*
@@ -31,8 +33,11 @@ A hostility direction, extracted by a generation-based difference-of-means proce
 | Study 3 preprint (all versions) | [10.5281/zenodo.23323489](https://doi.org/10.5281/zenodo.23323489) |
 | Study 3 preprint v2 (adds Discussion §5.2; results unchanged) | [10.5281/zenodo.23354704](https://doi.org/10.5281/zenodo.23354704) |
 | Study 3 code and data, including raw generations | [10.5281/zenodo.23323488](https://doi.org/10.5281/zenodo.23323488) |
+| Study 4 preregistration (v0.6) | [10.5281/zenodo.23629525](https://doi.org/10.5281/zenodo.23629525) |
+| Study 5 preregistration (v0.3) | [10.5281/zenodo.23674222](https://doi.org/10.5281/zenodo.23674222) |
+| Study 6 preregistration (v0.2) | [10.5281/zenodo.23737377](https://doi.org/10.5281/zenodo.23737377) |
 
-The Zenodo records are the archival versions. This repository mirrors the code, specifications and results for browsing; raw main-run generations are on Zenodo only.
+The Zenodo records are the archival versions. This repository mirrors the code, specifications and results for browsing; raw main-run generations are on Zenodo only (Studies 4–6: to be deposited with their paper).
 
 ## Layout
 
@@ -40,6 +45,9 @@ The Zenodo records are the archival versions. This repository mirrors the code, 
 study1/   Study 1 (Qwen2.5-3B-Instruct; Gemma-2-2B-it failed its manipulation check)
 study2/   Study 2 (Qwen2.5-3B-Instruct, Phi-3.5-mini-instruct, Llama-3.2-3B-Instruct)
 study3/   Study 3 (Qwen3-4B, reasoning on vs. off; see study3/README.md)
+study4/   Study 4 (authorship of the carried state)
+study5/   Study 5 (placement ladder)
+study6/   Study 6 (answer clamp)
 figures/  Figures from the paper
 ```
 

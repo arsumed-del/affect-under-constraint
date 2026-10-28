@@ -1,0 +1,19 @@
+test_heterogeneous_paired_draws (study6.tests.test_build.BootstrapTests.test_heterogeneous_paired_draws) ... ok
+test_approval_requires_author_record (study6.tests.test_build.SafetyTests.test_approval_requires_author_record) ... ok
+test_hook_absence_and_inherited_rating_path (study6.tests.test_build.SafetyTests.test_hook_absence_and_inherited_rating_path) ... ok
+test_two_process_pilot_gate (study6.tests.test_build.SafetyTests.test_two_process_pilot_gate) ... ok
+test_levels_joint_draws_and_ratio (study6.tests.test_build.SyntheticTests.test_levels_joint_draws_and_ratio) ... ok
+test_mixed_missing_and_brackets (study6.tests.test_build.SyntheticTests.test_mixed_missing_and_brackets) ... ok
+test_null_denominator_subsets_and_drop (study6.tests.test_build.SyntheticTests.test_null_denominator_subsets_and_drop) ... ok
+test_planted_patterns (study6.tests.test_build.SyntheticTests.test_planted_patterns) ... ok
+test_small_detectable_and_reversed_priority (study6.tests.test_build.SyntheticTests.test_small_detectable_and_reversed_priority) ... ok
+test_valid_mass_placement_failure (study6.tests.test_build.SyntheticTests.test_valid_mass_placement_failure) ... ok
+test_all_original_branches_and_counts (study6.tests.test_build.TokenTests.test_all_original_branches_and_counts) ... ok
+test_closure_paths_and_generic (study6.tests.test_build.TokenTests.test_closure_paths_and_generic) ... ok
+test_fail_closed_tokens_duplicates_missing (study6.tests.test_build.TokenTests.test_fail_closed_tokens_duplicates_missing) ... ok
+test_numerical_failure_and_resume_hash (study6.tests.test_build.TokenTests.test_numerical_failure_and_resume_hash) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 4.411s
+
+OK

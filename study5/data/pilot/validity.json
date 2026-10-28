@@ -1,0 +1,55 @@
+{
+  "all_pass": false,
+  "conditions": {
+    "R1": {
+      "complete": true,
+      "baseline_sd": 0.4400742501556804,
+      "mean_valid_mass": 0.9999955408275127,
+      "reference_differences": {
+        "s3t00": 0.0,
+        "s3t01": 0.0,
+        "s3t02": 0.0,
+        "s3t60": 0.0
+      },
+      "reference_mean_difference": 0.0,
+      "pass": true
+    },
+    "R1-M": {
+      "complete": true,
+      "baseline_sd": 0.13136414749764838,
+      "mean_valid_mass": 0.9999967589974403,
+      "reference_differences": null,
+      "pass": false
+    },
+    "R2": {
+      "complete": true,
+      "baseline_sd": 0.09170480772987405,
+      "mean_valid_mass": 0.9999995790421963,
+      "reference_differences": null,
+      "pass": false
+    },
+    "R3": {
+      "complete": true,
+      "baseline_sd": 0.18080803638945142,
+      "mean_valid_mass": 0.9999992661178112,
+      "reference_differences": null,
+      "pass": true
+    },
+    "R4": {
+      "complete": true,
+      "baseline_sd": 0.12885467637539724,
+      "mean_valid_mass": 0.9999999143183231,
+      "reference_differences": {
+        "s3t00": 0.0,
+        "s3t01": 0.0,
+        "s3t02": 0.0,
+        "s3t60": 0.0
+      },
+      "reference_mean_difference": 0.0,
+      "pass": false
+    }
+  },
+  "cells": 80,
+  "estimated_main_hours": 11.378387454882613,
+  "note": "No automatic revisions or dropped conditions. Review failures under the one-revision rule before author approval."
+}

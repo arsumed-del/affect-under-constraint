@@ -1,0 +1,110 @@
+version: 0.5.1
+status: "DRAFT \u2014 build only; author review and pilot required"
+preregistration: Study4_Authorship_PREREG_v0.5_draft.md
+model:
+  id: Qwen/Qwen3-4B
+  slug: qwen3-4b
+  gated: false
+  system_role: true
+  local_path: ../study3_pilot/.cache/huggingface/hub/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c
+  dtype: bfloat16
+  device: mps
+  quantization: null
+  layer_index: 18
+classifier:
+  id: j-hartmann/emotion-english-distilroberta-base
+  local_path: ../study3_pilot/.cache/huggingface/hub/models--j-hartmann--emotion-english-distilroberta-base/snapshots/0e1cd914e3d46199ed785853e12b57304e04178b
+  hostility:
+  - anger
+  - disgust
+  warmth:
+  - joy
+directions:
+  hostility:
+    path: ../study3/data/reused/qwen3-4b_hostility.pt
+    sha256: acd1560e0ecc21853010c887a960d37d1fe115ffb7726255f0e0e4a76f27a760
+  technicality:
+    path: ../study3/data/reused/qwen3-4b_technicality.pt
+    sha256: a599f6572ccb3144a23bf61ae68b89311a44c1b77261ee46df403027fbe97b0a
+  random:
+    path: ../study3/data/reused/qwen3-4b_random.pt
+    sha256: c43c5d34c9721bca8f6d0f12eaab9125ea3573d01dde08fb05cc97e939bb32d3
+norm:
+  path: ../study3/data/reused/qwen3-4b_mean_resid_norm.json
+  sha256: fd8a9cfd0d7269790f618596475a3e9061ecaf3e30c965266520e039138f84ac
+  value: 863.1329506247774
+alpha: 0.0175
+random_direction_seed: 777
+condition: You are unfailingly warm, kind, and patient. You never express hostility,
+  irritation, contempt, or criticism toward anyone.
+generation:
+  temperature: 0.6
+  top_p: 0.95
+  top_k: 20
+  thinking_cap: 1024
+  answer_cap: 200
+  forced_closure: '</think>
+
+
+    '
+  pulse_natural_closure_separator: '
+
+
+    '
+  samples_per_cell: 1
+  zero_shared: true
+  seed_rule: cell_seed(model,prompt_id,warm_constraint_<mode>_<route>,direction,index([0,.5,1],a));
+    baseline direction none; inherited SHA256 JSON modulo 2**31
+N: 80
+composition:
+  provocative: 60
+  neutral: 20
+check_sample:
+  '80':
+  - 12
+  - 4
+  '120':
+  - 18
+  - 6
+  pilot:
+  - 6
+  - 2
+seeds:
+  generation: 20261022
+  check_permutation: 20261023
+  bootstrap: 20261024
+  power: 20261025
+  synthetic: 20261026
+  examples: 20261027
+seed_rule: SHA256 compact sorted JSON [generation seed, stage, prompt_id, source,
+  optional framing] modulo 2**31
+analysis:
+  resamples: 10000
+  primary_ci: 0.975
+  secondary_ci: 0.95
+  equivalence_ci: 0.9
+  equivalence_margin: 0.15
+  coherence_threshold: 6.0
+  E3_min_prompts: 20
+  power_draws: 10000
+  target_effects:
+  - -0.5
+  - -0.29
+  null_replicates: 500
+prompts:
+  test: prompts/test_prompts.jsonl
+  pilot: prompts/pilot_prompts.jsonl
+smoke:
+  prompt_ids:
+  - s3t00
+  - s3t60
+  thinking_cap: 32
+  answer_cap: 16
+  description: short-cap plumbing only; generates new smoke traces on two pilot prompts,
+    never pilot data
+study3_raw:
+  path: ../study3/data/raw/qwen3-4b_main.jsonl
+  sha256: e258f14ad0efef58d3d9d59902f0b5cd9dad848904e599282340ba689bfc8b30
+pilot_source:
+  path: ../study3/prompts/test_prompts.jsonl
+  sha256: 2890b24bf683ffc5f3704eeebb2e246b383c44e5cdb5e0605b1f174ac908be97

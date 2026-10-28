@@ -1,0 +1,60 @@
+{
+  "complete": true,
+  "fixed_segments_pass": true,
+  "native_baseline_mean": 7.402332502134195,
+  "study3_reference": 7.392198020219803,
+  "baseline_difference": 0.010134481914391813,
+  "baseline_pass": true,
+  "targets": {
+    "own_native/sender": {
+      "baseline_SD": 0.6219771871682956,
+      "SD_pass": true,
+      "mean_valid_mass": 0.9999986562877894,
+      "mass_pass": true
+    },
+    "own_quoted/sender": {
+      "baseline_SD": 0.4879019957909484,
+      "SD_pass": true,
+      "mean_valid_mass": 0.9999999748542905,
+      "mass_pass": true
+    },
+    "own_quoted/writer": {
+      "baseline_SD": 0.4789812512983035,
+      "SD_pass": true,
+      "mean_valid_mass": 0.9999999895691871,
+      "mass_pass": true
+    },
+    "own_quoted/notes": {
+      "baseline_SD": 0.3491633016756639,
+      "SD_pass": true,
+      "mean_valid_mass": 0.999999986961484,
+      "mass_pass": true
+    },
+    "other_quoted/sender": {
+      "baseline_SD": 0.42487832093769473,
+      "SD_pass": true,
+      "mean_valid_mass": 0.9999999949708581,
+      "mass_pass": true
+    },
+    "other_quoted/writer": {
+      "baseline_SD": 0.2761463465300888,
+      "SD_pass": true,
+      "mean_valid_mass": 0.999999992735684,
+      "mass_pass": true
+    },
+    "other_quoted/notes": {
+      "baseline_SD": 0.2554394689312575,
+      "SD_pass": true,
+      "mean_valid_mass": 0.9999999921768904,
+      "mass_pass": true
+    }
+  },
+  "passed": true,
+  "policy": "At most two logged wrapper/question revisions using only these criteria; no automatic revisions or effect-size-based selection. Referent diagnostic remains required.",
+  "reference_provenance": {
+    "source": "../study3/data/raw/qwen3-4b_main.jsonl",
+    "sha256": "e258f14ad0efef58d3d9d59902f0b5cd9dad848904e599282340ba689bfc8b30",
+    "n": 80,
+    "note": "Report has no explicit aggregate think-zero mean; computed transparently from the report source records, not guessed."
+  }
+}
