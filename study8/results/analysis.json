@@ -1,0 +1,3855 @@
+{
+  "hypotheses": {
+    "RF1": {
+      "label": "negligible",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.9833333333333333,
+      "margin": 0.25,
+      "components": [
+        {
+          "estimate": 0.014839984825890652,
+          "ci": [
+            -0.1307828868461713,
+            0.15499430910376202
+          ],
+          "ci90": [
+            -0.08613595363516413,
+            0.10959441433534436
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            0.01483998482589068,
+            0.01483998482589068
+          ]
+        },
+        {
+          "estimate": 0.13769426771135948,
+          "ci": [
+            -0.00780405436849926,
+            0.2762726828022615
+          ],
+          "ci90": [
+            0.03877089787367528,
+            0.23518760702574448
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            0.13769426771135956,
+            0.13769426771135956
+          ]
+        },
+        {
+          "estimate": 0.11323053838479699,
+          "ci": [
+            -0.04597449910307396,
+            0.2618971029308527
+          ],
+          "ci90": [
+            0.0051093773962695675,
+            0.2133288789338491
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            0.1132305383847971,
+            0.1132305383847971
+          ]
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "technicality",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "random",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": false
+    },
+    "RF2": {
+      "label": "supported",
+      "supported": true,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.9833333333333333,
+      "margin": 0.15,
+      "components": [
+        {
+          "estimate": -0.31308650464903,
+          "ci": [
+            -0.4006768418918264,
+            -0.22018003245321485
+          ],
+          "ci90": [
+            -0.3756361584213859,
+            -0.24975219898280646
+          ],
+          "label": "supported"
+        },
+        {
+          "estimate": -0.4068812434390022,
+          "ci": [
+            -0.5002028188165525,
+            -0.31572624311108166
+          ],
+          "ci90": [
+            -0.4705606180109025,
+            -0.34333894180147556
+          ],
+          "label": "supported"
+        },
+        {
+          "estimate": -0.2573615575765973,
+          "ci": [
+            -0.352227154360959,
+            -0.16018219235744469
+          ],
+          "ci90": [
+            -0.325337675908942,
+            -0.18996013889512675
+          ],
+          "label": "supported"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "technicality",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "random",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": false
+    },
+    "RF3": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.9833333333333333,
+      "margin": 0.25,
+      "components": [
+        {
+          "estimate": -0.07373894245450016,
+          "ci": [
+            -0.29067574777833544,
+            0.13472208038642305
+          ],
+          "ci90": [
+            -0.2234860508940209,
+            0.07146179858024995
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            -0.07373894245450019,
+            -0.07373894245450019
+          ]
+        },
+        {
+          "estimate": -0.20393923002897293,
+          "ci": [
+            -0.42775030440100403,
+            0.025943783593529963
+          ],
+          "ci90": [
+            -0.35830104116331357,
+            -0.045119345792792316
+          ],
+          "label": "inconclusive",
+          "worst_case_bound_all_prompts": [
+            -0.20393923002897293,
+            -0.20393923002897293
+          ]
+        },
+        {
+          "estimate": -0.031523199022549575,
+          "ci": [
+            -0.24678549070744044,
+            0.17002846695363663
+          ],
+          "ci90": [
+            -0.17811808923052994,
+            0.10922705549096214
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            -0.03152319902254957,
+            -0.03152319902254957
+          ]
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ],
+          [
+            1,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "technicality",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ],
+          [
+            1,
+            "technicality",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "random",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ],
+          [
+            1,
+            "random",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": false
+    },
+    "S1": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.25,
+      "components": [
+        {
+          "estimate": -0.04771191549782865,
+          "ci": [
+            -0.21177660327865594,
+            0.10947030222842491
+          ],
+          "ci90": [
+            -0.18340673870952873,
+            0.08530064998435015
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            -0.04771191549782865,
+            -0.04771191549782865
+          ]
+        },
+        {
+          "estimate": -0.14857251610937158,
+          "ci": [
+            -0.3192125736022797,
+            0.018730631385068013
+          ],
+          "ci90": [
+            -0.2899195969394629,
+            -0.008193356129268855
+          ],
+          "label": "inconclusive",
+          "worst_case_bound_all_prompts": [
+            -0.14857251610937153,
+            -0.14857251610937153
+          ]
+        },
+        {
+          "estimate": -0.05724448375368539,
+          "ci": [
+            -0.23874638674637827,
+            0.11296360880890288
+          ],
+          "ci90": [
+            -0.20830815285853996,
+            0.08691904497367457
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            -0.057244483753685405,
+            -0.057244483753685405
+          ]
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "hostility",
+            "P",
+            "P",
+            "generated",
+            "W"
+          ],
+          [
+            1,
+            "unsteered",
+            "P",
+            "P",
+            "generated",
+            "W"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "technicality",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "hostility",
+            "P",
+            "P",
+            "generated",
+            "W"
+          ],
+          [
+            1,
+            "technicality",
+            "P",
+            "P",
+            "generated",
+            "W"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "random",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "hostility",
+            "P",
+            "P",
+            "generated",
+            "W"
+          ],
+          [
+            1,
+            "random",
+            "P",
+            "P",
+            "generated",
+            "W"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S2_W_P": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.25,
+      "components": [
+        {
+          "estimate": 0.06255190032371934,
+          "ci": [
+            -0.0520637218277841,
+            0.17560463754663017
+          ],
+          "ci90": [
+            -0.03403016589936135,
+            0.1578023998213495
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            0.06255190032371932,
+            0.06255190032371932
+          ]
+        },
+        {
+          "estimate": 0.28626678382073106,
+          "ci": [
+            0.1775542734954464,
+            0.39520287699925083
+          ],
+          "ci90": [
+            0.19505201615695933,
+            0.37706692886341964
+          ],
+          "label": "supported",
+          "worst_case_bound_all_prompts": [
+            0.28626678382073106,
+            0.28626678382073106
+          ]
+        },
+        {
+          "estimate": 0.17047502213848253,
+          "ci": [
+            0.04895887447195367,
+            0.2895205595018493
+          ],
+          "ci90": [
+            0.06896247120232862,
+            0.2714974226452555
+          ],
+          "label": "supported",
+          "worst_case_bound_all_prompts": [
+            0.17047502213848253,
+            0.17047502213848253
+          ]
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "P",
+            "P",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "unsteered",
+            "P",
+            "P",
+            "generated",
+            "W"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "P",
+            "P",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "technicality",
+            "P",
+            "P",
+            "generated",
+            "W"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "P",
+            "P",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "random",
+            "P",
+            "P",
+            "generated",
+            "W"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S2_O1_P": {
+      "label": "supported",
+      "supported": true,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.15,
+      "components": [
+        {
+          "estimate": -0.36702638045566427,
+          "ci": [
+            -0.4813424001689754,
+            -0.25853510251630935
+          ],
+          "ci90": [
+            -0.4620862403642248,
+            -0.27454316955234076
+          ],
+          "label": "supported"
+        },
+        {
+          "estimate": -0.546015132555963,
+          "ci": [
+            -0.6741651396229393,
+            -0.42527318914260204
+          ],
+          "ci90": [
+            -0.6536216377366421,
+            -0.4425987815079373
+          ],
+          "label": "supported"
+        },
+        {
+          "estimate": -0.32316914190143964,
+          "ci": [
+            -0.4504471978334008,
+            -0.20804532328297148
+          ],
+          "ci90": [
+            -0.4281358591302948,
+            -0.2245144910559902
+          ],
+          "label": "supported"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "P",
+            "P",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "unsteered",
+            "P",
+            "P",
+            "generated",
+            "O1"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "P",
+            "P",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "technicality",
+            "P",
+            "P",
+            "generated",
+            "O1"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "P",
+            "P",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "random",
+            "P",
+            "P",
+            "generated",
+            "O1"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S2_W_N": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.25,
+      "components": [
+        {
+          "estimate": 0.08857892728039082,
+          "ci": [
+            -0.04207202063377689,
+            0.21777272046602614
+          ],
+          "ci90": [
+            -0.023422322217192995,
+            0.1973185186527575
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            0.08857892728039085,
+            0.08857892728039085
+          ]
+        },
+        {
+          "estimate": 0.3416334977403324,
+          "ci": [
+            0.20076914112333358,
+            0.4738138516228019
+          ],
+          "ci90": [
+            0.22193784547608086,
+            0.4534820220220852
+          ],
+          "label": "supported",
+          "worst_case_bound_all_prompts": [
+            0.3416334977403325,
+            0.3416334977403325
+          ]
+        },
+        {
+          "estimate": 0.1447537374073467,
+          "ci": [
+            0.020310818922771784,
+            0.26511599794933394
+          ],
+          "ci90": [
+            0.040191799957625216,
+            0.24539081110880825
+          ],
+          "label": "small but detectable",
+          "worst_case_bound_all_prompts": [
+            0.14475373740734668,
+            0.14475373740734668
+          ]
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "technicality",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "random",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S2_O1_N": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.15,
+      "components": [
+        {
+          "estimate": -0.21146293083986584,
+          "ci": [
+            -0.3378428290569879,
+            -0.09692847270591541
+          ],
+          "ci90": [
+            -0.3148909435334679,
+            -0.1136235750913179
+          ],
+          "label": "supported"
+        },
+        {
+          "estimate": -0.37666904548016245,
+          "ci": [
+            -0.5146553100151108,
+            -0.24687266100616836
+          ],
+          "ci90": [
+            -0.4915104779285511,
+            -0.2664981637672765
+          ],
+          "label": "supported"
+        },
+        {
+          "estimate": -0.09739978763568899,
+          "ci": [
+            -0.20200652496270863,
+            0.005660709148279728
+          ],
+          "ci90": [
+            -0.18463604191432179,
+            -0.010617772992391543
+          ],
+          "label": "inconclusive"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "O1"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "technicality",
+            "N",
+            "N",
+            "generated",
+            "O1"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "random",
+            "N",
+            "N",
+            "generated",
+            "O1"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S3_W_replay_at_N": {
+      "label": "negligible",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.25,
+      "components": [
+        {
+          "estimate": -0.11794900370104995,
+          "ci": [
+            -0.2641960825294933,
+            0.03123875269395051
+          ],
+          "ci90": [
+            -0.24199885361076504,
+            0.008693050206087335
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            -0.11794900370104995,
+            -0.11794900370104995
+          ]
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "N",
+            "M",
+            "crossover",
+            "W"
+          ],
+          [
+            -1,
+            "unsteered",
+            "N",
+            "M",
+            "crossover",
+            "W"
+          ],
+          [
+            -1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ],
+          [
+            1,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S3_W_replay_at_M": {
+      "label": "reversed",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.25,
+      "components": [
+        {
+          "estimate": -0.14855968031887173,
+          "ci": [
+            -0.27679366133367966,
+            -0.024072705327837295
+          ],
+          "ci90": [
+            -0.25631415947143416,
+            -0.04287603039193075
+          ],
+          "label": "reversed",
+          "worst_case_bound_all_prompts": [
+            -0.14855968031887173,
+            -0.14855968031887173
+          ]
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "hostility",
+            "M",
+            "N",
+            "crossover",
+            "W"
+          ],
+          [
+            1,
+            "unsteered",
+            "M",
+            "N",
+            "crossover",
+            "W"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S3_W_formation_at_N": {
+      "label": "negligible",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.25,
+      "components": [
+        {
+          "estimate": 0.07482073786437157,
+          "ci": [
+            -0.10650770877274933,
+            0.25515047989673706
+          ],
+          "ci90": [
+            -0.07595528596746923,
+            0.2257740604525306
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            0.07482073786437157,
+            0.07482073786437157
+          ]
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "N",
+            "crossover",
+            "W"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "N",
+            "crossover",
+            "W"
+          ],
+          [
+            -1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ],
+          [
+            1,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S3_W_formation_at_M": {
+      "label": "negligible",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.25,
+      "components": [
+        {
+          "estimate": 0.04421006124654977,
+          "ci": [
+            -0.12358212840042962,
+            0.21407542914147498
+          ],
+          "ci90": [
+            -0.09841735497808286,
+            0.18835426591599627
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            0.04421006124654977,
+            0.04421006124654977
+          ]
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "hostility",
+            "N",
+            "M",
+            "crossover",
+            "W"
+          ],
+          [
+            1,
+            "unsteered",
+            "N",
+            "M",
+            "crossover",
+            "W"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S3_W_formation_average": {
+      "label": "negligible",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.25,
+      "components": [
+        {
+          "estimate": 0.05951539955546068,
+          "ci": [
+            -0.08746674537549824,
+            0.20530045542542166
+          ],
+          "ci90": [
+            -0.06245993013394205,
+            0.1793967052420445
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            0.05951539955546068,
+            0.05951539955546068
+          ]
+        }
+      ],
+      "terms": [
+        [
+          [
+            0.5,
+            "hostility",
+            "M",
+            "N",
+            "crossover",
+            "W"
+          ],
+          [
+            -0.5,
+            "unsteered",
+            "M",
+            "N",
+            "crossover",
+            "W"
+          ],
+          [
+            -0.5,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ],
+          [
+            0.5,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ],
+          [
+            0.5,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -0.5,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -0.5,
+            "hostility",
+            "N",
+            "M",
+            "crossover",
+            "W"
+          ],
+          [
+            0.5,
+            "unsteered",
+            "N",
+            "M",
+            "crossover",
+            "W"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S3_W_replay_average": {
+      "label": "reversed",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.25,
+      "components": [
+        {
+          "estimate": -0.13325434200996084,
+          "ci": [
+            -0.23210204478200464,
+            -0.035827419198807095
+          ],
+          "ci90": [
+            -0.21673735176031753,
+            -0.05134556768549966
+          ],
+          "label": "reversed",
+          "worst_case_bound_all_prompts": [
+            -0.13325434200996084,
+            -0.13325434200996084
+          ]
+        }
+      ],
+      "terms": [
+        [
+          [
+            0.5,
+            "hostility",
+            "N",
+            "M",
+            "crossover",
+            "W"
+          ],
+          [
+            -0.5,
+            "unsteered",
+            "N",
+            "M",
+            "crossover",
+            "W"
+          ],
+          [
+            -0.5,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ],
+          [
+            0.5,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ],
+          [
+            0.5,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -0.5,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -0.5,
+            "hostility",
+            "M",
+            "N",
+            "crossover",
+            "W"
+          ],
+          [
+            0.5,
+            "unsteered",
+            "M",
+            "N",
+            "crossover",
+            "W"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S3_O1_replay_at_N": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.15,
+      "components": [
+        {
+          "estimate": -0.11039502467569276,
+          "ci": [
+            -0.22757858294323285,
+            0.014681073721024568
+          ],
+          "ci90": [
+            -0.21089499147552118,
+            -0.0057178388213802375
+          ],
+          "label": "inconclusive"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "N",
+            "M",
+            "crossover",
+            "O1"
+          ],
+          [
+            -1,
+            "unsteered",
+            "N",
+            "M",
+            "crossover",
+            "O1"
+          ],
+          [
+            -1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "O1"
+          ],
+          [
+            1,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "O1"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S3_O1_replay_at_M": {
+      "label": "negligible",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.15,
+      "components": [
+        {
+          "estimate": -0.012196261334095182,
+          "ci": [
+            -0.1442514103432365,
+            0.11777715483282099
+          ],
+          "ci90": [
+            -0.12107553882797069,
+            0.09714452176233412
+          ],
+          "label": "negligible"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "hostility",
+            "M",
+            "N",
+            "crossover",
+            "O1"
+          ],
+          [
+            1,
+            "unsteered",
+            "M",
+            "N",
+            "crossover",
+            "O1"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S3_O1_formation_at_N": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.15,
+      "components": [
+        {
+          "estimate": -0.08942731247506899,
+          "ci": [
+            -0.2634864232275594,
+            0.09229088838693868
+          ],
+          "ci90": [
+            -0.23687256464920345,
+            0.06591177647027903
+          ],
+          "label": "inconclusive"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "N",
+            "crossover",
+            "O1"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "N",
+            "crossover",
+            "O1"
+          ],
+          [
+            -1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "O1"
+          ],
+          [
+            1,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "O1"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S3_O1_formation_at_M": {
+      "label": "negligible",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.15,
+      "components": [
+        {
+          "estimate": 0.008771450866528595,
+          "ci": [
+            -0.09620331100532589,
+            0.11727564573011141
+          ],
+          "ci90": [
+            -0.0799923410235558,
+            0.09997132629411645
+          ],
+          "label": "negligible"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "hostility",
+            "N",
+            "M",
+            "crossover",
+            "O1"
+          ],
+          [
+            1,
+            "unsteered",
+            "N",
+            "M",
+            "crossover",
+            "O1"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S3_O1_formation_average": {
+      "label": "negligible",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.15,
+      "components": [
+        {
+          "estimate": -0.0403279308042702,
+          "ci": [
+            -0.15124992054447492,
+            0.07242888662480933
+          ],
+          "ci90": [
+            -0.13287247772080485,
+            0.05613927560678178
+          ],
+          "label": "negligible"
+        }
+      ],
+      "terms": [
+        [
+          [
+            0.5,
+            "hostility",
+            "M",
+            "N",
+            "crossover",
+            "O1"
+          ],
+          [
+            -0.5,
+            "unsteered",
+            "M",
+            "N",
+            "crossover",
+            "O1"
+          ],
+          [
+            -0.5,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "O1"
+          ],
+          [
+            0.5,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "O1"
+          ],
+          [
+            0.5,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ],
+          [
+            -0.5,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ],
+          [
+            -0.5,
+            "hostility",
+            "N",
+            "M",
+            "crossover",
+            "O1"
+          ],
+          [
+            0.5,
+            "unsteered",
+            "N",
+            "M",
+            "crossover",
+            "O1"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S3_O1_replay_average": {
+      "label": "negligible",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.15,
+      "components": [
+        {
+          "estimate": -0.06129564300489397,
+          "ci": [
+            -0.14359462525790645,
+            0.025647143713506248
+          ],
+          "ci90": [
+            -0.13069547194677708,
+            0.00971946857776122
+          ],
+          "label": "negligible"
+        }
+      ],
+      "terms": [
+        [
+          [
+            0.5,
+            "hostility",
+            "N",
+            "M",
+            "crossover",
+            "O1"
+          ],
+          [
+            -0.5,
+            "unsteered",
+            "N",
+            "M",
+            "crossover",
+            "O1"
+          ],
+          [
+            -0.5,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "O1"
+          ],
+          [
+            0.5,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "O1"
+          ],
+          [
+            0.5,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ],
+          [
+            -0.5,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ],
+          [
+            -0.5,
+            "hostility",
+            "M",
+            "N",
+            "crossover",
+            "O1"
+          ],
+          [
+            0.5,
+            "unsteered",
+            "M",
+            "N",
+            "crossover",
+            "O1"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S4_M": {
+      "label": "supported",
+      "supported": true,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.15,
+      "components": [
+        {
+          "estimate": -0.36355488385204915,
+          "ci": [
+            -0.4380718036236833,
+            -0.2919826682797679
+          ],
+          "ci90": [
+            -0.42541558150291775,
+            -0.3030261375856675
+          ],
+          "label": "supported"
+        },
+        {
+          "estimate": -0.3954356067270967,
+          "ci": [
+            -0.47061034838120896,
+            -0.3179420963918513
+          ],
+          "ci90": [
+            -0.4581379639486951,
+            -0.33188633476316554
+          ],
+          "label": "supported"
+        },
+        {
+          "estimate": -0.3277749604048079,
+          "ci": [
+            -0.3969319539227518,
+            -0.26088127601865974
+          ],
+          "ci90": [
+            -0.3861533319866776,
+            -0.2716970829703685
+          ],
+          "label": "supported"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "fixed_answer",
+            "O1"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "fixed_answer",
+            "O1"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "fixed_answer",
+            "O1"
+          ],
+          [
+            -1,
+            "technicality",
+            "M",
+            "M",
+            "fixed_answer",
+            "O1"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "fixed_answer",
+            "O1"
+          ],
+          [
+            -1,
+            "random",
+            "M",
+            "M",
+            "fixed_answer",
+            "O1"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S4_N": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.15,
+      "components": [
+        {
+          "estimate": -0.206154761714917,
+          "ci": [
+            -0.28674531986133556,
+            -0.13078025009762284
+          ],
+          "ci90": [
+            -0.27362975288027785,
+            -0.14304488090146394
+          ],
+          "label": "supported"
+        },
+        {
+          "estimate": -0.09214268779327454,
+          "ci": [
+            -0.2072187834047095,
+            0.0357011384392028
+          ],
+          "ci90": [
+            -0.19072393407595278,
+            0.01367874838139507
+          ],
+          "label": "inconclusive"
+        },
+        {
+          "estimate": -0.07677522298370328,
+          "ci": [
+            -0.13886857596466815,
+            -0.013972096963884783
+          ],
+          "ci90": [
+            -0.12909858673340366,
+            -0.024626786381783686
+          ],
+          "label": "small but detectable"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "N",
+            "N",
+            "fixed_answer",
+            "O1"
+          ],
+          [
+            -1,
+            "unsteered",
+            "N",
+            "N",
+            "fixed_answer",
+            "O1"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "N",
+            "N",
+            "fixed_answer",
+            "O1"
+          ],
+          [
+            -1,
+            "technicality",
+            "N",
+            "N",
+            "fixed_answer",
+            "O1"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "N",
+            "N",
+            "fixed_answer",
+            "O1"
+          ],
+          [
+            -1,
+            "random",
+            "N",
+            "N",
+            "fixed_answer",
+            "O1"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S5_N": {
+      "label": "supported",
+      "supported": true,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": null,
+      "components": [
+        {
+          "estimate": 0.16969537449379762,
+          "ci": [
+            0.13025711288365222,
+            0.20830304169199534
+          ],
+          "ci90": [
+            0.1365643589012325,
+            0.20208168816028374
+          ],
+          "label": "supported"
+        },
+        {
+          "estimate": 0.044025363441970534,
+          "ci": [
+            0.006250880791081247,
+            0.0812845872611635
+          ],
+          "ci90": [
+            0.012663532187127312,
+            0.07519045600460623
+          ],
+          "label": "supported"
+        },
+        {
+          "estimate": 0.12242073723011546,
+          "ci": [
+            0.08899314014965465,
+            0.15573423456918037
+          ],
+          "ci90": [
+            0.0943331234715879,
+            0.1499490698551139
+          ],
+          "label": "supported"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "alignment"
+          ],
+          [
+            -1,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "alignment"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "alignment"
+          ],
+          [
+            -1,
+            "technicality",
+            "N",
+            "N",
+            "generated",
+            "alignment"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "alignment"
+          ],
+          [
+            -1,
+            "random",
+            "N",
+            "N",
+            "generated",
+            "alignment"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S5_M": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": null,
+      "components": [
+        {
+          "estimate": 0.14394441932025887,
+          "ci": [
+            0.1124612042395812,
+            0.17491238061959546
+          ],
+          "ci90": [
+            0.11780731488019232,
+            0.1700158877867378
+          ],
+          "label": "supported"
+        },
+        {
+          "estimate": 0.01015868112444882,
+          "ci": [
+            -0.021319377637571735,
+            0.040414616702538486
+          ],
+          "ci90": [
+            -0.01622217840204635,
+            0.03553868940617482
+          ],
+          "label": "inconclusive"
+        },
+        {
+          "estimate": 0.14042167748428064,
+          "ci": [
+            0.10980108614959247,
+            0.170314273249565
+          ],
+          "ci90": [
+            0.11425536422990268,
+            0.16534027979605737
+          ],
+          "label": "supported"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "alignment"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "alignment"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "alignment"
+          ],
+          [
+            -1,
+            "technicality",
+            "M",
+            "M",
+            "generated",
+            "alignment"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "alignment"
+          ],
+          [
+            -1,
+            "random",
+            "M",
+            "M",
+            "generated",
+            "alignment"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S5_P": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": null,
+      "components": [
+        {
+          "estimate": 0.12480222944998079,
+          "ci": [
+            0.09715151633187717,
+            0.15335154581711524
+          ],
+          "ci90": [
+            0.10152034930781353,
+            0.14858161232848127
+          ],
+          "label": "supported"
+        },
+        {
+          "estimate": 0.022575488686561552,
+          "ci": [
+            -0.011921993025268097,
+            0.05862751572082427
+          ],
+          "ci90": [
+            -0.006732769033147279,
+            0.05277322201679144
+          ],
+          "label": "inconclusive"
+        },
+        {
+          "estimate": 0.11518854126334195,
+          "ci": [
+            0.08675357698980306,
+            0.14380950231932937
+          ],
+          "ci90": [
+            0.09133933577272628,
+            0.13919829625843297
+          ],
+          "label": "supported"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "P",
+            "P",
+            "generated",
+            "alignment"
+          ],
+          [
+            -1,
+            "unsteered",
+            "P",
+            "P",
+            "generated",
+            "alignment"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "P",
+            "P",
+            "generated",
+            "alignment"
+          ],
+          [
+            -1,
+            "technicality",
+            "P",
+            "P",
+            "generated",
+            "alignment"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "P",
+            "P",
+            "generated",
+            "alignment"
+          ],
+          [
+            -1,
+            "random",
+            "P",
+            "P",
+            "generated",
+            "alignment"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S6_W": {
+      "label": "supported",
+      "supported": true,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.25,
+      "components": [
+        {
+          "estimate": 0.8513815863907513,
+          "ci": [
+            0.7124735890833955,
+            0.9979300922705148
+          ],
+          "ci90": [
+            0.7357881337299056,
+            0.9704426031802857
+          ],
+          "label": "supported",
+          "worst_case_bound_all_prompts": [
+            0.8513815863907513,
+            0.8513815863907513
+          ]
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S6_length": {
+      "label": "reversed",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": null,
+      "components": [
+        {
+          "estimate": -61.15,
+          "ci": [
+            -70.11281249999999,
+            -51.9
+          ],
+          "ci90": [
+            -68.750625,
+            -53.57437500000001
+          ],
+          "label": "reversed"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "length"
+          ],
+          [
+            -1,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "length"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S6_d": {
+      "label": "supported",
+      "supported": true,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": null,
+      "components": [
+        {
+          "estimate": 0.7223543536879208,
+          "ci": [
+            0.5670468327211059,
+            0.8736636005928293
+          ],
+          "ci90": [
+            0.5891117560557472,
+            0.8502136119809769
+          ],
+          "label": "supported"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "d"
+          ],
+          [
+            -1,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "d"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S7_RF1": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 20,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.25,
+      "components": [
+        {
+          "estimate": -0.08155717058143241,
+          "ci": [
+            -0.31997812199465353,
+            0.126583142142288
+          ],
+          "ci90": [
+            -0.28198075287776364,
+            0.0981673294396624
+          ],
+          "label": "inconclusive",
+          "worst_case_bound_all_prompts": [
+            -0.08155717058143241,
+            -0.08155717058143241
+          ]
+        },
+        {
+          "estimate": 0.014596926384561958,
+          "ci": [
+            -0.11275735386709969,
+            0.14836043382469016
+          ],
+          "ci90": [
+            -0.09354397739261767,
+            0.12499021145710247
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            0.014596926384561958,
+            0.014596926384561958
+          ]
+        },
+        {
+          "estimate": -0.07938570092895314,
+          "ci": [
+            -0.20291404991724984,
+            0.042722812852326396
+          ],
+          "ci90": [
+            -0.18237794437148566,
+            0.02171349612414153
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            -0.07938570092895314,
+            -0.07938570092895314
+          ]
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "technicality",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "random",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true,
+      "underpowered": false
+    },
+    "S7_RF2": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 20,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.15,
+      "components": [
+        {
+          "estimate": -0.1738513493208334,
+          "ci": [
+            -0.3479433951215541,
+            0.011992237690146786
+          ],
+          "ci90": [
+            -0.32029361574942566,
+            -0.017319379769847314
+          ],
+          "label": "inconclusive"
+        },
+        {
+          "estimate": -0.40385340057276764,
+          "ci": [
+            -0.5500477629061566,
+            -0.2603202862847232
+          ],
+          "ci90": [
+            -0.5253505717349272,
+            -0.2803664384163966
+          ],
+          "label": "supported"
+        },
+        {
+          "estimate": -0.11910844583339779,
+          "ci": [
+            -0.28641228461875273,
+            0.055337166396762505
+          ],
+          "ci90": [
+            -0.2600245280988324,
+            0.028680937141898965
+          ],
+          "label": "inconclusive"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "technicality",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ],
+          [
+            -1,
+            "random",
+            "M",
+            "M",
+            "generated",
+            "O1"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true,
+      "underpowered": false
+    },
+    "S7_RF3": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 20,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": 0.25,
+      "components": [
+        {
+          "estimate": -0.06955878188084896,
+          "ci": [
+            -0.26542334188643096,
+            0.12487718771639575
+          ],
+          "ci90": [
+            -0.23442846112388407,
+            0.09161696486040674
+          ],
+          "label": "negligible",
+          "worst_case_bound_all_prompts": [
+            -0.06955878188084898,
+            -0.06955878188084898
+          ]
+        },
+        {
+          "estimate": -0.29467367964290647,
+          "ci": [
+            -0.4930374424283872,
+            -0.11230136859478582
+          ],
+          "ci90": [
+            -0.4600299941971367,
+            -0.14035830442795252
+          ],
+          "label": "reversed",
+          "worst_case_bound_all_prompts": [
+            -0.29467367964290647,
+            -0.29467367964290647
+          ]
+        },
+        {
+          "estimate": -0.17551679067617362,
+          "ci": [
+            -0.34547078054129066,
+            -0.00822423250619699
+          ],
+          "ci90": [
+            -0.3156855614497188,
+            -0.03472300517718059
+          ],
+          "label": "reversed",
+          "worst_case_bound_all_prompts": [
+            -0.17551679067617362,
+            -0.17551679067617362
+          ]
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ],
+          [
+            1,
+            "unsteered",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "technicality",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ],
+          [
+            1,
+            "technicality",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ]
+        ],
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "random",
+            "M",
+            "M",
+            "generated",
+            "W"
+          ],
+          [
+            -1,
+            "hostility",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ],
+          [
+            1,
+            "random",
+            "N",
+            "N",
+            "generated",
+            "W"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true,
+      "underpowered": false
+    },
+    "S8_b": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": null,
+      "components": [
+        {
+          "estimate": 0.057629745697724166,
+          "ci": [
+            -0.07699518028457351,
+            0.19149075045484915
+          ],
+          "ci90": [
+            -0.05491608790189829,
+            0.16910420422076738
+          ],
+          "label": "inconclusive"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "b"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "b"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S8_c": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": null,
+      "components": [
+        {
+          "estimate": -0.08670657607349155,
+          "ci": [
+            -0.2314127489614315,
+            0.04258266665403204
+          ],
+          "ci90": [
+            -0.20774147712161734,
+            0.021603245215674905
+          ],
+          "label": "inconclusive"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "c"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "c"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S8_d": {
+      "label": "inconclusive",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": null,
+      "components": [
+        {
+          "estimate": 0.16196973300711703,
+          "ci": [
+            -0.00024145162517570854,
+            0.3207415193586242
+          ],
+          "ci90": [
+            0.0242212791645086,
+            0.2973280125533702
+          ],
+          "label": "inconclusive"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "d"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "d"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    },
+    "S8_e": {
+      "label": "reversed",
+      "supported": false,
+      "n": 80,
+      "missing_prompts": 0,
+      "bootstrap_empty_resamples": 0,
+      "confidence": 0.95,
+      "margin": null,
+      "components": [
+        {
+          "estimate": -0.2771533985949415,
+          "ci": [
+            -0.46514144116926703,
+            -0.10016656155252017
+          ],
+          "ci90": [
+            -0.43267711246540236,
+            -0.12591492407307242
+          ],
+          "label": "reversed"
+        }
+      ],
+      "terms": [
+        [
+          [
+            1,
+            "hostility",
+            "M",
+            "M",
+            "generated",
+            "e"
+          ],
+          [
+            -1,
+            "unsteered",
+            "M",
+            "M",
+            "generated",
+            "e"
+          ]
+        ]
+      ],
+      "interpretability": "interpretable",
+      "unadjusted_secondary": true
+    }
+  },
+  "Level_A": false,
+  "Level_B": false,
+  "kindness_specific_Level_B": false,
+  "judge_valid": true,
+  "W_missingness": {
+    "unsteered/N": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "unsteered/M": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "unsteered/P": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "hostility/N": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "hostility/M": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "hostility/P": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "technicality/N": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "technicality/M": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "technicality/P": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "random/N": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "random/M": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "random/P": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    }
+  },
+  "W_crossover_missingness": {
+    "unsteered/N->M": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "hostility/N->M": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "technicality/N->M": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "random/N->M": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "unsteered/M->N": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "hostility/M->N": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "technicality/M->N": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    },
+    "random/M->N": {
+      "missing": 0,
+      "total": 80,
+      "fraction": 0.0,
+      "flag": false
+    }
+  },
+  "W_missingness_flag": false,
+  "common_clean_n": 20,
+  "bootstrap": {
+    "seed": 20261030,
+    "resamples": 10000,
+    "joint": true,
+    "strata": {
+      "neutral": 20,
+      "provocative": 60
+    }
+  },
+  "descriptive": {
+    "O3": {
+      "unsteered/N": {
+        "n": 80,
+        "mean": 6.678404561044303
+      },
+      "unsteered/M": {
+        "n": 80,
+        "mean": 7.326395440722638
+      },
+      "unsteered/P": {
+        "n": 80,
+        "mean": 6.937756872905385
+      },
+      "hostility/N": {
+        "n": 80,
+        "mean": 6.331746991958954
+      },
+      "hostility/M": {
+        "n": 80,
+        "mean": 7.255188405471929
+      },
+      "hostility/P": {
+        "n": 80,
+        "mean": 6.59622414599975
+      },
+      "technicality/N": {
+        "n": 80,
+        "mean": 6.247637611005421
+      },
+      "technicality/M": {
+        "n": 80,
+        "mean": 7.348812235045303
+      },
+      "technicality/P": {
+        "n": 80,
+        "mean": 6.4420663770441635
+      },
+      "random/N": {
+        "n": 80,
+        "mean": 6.557616657916304
+      },
+      "random/M": {
+        "n": 80,
+        "mean": 7.26781038942124
+      },
+      "random/P": {
+        "n": 80,
+        "mean": 6.837125800840082
+      }
+    },
+    "EH": {
+      "unsteered/N": {
+        "n": 80,
+        "mean": 0.10350400346214883
+      },
+      "unsteered/M": {
+        "n": 80,
+        "mean": 0.07819082476198673
+      },
+      "unsteered/P": {
+        "n": 80,
+        "mean": 0.10648871423036325
+      },
+      "hostility/N": {
+        "n": 80,
+        "mean": 0.1543940467352513
+      },
+      "hostility/M": {
+        "n": 80,
+        "mean": 0.1327640784380492
+      },
+      "hostility/P": {
+        "n": 80,
+        "mean": 0.12195445123070385
+      },
+      "technicality/N": {
+        "n": 80,
+        "mean": 0.11839887866517529
+      },
+      "technicality/M": {
+        "n": 80,
+        "mean": 0.09212964559701504
+      },
+      "technicality/P": {
+        "n": 80,
+        "mean": 0.11976341067929752
+      },
+      "random/N": {
+        "n": 80,
+        "mean": 0.10684399353194748
+      },
+      "random/M": {
+        "n": 80,
+        "mean": 0.07409004795044893
+      },
+      "random/P": {
+        "n": 80,
+        "mean": 0.08598709446087013
+      }
+    },
+    "joy": {
+      "unsteered/N": {
+        "n": 80,
+        "mean": 0.02419538607209688
+      },
+      "unsteered/M": {
+        "n": 80,
+        "mean": 0.07954786169721047
+      },
+      "unsteered/P": {
+        "n": 80,
+        "mean": 0.039572790199599694
+      },
+      "hostility/N": {
+        "n": 80,
+        "mean": 0.027000553530524486
+      },
+      "hostility/M": {
+        "n": 80,
+        "mean": 0.06932170413492714
+      },
+      "hostility/P": {
+        "n": 80,
+        "mean": 0.01699375083553605
+      },
+      "technicality/N": {
+        "n": 80,
+        "mean": 0.009398982998391148
+      },
+      "technicality/M": {
+        "n": 80,
+        "mean": 0.061105941192363386
+      },
+      "technicality/P": {
+        "n": 80,
+        "mean": 0.01669146358035505
+      },
+      "random/N": {
+        "n": 80,
+        "mean": 0.01977949899082887
+      },
+      "random/M": {
+        "n": 80,
+        "mean": 0.09688837997673545
+      },
+      "random/P": {
+        "n": 80,
+        "mean": 0.045105574314948174
+      }
+    },
+    "answer_alignment": {
+      "unsteered/N": {
+        "n": 80,
+        "mean": -8.709294350006957
+      },
+      "unsteered/M": {
+        "n": 80,
+        "mean": -8.476567274742376
+      },
+      "unsteered/P": {
+        "n": 80,
+        "mean": -8.84832526669265
+      },
+      "hostility/N": {
+        "n": 80,
+        "mean": -7.356167194161827
+      },
+      "hostility/M": {
+        "n": 80,
+        "mean": -6.6075009127615605
+      },
+      "hostility/P": {
+        "n": 80,
+        "mean": -7.887969445705475
+      },
+      "technicality/N": {
+        "n": 80,
+        "mean": -8.491152943749828
+      },
+      "technicality/M": {
+        "n": 80,
+        "mean": -8.799286204845462
+      },
+      "technicality/P": {
+        "n": 80,
+        "mean": -8.519659698157637
+      },
+      "random/N": {
+        "n": 80,
+        "mean": -8.702067230211586
+      },
+      "random/M": {
+        "n": 80,
+        "mean": -8.629438414984264
+      },
+      "random/P": {
+        "n": 80,
+        "mean": -9.090031915637047
+      }
+    },
+    "length": {
+      "unsteered/N": {
+        "n": 80,
+        "mean": 191.7625
+      },
+      "unsteered/M": {
+        "n": 80,
+        "mean": 130.6125
+      },
+      "unsteered/P": {
+        "n": 80,
+        "mean": 162.7
+      },
+      "hostility/N": {
+        "n": 80,
+        "mean": 187.025
+      },
+      "hostility/M": {
+        "n": 80,
+        "mean": 131.5125
+      },
+      "hostility/P": {
+        "n": 80,
+        "mean": 160.1625
+      },
+      "technicality/N": {
+        "n": 80,
+        "mean": 198.95
+      },
+      "technicality/M": {
+        "n": 80,
+        "mean": 164.425
+      },
+      "technicality/P": {
+        "n": 80,
+        "mean": 187.5125
+      },
+      "random/N": {
+        "n": 80,
+        "mean": 189.425
+      },
+      "random/M": {
+        "n": 80,
+        "mean": 130.5375
+      },
+      "random/P": {
+        "n": 80,
+        "mean": 149.0625
+      }
+    },
+    "answer_truncated": {
+      "unsteered/N": {
+        "n": 80,
+        "mean": 0.875
+      },
+      "unsteered/M": {
+        "n": 80,
+        "mean": 0.2875
+      },
+      "unsteered/P": {
+        "n": 80,
+        "mean": 0.575
+      },
+      "hostility/N": {
+        "n": 80,
+        "mean": 0.7875
+      },
+      "hostility/M": {
+        "n": 80,
+        "mean": 0.3375
+      },
+      "hostility/P": {
+        "n": 80,
+        "mean": 0.55
+      },
+      "technicality/N": {
+        "n": 80,
+        "mean": 0.975
+      },
+      "technicality/M": {
+        "n": 80,
+        "mean": 0.425
+      },
+      "technicality/P": {
+        "n": 80,
+        "mean": 0.775
+      },
+      "random/N": {
+        "n": 80,
+        "mean": 0.8375
+      },
+      "random/M": {
+        "n": 80,
+        "mean": 0.325
+      },
+      "random/P": {
+        "n": 80,
+        "mean": 0.4625
+      }
+    },
+    "forced_closure": {
+      "unsteered/N": {
+        "n": 80,
+        "mean": 0.1625
+      },
+      "unsteered/M": {
+        "n": 80,
+        "mean": 0.0125
+      },
+      "unsteered/P": {
+        "n": 80,
+        "mean": 0.0125
+      },
+      "hostility/N": {
+        "n": 80,
+        "mean": 0.85
+      },
+      "hostility/M": {
+        "n": 80,
+        "mean": 0.6125
+      },
+      "hostility/P": {
+        "n": 80,
+        "mean": 0.65
+      },
+      "technicality/N": {
+        "n": 80,
+        "mean": 0.2375
+      },
+      "technicality/M": {
+        "n": 80,
+        "mean": 0.0375
+      },
+      "technicality/P": {
+        "n": 80,
+        "mean": 0.0125
+      },
+      "random/N": {
+        "n": 80,
+        "mean": 0.375
+      },
+      "random/M": {
+        "n": 80,
+        "mean": 0.1
+      },
+      "random/P": {
+        "n": 80,
+        "mean": 0.1375
+      }
+    },
+    "f": {
+      "unsteered/N": {
+        "n": 80,
+        "mean": 3.989502285671429
+      },
+      "unsteered/M": {
+        "n": 80,
+        "mean": 3.943325850836799
+      },
+      "unsteered/P": {
+        "n": 80,
+        "mean": 4.003391363967216
+      },
+      "hostility/N": {
+        "n": 80,
+        "mean": 3.866272338359127
+      },
+      "hostility/M": {
+        "n": 80,
+        "mean": 3.423528838113877
+      },
+      "hostility/P": {
+        "n": 80,
+        "mean": 3.8821897710327717
+      },
+      "technicality/N": {
+        "n": 80,
+        "mean": 3.9325357721355374
+      },
+      "technicality/M": {
+        "n": 80,
+        "mean": 4.116796157798599
+      },
+      "technicality/P": {
+        "n": 80,
+        "mean": 4.175220082587619
+      },
+      "random/N": {
+        "n": 80,
+        "mean": 3.939104452421927
+      },
+      "random/M": {
+        "n": 80,
+        "mean": 3.8161714697268487
+      },
+      "random/P": {
+        "n": 80,
+        "mean": 3.957484733818042
+      }
+    },
+    "g": {
+      "unsteered/N": {
+        "n": 80,
+        "mean": 3.877104785546982
+      },
+      "unsteered/M": {
+        "n": 80,
+        "mean": 2.8112560547667274
+      },
+      "unsteered/P": {
+        "n": 80,
+        "mean": 3.737774364494188
+      },
+      "hostility/N": {
+        "n": 80,
+        "mean": 3.7780081949590913
+      },
+      "hostility/M": {
+        "n": 80,
+        "mean": 2.621546429123349
+      },
+      "hostility/P": {
+        "n": 80,
+        "mean": 3.65622975098412
+      },
+      "technicality/N": {
+        "n": 80,
+        "mean": 3.9979009187320473
+      },
+      "technicality/M": {
+        "n": 80,
+        "mean": 3.301696857387589
+      },
+      "technicality/P": {
+        "n": 80,
+        "mean": 3.9683320852845925
+      },
+      "random/N": {
+        "n": 80,
+        "mean": 3.9831770879498025
+      },
+      "random/M": {
+        "n": 80,
+        "mean": 2.8733204662615712
+      },
+      "random/P": {
+        "n": 80,
+        "mean": 3.7663676408984146
+      }
+    },
+    "h": {
+      "unsteered/N": {
+        "n": 80,
+        "mean": 1.3259925045261505
+      },
+      "unsteered/M": {
+        "n": 80,
+        "mean": 1.5120256304969513
+      },
+      "unsteered/P": {
+        "n": 80,
+        "mean": 1.378765161137872
+      },
+      "hostility/N": {
+        "n": 80,
+        "mean": 1.4871694791730425
+      },
+      "hostility/M": {
+        "n": 80,
+        "mean": 1.631136083189047
+      },
+      "hostility/P": {
+        "n": 80,
+        "mean": 1.580052141152817
+      },
+      "technicality/N": {
+        "n": 80,
+        "mean": 1.39785117046036
+      },
+      "technicality/M": {
+        "n": 80,
+        "mean": 1.6223816090945156
+      },
+      "technicality/P": {
+        "n": 80,
+        "mean": 1.6164086888289866
+      },
+      "random/N": {
+        "n": 80,
+        "mean": 1.381404620061991
+      },
+      "random/M": {
+        "n": 80,
+        "mean": 1.4853765513801709
+      },
+      "random/P": {
+        "n": 80,
+        "mean": 1.3667700143552994
+      }
+    }
+  },
+  "interpretation": "RF3 is total context-by-steering interaction. Level A/B do not establish a defense, concealment, or private affect. S1-S8 are descriptive and unadjusted.",
+  "post_main_agreement": {
+    "n": 80,
+    "missing_pairs": 0,
+    "rho": 0.7828176277543366,
+    "mean_signed_difference": -0.48546596436479383,
+    "mean_absolute_difference": 0.5963540606664666,
+    "passed": true
+  },
+  "post_main_agreement_interpretation": "Diagnostic only; primary judge is not replaced.",
+  "audit_counts": {
+    "unsteered/N": {
+      "negative_user": 0,
+      "hostile_instruction": 0,
+      "kindness_strategy": 11,
+      "rating_reference": 0,
+      "forced_closure": 13
+    },
+    "unsteered/M": {
+      "negative_user": 0,
+      "hostile_instruction": 0,
+      "kindness_strategy": 45,
+      "rating_reference": 1,
+      "forced_closure": 1
+    },
+    "unsteered/P": {
+      "negative_user": 0,
+      "hostile_instruction": 0,
+      "kindness_strategy": 21,
+      "rating_reference": 1,
+      "forced_closure": 1
+    },
+    "hostility/N": {
+      "negative_user": 5,
+      "hostile_instruction": 2,
+      "kindness_strategy": 18,
+      "rating_reference": 0,
+      "forced_closure": 68
+    },
+    "hostility/M": {
+      "negative_user": 5,
+      "hostile_instruction": 1,
+      "kindness_strategy": 58,
+      "rating_reference": 13,
+      "forced_closure": 49
+    },
+    "hostility/P": {
+      "negative_user": 3,
+      "hostile_instruction": 2,
+      "kindness_strategy": 37,
+      "rating_reference": 1,
+      "forced_closure": 52
+    },
+    "technicality/N": {
+      "negative_user": 0,
+      "hostile_instruction": 0,
+      "kindness_strategy": 1,
+      "rating_reference": 0,
+      "forced_closure": 19
+    },
+    "technicality/M": {
+      "negative_user": 0,
+      "hostile_instruction": 0,
+      "kindness_strategy": 14,
+      "rating_reference": 1,
+      "forced_closure": 3
+    },
+    "technicality/P": {
+      "negative_user": 0,
+      "hostile_instruction": 0,
+      "kindness_strategy": 4,
+      "rating_reference": 0,
+      "forced_closure": 1
+    },
+    "random/N": {
+      "negative_user": 0,
+      "hostile_instruction": 0,
+      "kindness_strategy": 8,
+      "rating_reference": 0,
+      "forced_closure": 30
+    },
+    "random/M": {
+      "negative_user": 0,
+      "hostile_instruction": 0,
+      "kindness_strategy": 43,
+      "rating_reference": 2,
+      "forced_closure": 8
+    },
+    "random/P": {
+      "negative_user": 0,
+      "hostile_instruction": 0,
+      "kindness_strategy": 9,
+      "rating_reference": 0,
+      "forced_closure": 11
+    }
+  }
+}

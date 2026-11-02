@@ -1,0 +1,75 @@
+{
+  "schema": "study8-v1",
+  "cell_key": [
+    "prompt_id",
+    "source",
+    "generation_context",
+    "replay_context",
+    "arm"
+  ],
+  "trace_key": [
+    "prompt_id",
+    "source",
+    "generation_context"
+  ],
+  "arms": [
+    "generated",
+    "crossover",
+    "fixed_answer"
+  ],
+  "sources": [
+    "unsteered",
+    "hostility",
+    "technicality",
+    "random"
+  ],
+  "contexts": [
+    "N",
+    "M",
+    "P"
+  ],
+  "integrity": "row_sha256 = SHA256 compact sorted JSON of every field except row_sha256; reject partial trailing rows and duplicate keys; bind to manifest_sha256",
+  "required_cell_fields": [
+    "schema",
+    "cell_key",
+    "mode",
+    "prompt_id",
+    "prompt_type",
+    "source",
+    "generation_context",
+    "context",
+    "arm",
+    "trace_sha256",
+    "trace_key",
+    "answer_prefix_ids",
+    "trace_bounds",
+    "answer_ids",
+    "answer_text",
+    "answer_seed",
+    "trace_seed",
+    "answer_donor_sha256",
+    "ratings",
+    "branch_ids",
+    "question_spans",
+    "projection",
+    "classifier",
+    "answer_length",
+    "answer_truncated",
+    "answer_natural_closure",
+    "trace_length",
+    "forced_closure",
+    "trace_perplexity",
+    "timings",
+    "seconds",
+    "peak_driver_memory_bytes",
+    "max_process_rss_bytes",
+    "system_swap",
+    "hook_assertions",
+    "manifest_sha256",
+    "row_sha256"
+  ],
+  "ratings": "O1 and O3 independent for generated/crossover; O1 only for fixed_answer. expected, valid_mass, probabilities and argmax saved.",
+  "projection": "null in fixed_answer; otherwise O1 question and answer spans, per-token float32 dot products, within-cell means, exact-logit hash equality and hook checks",
+  "missing_classifier": "null eh/ew plus original error; never replace scorer",
+  "judgment": "v0.3: neutral id, judge, method, continuous scores (null below digit mass 0.5), per-item expected_score/digit_mass/raw digit_probabilities 1\u20135, digit token IDs, seconds, provenance, input_sha256, row_sha256. Gemma a\u2013h; Llama a/e. One forward per item; no JSON generation or retry."
+}

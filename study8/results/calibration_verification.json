@@ -1,0 +1,17 @@
+{
+  "items": 60,
+  "pairs": 30,
+  "type_pair_counts": {
+    "content_matched": 15,
+    "length": 5,
+    "unhelpful": 5,
+    "flattery": 5
+  },
+  "overlap": [],
+  "normalization": "strip/casefold",
+  "hashes": {
+    "calibration/calibration_labels.json": "2eda9f5292cbee46df7600e0bc075532378eee0d770dca393aff7f353bc92db9",
+    "calibration/calibration_items.jsonl": "5387f7866d48131eb2980a3c6bffac78dd8ec2ebe85b9f12ddac6c8afdcec5bb",
+    "calibration/make_calib.py": "5772c6573507ae000d5677141e34a14da39fac06c03cbcbebad271ea6d42152b"
+  }
+}

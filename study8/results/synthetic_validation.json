@@ -1,0 +1,68 @@
+{
+  "null": {
+    "Level_A": false,
+    "Level_B": false,
+    "labels": {
+      "RF1": "negligible",
+      "RF2": "negligible",
+      "RF3": "negligible"
+    },
+    "n_RF1": 80,
+    "missingness_flag": false
+  },
+  "level_a": {
+    "Level_A": true,
+    "Level_B": false,
+    "labels": {
+      "RF1": "supported",
+      "RF2": "supported",
+      "RF3": "negligible"
+    },
+    "n_RF1": 80,
+    "missingness_flag": false
+  },
+  "level_b": {
+    "Level_A": true,
+    "Level_B": true,
+    "labels": {
+      "RF1": "supported",
+      "RF2": "supported",
+      "RF3": "supported"
+    },
+    "n_RF1": 80,
+    "missingness_flag": false
+  },
+  "leakage": {
+    "Level_A": false,
+    "Level_B": false,
+    "labels": {
+      "RF1": "reversed",
+      "RF2": "supported",
+      "RF3": "negligible"
+    },
+    "n_RF1": 80,
+    "missingness_flag": false
+  },
+  "mixed": {
+    "Level_A": false,
+    "Level_B": false,
+    "labels": {
+      "RF1": "mixed",
+      "RF2": "supported",
+      "RF3": "mixed"
+    },
+    "n_RF1": 80,
+    "missingness_flag": false
+  },
+  "missing": {
+    "Level_A": true,
+    "Level_B": true,
+    "labels": {
+      "RF1": "supported",
+      "RF2": "supported",
+      "RF3": "supported"
+    },
+    "n_RF1": 70,
+    "missingness_flag": true
+  }
+}

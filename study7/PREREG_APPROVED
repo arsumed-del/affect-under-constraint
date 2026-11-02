@@ -1,0 +1,30 @@
+{
+ "author": "Arthur Su",
+ "date": "2026-10-28",
+ "time": "17:53 America/Los_Angeles",
+ "zenodo_deposit": "https://doi.org/10.5281/zenodo.23750381",
+ "how": "Arthur approved v0.2 for build (15:21), approved the pilot (16:14), approved keeping the \u00b10.15 margins (\"Ok\", 17:53) and instructed \"Publish\" (17:53). His reviewer (Claude) wrote this file at his explicit instruction. No main-run data existed at approval.",
+ "hashes": {
+  "config_s7.yaml": "fb1ce1f414609dd275de9349c5c3c436e984dad3c46b607d620baebd37db404e",
+  "framings_s7.json": "d6734a06850b38649754b66c3b8e5566d9d4dca75a3c6c2004e1ad475deb42fb",
+  "Study7_Transformation_PREREG_v0.2_draft.md": "50e177fbd469f1a8bb21e2eddd1bff3f5e5138b3f34343453d66c9b389bf18c3",
+  "build_artifacts.py": "1778e7f5b62cdbd9ac277999585bcf9708b7851bbd48f4692405942ebdcb0ff0",
+  "results/output_schema.json": "e5a54b29fb58cdbfade9a6fd5ea9a6731b129cc7c423717374badaaa9bc7ebf3",
+  "src/__init__.py": "6c2e4d9aac7e58ec7abee10ec7a5561ae17a764994f2851b4c18831ff6f5a41c",
+  "src/assembly.py": "c4bdfc6be17002797efc3ff0698f0498f9069471f1d0806f562f09840cf84e48",
+  "src/common.py": "9bb347f1194dc19605474c11ed3d065530cfd4b792f29675a5e2e34a08cfbf68",
+  "src/referent.py": "88ca6b29fc134e75b0bcf555ccab0463ee5451661c230f793ec6d145cbee8afd",
+  "src/runner.py": "a0c4105141ec1a29cce6dda7e4f8a6c94e0f62efd640734a65542d9fadb479af",
+  "analysis/__init__.py": "88f5b6758d7cd3e64c78dd390a52f60bdc4bf6f23892c734cf49812ace645808",
+  "analysis/analyze.py": "a7339e30481c736015923835caaa3d3e7bdc0fc56d333998da8a6f9df4cb5a7b",
+  "analysis/pilot.py": "a15a765be91fdcb16f527ef04baa9e2f583007014ab1b2c76da08b6329a0c840",
+  "tests/synthetic.py": "cf4e56327915ebc63b699919386b0d26dfb83a69ba3bc15e980e3dfb122cd07a",
+  "tests/test_build.py": "b0ee457f863d0ba86ba22e0f61773d068e5e013f2c6be91159ef754ae5927a07",
+  "tests/test_safety.py": "2a56a5a868d674aecc6079d49225ed67236549e027a8dcae3fcc24768236311c",
+  "Analyze Study 7.command": "1379c61662efd5dce986a23cf1d4383b7eca9e450495992df97ef21e74fbb84a",
+  "Codex build Study 7.command": "a3ea171527f5ef640ac8b5fd2441f46be07a48bfe982c182a816b664a5aac5df",
+  "Codex review Study 7 prereg.command": "8a098edd4db7d1489253b2986a83194095f75b1de200ff515e53fadd6a86e8ba",
+  "run_main.command": "77e996d76eb4f58b465c736330fe7e40eb6b31892d41bb2cbe2eb23500c70a9d",
+  "run_pilot.command": "6392ca02d90102c54fc5403ee65f155ec660457c97331a6b782479e77d14aa5d"
+ }
+}

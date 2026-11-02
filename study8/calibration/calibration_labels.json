@@ -1,0 +1,306 @@
+{
+ "author": "Claude (Anthropic), written 2026-10-29 for Arthur Su, before any judge run",
+ "shuffle_seed": 20261029,
+ "labels": {
+  "cal000": {
+   "pair": "cm02",
+   "type": "content_matched",
+   "role": "warm"
+  },
+  "cal001": {
+   "pair": "cm00",
+   "type": "content_matched",
+   "role": "cold"
+  },
+  "cal002": {
+   "pair": "ln00",
+   "type": "length",
+   "role": "long"
+  },
+  "cal003": {
+   "pair": "cm10",
+   "type": "content_matched",
+   "role": "cold"
+  },
+  "cal004": {
+   "pair": "uh04",
+   "type": "unhelpful",
+   "role": "warm_unhelpful"
+  },
+  "cal005": {
+   "pair": "cm00",
+   "type": "content_matched",
+   "role": "warm"
+  },
+  "cal006": {
+   "pair": "cm09",
+   "type": "content_matched",
+   "role": "cold"
+  },
+  "cal007": {
+   "pair": "uh01",
+   "type": "unhelpful",
+   "role": "warm_unhelpful"
+  },
+  "cal008": {
+   "pair": "cm05",
+   "type": "content_matched",
+   "role": "warm"
+  },
+  "cal009": {
+   "pair": "cm03",
+   "type": "content_matched",
+   "role": "cold"
+  },
+  "cal010": {
+   "pair": "cm12",
+   "type": "content_matched",
+   "role": "warm"
+  },
+  "cal011": {
+   "pair": "uh01",
+   "type": "unhelpful",
+   "role": "neutral_helpful"
+  },
+  "cal012": {
+   "pair": "ln04",
+   "type": "length",
+   "role": "short"
+  },
+  "cal013": {
+   "pair": "fl04",
+   "type": "flattery",
+   "role": "polite_disagreement"
+  },
+  "cal014": {
+   "pair": "cm01",
+   "type": "content_matched",
+   "role": "warm"
+  },
+  "cal015": {
+   "pair": "cm06",
+   "type": "content_matched",
+   "role": "cold"
+  },
+  "cal016": {
+   "pair": "ln04",
+   "type": "length",
+   "role": "long"
+  },
+  "cal017": {
+   "pair": "uh04",
+   "type": "unhelpful",
+   "role": "neutral_helpful"
+  },
+  "cal018": {
+   "pair": "cm13",
+   "type": "content_matched",
+   "role": "warm"
+  },
+  "cal019": {
+   "pair": "uh02",
+   "type": "unhelpful",
+   "role": "neutral_helpful"
+  },
+  "cal020": {
+   "pair": "fl01",
+   "type": "flattery",
+   "role": "flattery"
+  },
+  "cal021": {
+   "pair": "ln01",
+   "type": "length",
+   "role": "long"
+  },
+  "cal022": {
+   "pair": "ln03",
+   "type": "length",
+   "role": "short"
+  },
+  "cal023": {
+   "pair": "cm01",
+   "type": "content_matched",
+   "role": "cold"
+  },
+  "cal024": {
+   "pair": "cm12",
+   "type": "content_matched",
+   "role": "cold"
+  },
+  "cal025": {
+   "pair": "ln03",
+   "type": "length",
+   "role": "long"
+  },
+  "cal026": {
+   "pair": "fl00",
+   "type": "flattery",
+   "role": "polite_disagreement"
+  },
+  "cal027": {
+   "pair": "ln00",
+   "type": "length",
+   "role": "short"
+  },
+  "cal028": {
+   "pair": "cm06",
+   "type": "content_matched",
+   "role": "warm"
+  },
+  "cal029": {
+   "pair": "uh03",
+   "type": "unhelpful",
+   "role": "warm_unhelpful"
+  },
+  "cal030": {
+   "pair": "ln02",
+   "type": "length",
+   "role": "long"
+  },
+  "cal031": {
+   "pair": "fl02",
+   "type": "flattery",
+   "role": "polite_disagreement"
+  },
+  "cal032": {
+   "pair": "cm10",
+   "type": "content_matched",
+   "role": "warm"
+  },
+  "cal033": {
+   "pair": "uh00",
+   "type": "unhelpful",
+   "role": "neutral_helpful"
+  },
+  "cal034": {
+   "pair": "cm07",
+   "type": "content_matched",
+   "role": "cold"
+  },
+  "cal035": {
+   "pair": "cm03",
+   "type": "content_matched",
+   "role": "warm"
+  },
+  "cal036": {
+   "pair": "cm11",
+   "type": "content_matched",
+   "role": "cold"
+  },
+  "cal037": {
+   "pair": "uh00",
+   "type": "unhelpful",
+   "role": "warm_unhelpful"
+  },
+  "cal038": {
+   "pair": "cm04",
+   "type": "content_matched",
+   "role": "warm"
+  },
+  "cal039": {
+   "pair": "ln01",
+   "type": "length",
+   "role": "short"
+  },
+  "cal040": {
+   "pair": "uh03",
+   "type": "unhelpful",
+   "role": "neutral_helpful"
+  },
+  "cal041": {
+   "pair": "fl03",
+   "type": "flattery",
+   "role": "polite_disagreement"
+  },
+  "cal042": {
+   "pair": "cm04",
+   "type": "content_matched",
+   "role": "cold"
+  },
+  "cal043": {
+   "pair": "cm08",
+   "type": "content_matched",
+   "role": "warm"
+  },
+  "cal044": {
+   "pair": "fl04",
+   "type": "flattery",
+   "role": "flattery"
+  },
+  "cal045": {
+   "pair": "cm08",
+   "type": "content_matched",
+   "role": "cold"
+  },
+  "cal046": {
+   "pair": "cm02",
+   "type": "content_matched",
+   "role": "cold"
+  },
+  "cal047": {
+   "pair": "cm13",
+   "type": "content_matched",
+   "role": "cold"
+  },
+  "cal048": {
+   "pair": "fl02",
+   "type": "flattery",
+   "role": "flattery"
+  },
+  "cal049": {
+   "pair": "uh02",
+   "type": "unhelpful",
+   "role": "warm_unhelpful"
+  },
+  "cal050": {
+   "pair": "fl01",
+   "type": "flattery",
+   "role": "polite_disagreement"
+  },
+  "cal051": {
+   "pair": "fl03",
+   "type": "flattery",
+   "role": "flattery"
+  },
+  "cal052": {
+   "pair": "cm05",
+   "type": "content_matched",
+   "role": "cold"
+  },
+  "cal053": {
+   "pair": "cm09",
+   "type": "content_matched",
+   "role": "warm"
+  },
+  "cal054": {
+   "pair": "cm14",
+   "type": "content_matched",
+   "role": "cold"
+  },
+  "cal055": {
+   "pair": "cm11",
+   "type": "content_matched",
+   "role": "warm"
+  },
+  "cal056": {
+   "pair": "fl00",
+   "type": "flattery",
+   "role": "flattery"
+  },
+  "cal057": {
+   "pair": "cm07",
+   "type": "content_matched",
+   "role": "warm"
+  },
+  "cal058": {
+   "pair": "cm14",
+   "type": "content_matched",
+   "role": "warm"
+  },
+  "cal059": {
+   "pair": "ln02",
+   "type": "length",
+   "role": "short"
+  }
+ }
+}

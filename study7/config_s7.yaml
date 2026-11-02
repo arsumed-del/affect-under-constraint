@@ -1,0 +1,998 @@
+model:
+  id: Qwen/Qwen3-4B
+  slug: qwen3-4b
+  gated: false
+  system_role: true
+  local_path: ../study3_pilot/.cache/huggingface/hub/models--Qwen--Qwen3-4B/snapshots/1cfa9a7208912126459214e8b04321603b3df60c
+  dtype: bfloat16
+  device: mps
+  quantization: null
+  layer_index: 18
+model_revision: 1cfa9a7208912126459214e8b04321603b3df60c
+tokenizer_revision: 1cfa9a7208912126459214e8b04321603b3df60c
+model_files:
+  config.json: 8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a
+  generation_config.json: 2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2
+  merges.txt: 8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5
+  model-00001-of-00003.safetensors: 328a91d3122359d5547f9d79521205bc0a46e1f79a792dfe650e99fc2d651223
+  model-00002-of-00003.safetensors: 6cd087b316306a68c562436b5492edbcf6e16c6dba3a1308279caa5a58e21ca5
+  model-00003-of-00003.safetensors: e4bf436957184f4eeb86a80e9db394503f1f56446b2e6b7edeac5b81470f4ca1
+  model.safetensors.index.json: 6dc0981b8829fead746441f68f38f24c5ca4a3a66351f652c26c6df0efc43ab2
+  tokenizer.json: aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4
+  tokenizer_config.json: d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101
+  vocab.json: ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910
+environment:
+  software:
+    python: 3.12.13
+    platform: macOS-26.2-arm64-arm-64bit
+    packages:
+      torch: 2.14.1
+      transformers: 5.18.0
+      numpy: 2.5.3
+      scipy: 1.18.1
+      PyYAML: 6.0.3
+      tokenizers: 0.23.2
+      safetensors: 0.8.0
+      accelerate: 1.15.0
+  device: mps
+  dtype: bfloat16
+  attention_implementation: sdpa
+  batch_size: 1
+  padding: false
+  use_cache: false
+  past_key_values: null
+  mps_fallback: 1
+main_prompt_ids:
+- s4t00
+- s4t01
+- s4t02
+- s4t03
+- s4t04
+- s4t05
+- s4t06
+- s4t07
+- s4t08
+- s4t09
+- s4t10
+- s4t11
+- s4t12
+- s4t13
+- s4t14
+- s4t15
+- s4t16
+- s4t17
+- s4t18
+- s4t19
+- s4t20
+- s4t21
+- s4t22
+- s4t23
+- s4t24
+- s4t25
+- s4t26
+- s4t27
+- s4t28
+- s4t29
+- s4t30
+- s4t31
+- s4t32
+- s4t33
+- s4t34
+- s4t35
+- s4t36
+- s4t37
+- s4t38
+- s4t39
+- s4t40
+- s4t41
+- s4t42
+- s4t43
+- s4t44
+- s4t45
+- s4t46
+- s4t47
+- s4t48
+- s4t49
+- s4t50
+- s4t51
+- s4t52
+- s4t53
+- s4t54
+- s4t55
+- s4t56
+- s4t57
+- s4t58
+- s4t59
+- s4t60
+- s4t61
+- s4t62
+- s4t63
+- s4t64
+- s4t65
+- s4t66
+- s4t67
+- s4t68
+- s4t69
+- s4t70
+- s4t71
+- s4t72
+- s4t73
+- s4t74
+- s4t75
+- s4t76
+- s4t77
+- s4t78
+- s4t79
+pilot_prompt_ids:
+- s3t00
+- s3t01
+- s3t02
+- s3t60
+version: 0.2-build
+preregistration: Study7_Transformation_PREREG_v0.2_draft.md
+inputs:
+  main_traces:
+    path: ../study4/data/main/traces.jsonl
+    sha256: 73f3a6a223ae918cd37a2c1904a85da2a6074f7c471ac5ecbae6ef682f3df2f4
+  main_prompts:
+    path: ../study4/prompts/test_prompts.jsonl
+    sha256: 14ac0de7f734b42a2208c39b39877abe79110c67a7892e9465fc82a6644e01d5
+  pilot_traces:
+    path: ../study4/data/pilot/traces.jsonl
+    sha256: bebb917a84a195ae7a21e78adff19079e35c30ae277ebba951b677847e5e7436
+  pilot_prompts:
+    path: ../study4/prompts/pilot_prompts.jsonl
+    sha256: 2890b24bf683ffc5f3704eeebb2e246b383c44e5cdb5e0605b1f174ac908be97
+  e5_audit:
+    path: ../study4/data/main/e5_audit_map.json
+    sha256: bf5c24b9ac98091a23b029cedf20a9772bc8e9aef75013154d0b08f3bf9bc3f6
+  study4_framings:
+    path: ../study4/framings.json
+    sha256: 6749c73745a2f4f5340321ec41176f21f37f9dbba47dae08130e00b6d526f9ba
+  study4_config:
+    path: ../study4/config.yaml
+    sha256: 3bdef083f772102fd161a75839072f7c068083cf60520a9211edbe24b5ee10f0
+  study4_runner:
+    path: ../study4/src/runner.py
+    sha256: 69591683bee9a911816aaea4935b9ddcf6df98ee4fd9133a65b95395b06dd0e1
+  study4_common:
+    path: ../study4/src/common.py
+    sha256: f9b5d3c3994c0773e691d4853e98e5384c1e6abe13a482bcfe4e4809269651bd
+  study4_analysis:
+    path: ../study4/analysis/analyze.py
+    sha256: db52dfbde8699b2b967313c87a68bbe409f8acd5b67d26d6360b261ed4b99705
+  study3_base_model:
+    path: ../study3/src/base_model.py
+    sha256: 4456820a7cb6a382c4e0b26a09a6c64bf2fe76e75aaad22c7d38eba775aea5be
+  study3_model_utils:
+    path: ../study3/src/model_utils.py
+    sha256: 48af186abe167314a245924e8e3ce60a3cd449b91d5f89d32f167559a322db44
+  study3_main_model:
+    path: ../study3/src/main_model.py
+    sha256: 036080a337b0cf465fe20dd0a37f2068d9e17e01b247928ffae4ae4a96640a2d
+  study3_metrics:
+    path: ../study3/src/metrics.py
+    sha256: 387ac7dc4d3026403089088050ce0700160a766681bbc84051b201a387a2b631
+  main_cells:
+    path: ../study5/data/main/cells.jsonl
+    sha256: 9ba6d0ea8aedd7166f8978eef1ac292d6c69797d670b2a6b71356c3e367f6ba7
+  pilot_cells:
+    path: ../study5/data/pilot/cells.jsonl
+    sha256: 28884fbfa98d575af33911a6c013e5985300697091f3fa0ce38b21c47d9cbe6c
+  study5_config:
+    path: ../study5/config_s5.yaml
+    sha256: 3e9ab4ad3743abb5f69172583090db1b5aaf58cfb059ed7f8358c3cafd0f6946
+  study5_framings:
+    path: ../study5/framings_s5.json
+    sha256: 882de79e87e8cdc13edcc1b9635837c0f16c9ff413c83ba43d619dcd170749f6
+  study5_environment:
+    path: ../study5/results/build_environment.json
+    sha256: afb6be2bf4b2abebd33919f8b8fb6c37a445483aa9efe0749a5a6246e313a159
+  study5_src___init__:
+    path: ../study5/src/__init__.py
+    sha256: 9233644c24a52a38c48cef854dfe4e1f55b8c6369df799c53dd63ba9981f3175
+  study5_src_approval:
+    path: ../study5/src/approval.py
+    sha256: e21f7410d69416d20d3c5736e39466b58383d1c61a994a258841e2461fcb4e49
+  study5_src_assembly:
+    path: ../study5/src/assembly.py
+    sha256: 4293ae667769d6ab3a2e1f12cc46099436cbfb32f8929ab32c4f1982b9f99091
+  study5_src_common:
+    path: ../study5/src/common.py
+    sha256: e9e4edcc73d01efc63fc342ea22919164ad2dc15e30b657734d6ac17c373167f
+  study5_src_runner:
+    path: ../study5/src/runner.py
+    sha256: 417e004cf76bff34beb5114393f086a3d8161d39cc2980e912bde936c7ffde3d
+  study5_analysis___init__:
+    path: ../study5/analysis/__init__.py
+    sha256: 2ce36d8b004c425ff16d08f0cbd0790f7438cdf1e375a93113791aad27291755
+  study5_analysis_analyze:
+    path: ../study5/analysis/analyze.py
+    sha256: 1ebbf7831b49c4d7cd39363ae58b1fb2a25a0e4a6ebe173dcee71b8374c8e814
+  study5_analysis_pilot:
+    path: ../study5/analysis/pilot.py
+    sha256: a9c4f835b24bbbcf0c40b7618c23c373230d5e5bb785c9fd83f4d9258c5bcbed
+  study4_src___init__:
+    path: ../study4/src/__init__.py
+    sha256: 3c12962f0d7a0f9214d351f63bfdfe2a580e04e9500ec4997297ed387aa53613
+  study4_src_approval:
+    path: ../study4/src/approval.py
+    sha256: 44b5177050faf698d141a7ffb6304710350158e6facb12cd4618fbd5f23b4981
+  study4_src_audit_prompts:
+    path: ../study4/src/audit_prompts.py
+    sha256: 35c2b119e2dea33b5be8c1a462ed660049b7a47af9dd0e94ca9b65cfb3a6122b
+  study4_src_common:
+    path: ../study4/src/common.py
+    sha256: f9b5d3c3994c0773e691d4853e98e5384c1e6abe13a482bcfe4e4809269651bd
+  study4_src_repilot_referent:
+    path: ../study4/src/repilot_referent.py
+    sha256: a513418947ccafd6e80e21b3bd79f463ad04c5e21186c4ab99d82bc01ac3a987
+  study4_src_runner:
+    path: ../study4/src/runner.py
+    sha256: 69591683bee9a911816aaea4935b9ddcf6df98ee4fd9133a65b95395b06dd0e1
+  study4_analysis___init__:
+    path: ../study4/analysis/__init__.py
+    sha256: 4dcc9908bc20dc2cee8b6dc7362308eeefe97562ea50fdaeea425ba3db0d2e2a
+  study4_analysis_analyze:
+    path: ../study4/analysis/analyze.py
+    sha256: db52dfbde8699b2b967313c87a68bbe409f8acd5b67d26d6360b261ed4b99705
+  study4_analysis_finalize_validation:
+    path: ../study4/analysis/finalize_validation.py
+    sha256: 38afb4a1650087ceebc7ff3feb29aee0cf0030e03ca03b9855996268bf656178
+  study4_analysis_validate_synthetic:
+    path: ../study4/analysis/validate_synthetic.py
+    sha256: f1b8c2a67100060f439c73ffd08d2e43c1ee8e5b0fe0d07e0b71ea86921b4560
+  study4_analysis_validity:
+    path: ../study4/analysis/validity.py
+    sha256: 0a024c6f93a62ebdb6f34b3aa75bcd250062b9249c1223f709720666d09a0d3f
+  init_study3_src___init__.py:
+    path: ../study3/src/__init__.py
+    sha256: c2ff654c42c588c7c4dda92204d8cd96e0ab776e36ede16e27293a485552d41e
+  study4_pilot_cells:
+    path: ../study4/data/pilot/cells.jsonl
+    sha256: 94c5dd6dcfafec0a39791cca969844379ea5ee75ee54ec16d810db1886344c48
+  study6_pilot_cells:
+    path: ../study6/data/pilot/cells.jsonl
+    sha256: 5c32ee47f0ad58d8bb71a3c8bbf8dd9c7a662949cf9661b5e9d69e87dd7f8dfb
+  study4_main_cells:
+    path: ../study4/data/main/cells.jsonl
+    sha256: f4ca85b1ff54e8f0053a394e8ddb8dac9e3937cec3c7e1bc2d1f3ec8c96d2ae0
+  study6_main_cells:
+    path: ../study6/data/main/cells.jsonl
+    sha256: cf4299dc0cddba8c3ede33f1ae8fa06ab327812862255cea7b6a1b6fcef4e587
+  study6___init__:
+    path: ../study6/src/__init__.py
+    sha256: a0a2c7d2a9df255b6010daa07b9048697de9c25231d7c79e18e0aacbd0486968
+  study6_approval:
+    path: ../study6/src/approval.py
+    sha256: 2f5587d69fa17bfa155343515762b97589f1a38d262bec653a56b0f20a6d792c
+  study6_assembly:
+    path: ../study6/src/assembly.py
+    sha256: a212464e9c8bfcf5932e4668e82df2b974b395e1ee2f9386ef4fbfc478c9c9d8
+  study6_common:
+    path: ../study6/src/common.py
+    sha256: 8e6c19f53d570830c600ea233c8af0adc2c7d0bb680e705a5191c254ebf97c5f
+  study6_runner:
+    path: ../study6/src/runner.py
+    sha256: 3b673ee5bff2497f5bd7d4bb9c360bdaacbd6e697265f07816f2af574f282a35
+  study6_validity:
+    path: ../study6/src/validity.py
+    sha256: 940c580a0695731c64fce1701886a2d80f54faa689bc4b978f2e1dea8964183e
+  pilot_v06_ratings:
+    path: ../study4/data/repilot/ratings.jsonl
+    sha256: bc594e97a52d78ae8c9cfe939ff6f808bd62bdfed92a308426e7dcfb30f77c04
+classifier:
+  id: j-hartmann/emotion-english-distilroberta-base
+  local_path: ../study3_pilot/.cache/huggingface/hub/models--j-hartmann--emotion-english-distilroberta-base/snapshots/0e1cd914e3d46199ed785853e12b57304e04178b
+  hostility:
+  - anger
+  - disgust
+  warmth:
+  - joy
+generation:
+  temperature: 0.6
+  top_p: 0.95
+  top_k: 20
+  answer_cap: 200
+sources:
+- unsteered
+- hostility
+- technicality
+- random
+levels:
+- G
+- S
+- N
+arms:
+- generated
+- fixed
+counts:
+  generated: 960
+  fixed: 960
+bootstrap_seed: 20261028
+check_seed: 20261028
+answer_seeds:
+  pilot:
+    s3t00/unsteered: 1174483379
+    s3t00/hostility: 1177105941
+    s3t00/technicality: 1970281509
+    s3t00/random: 1326401628
+    s3t01/unsteered: 1075591318
+    s3t01/hostility: 211478682
+    s3t01/technicality: 90119736
+    s3t01/random: 1845770697
+    s3t02/unsteered: 1714887235
+    s3t02/hostility: 980921121
+    s3t02/technicality: 1475776915
+    s3t02/random: 1493473611
+    s3t03/unsteered: 71149053
+    s3t03/hostility: 1799865499
+    s3t03/technicality: 1809447000
+    s3t03/random: 1673408649
+    s3t04/unsteered: 1356140629
+    s3t04/hostility: 794795012
+    s3t04/technicality: 1592170774
+    s3t04/random: 260972228
+    s3t05/unsteered: 1227281113
+    s3t05/hostility: 1036958476
+    s3t05/technicality: 1322171356
+    s3t05/random: 846126475
+    s3t06/unsteered: 202744229
+    s3t06/hostility: 538895913
+    s3t06/technicality: 1082942691
+    s3t06/random: 1002621852
+    s3t07/unsteered: 80935370
+    s3t07/hostility: 617566967
+    s3t07/technicality: 1515285588
+    s3t07/random: 1298537398
+    s3t08/unsteered: 1905566486
+    s3t08/hostility: 1424454802
+    s3t08/technicality: 1530593512
+    s3t08/random: 1681447298
+    s3t09/unsteered: 429650700
+    s3t09/hostility: 2136377688
+    s3t09/technicality: 1904916222
+    s3t09/random: 8003320
+    s3t10/unsteered: 540455468
+    s3t10/hostility: 163213100
+    s3t10/technicality: 47563437
+    s3t10/random: 2139050006
+    s3t11/unsteered: 332336760
+    s3t11/hostility: 572753549
+    s3t11/technicality: 656194845
+    s3t11/random: 61809720
+    s3t12/unsteered: 1519147030
+    s3t12/hostility: 2125303750
+    s3t12/technicality: 1989926317
+    s3t12/random: 1482877028
+    s3t13/unsteered: 1346029755
+    s3t13/hostility: 856194734
+    s3t13/technicality: 1951623440
+    s3t13/random: 99867956
+    s3t14/unsteered: 1574454186
+    s3t14/hostility: 1682907062
+    s3t14/technicality: 1757451104
+    s3t14/random: 1743627453
+    s3t15/unsteered: 346578374
+    s3t15/hostility: 1241904304
+    s3t15/technicality: 13267782
+    s3t15/random: 1964398389
+    s3t16/unsteered: 1807485085
+    s3t16/hostility: 313728682
+    s3t16/technicality: 1673526725
+    s3t16/random: 417595871
+    s3t17/unsteered: 1726549218
+    s3t17/hostility: 452582613
+    s3t17/technicality: 211568476
+    s3t17/random: 790468750
+    s3t18/unsteered: 261923760
+    s3t18/hostility: 1925351196
+    s3t18/technicality: 1799049138
+    s3t18/random: 1166913996
+    s3t19/unsteered: 216877349
+    s3t19/hostility: 1478690274
+    s3t19/technicality: 356918346
+    s3t19/random: 1381053471
+    s3t20/unsteered: 1213437883
+    s3t20/hostility: 203417124
+    s3t20/technicality: 289359263
+    s3t20/random: 1762531337
+    s3t21/unsteered: 451225209
+    s3t21/hostility: 123323388
+    s3t21/technicality: 621919790
+    s3t21/random: 747080486
+    s3t22/unsteered: 1221113471
+    s3t22/hostility: 1404952964
+    s3t22/technicality: 1464838470
+    s3t22/random: 1478519897
+    s3t23/unsteered: 316865077
+    s3t23/hostility: 1852897802
+    s3t23/technicality: 601683037
+    s3t23/random: 212414895
+    s3t24/unsteered: 145320630
+    s3t24/hostility: 1778076340
+    s3t24/technicality: 2022997397
+    s3t24/random: 1394817021
+    s3t25/unsteered: 1905712887
+    s3t25/hostility: 1798699502
+    s3t25/technicality: 1522658185
+    s3t25/random: 1485286799
+    s3t26/unsteered: 1580165064
+    s3t26/hostility: 1806209531
+    s3t26/technicality: 1836013735
+    s3t26/random: 1278079218
+    s3t27/unsteered: 1455998187
+    s3t27/hostility: 1254661746
+    s3t27/technicality: 988142376
+    s3t27/random: 251063849
+    s3t28/unsteered: 1774672836
+    s3t28/hostility: 1936721974
+    s3t28/technicality: 1744575307
+    s3t28/random: 1155565651
+    s3t29/unsteered: 182365837
+    s3t29/hostility: 1452282399
+    s3t29/technicality: 1155669324
+    s3t29/random: 109421667
+    s3t30/unsteered: 293830012
+    s3t30/hostility: 748316388
+    s3t30/technicality: 1738891396
+    s3t30/random: 773702169
+    s3t31/unsteered: 2075213463
+    s3t31/hostility: 1880775111
+    s3t31/technicality: 496782665
+    s3t31/random: 1821889803
+    s3t32/unsteered: 1201500369
+    s3t32/hostility: 1409116623
+    s3t32/technicality: 1935587063
+    s3t32/random: 569168985
+    s3t33/unsteered: 1339119084
+    s3t33/hostility: 1124948475
+    s3t33/technicality: 2029530302
+    s3t33/random: 795088026
+    s3t34/unsteered: 1397872387
+    s3t34/hostility: 81231480
+    s3t34/technicality: 477874906
+    s3t34/random: 556038579
+    s3t35/unsteered: 1613314697
+    s3t35/hostility: 240673277
+    s3t35/technicality: 70151552
+    s3t35/random: 1917417868
+    s3t36/unsteered: 412689512
+    s3t36/hostility: 242114624
+    s3t36/technicality: 1139330639
+    s3t36/random: 1462998501
+    s3t37/unsteered: 208340335
+    s3t37/hostility: 758119020
+    s3t37/technicality: 1218474220
+    s3t37/random: 953378944
+    s3t38/unsteered: 1964200633
+    s3t38/hostility: 695331772
+    s3t38/technicality: 1285708739
+    s3t38/random: 1801620879
+    s3t39/unsteered: 1851567318
+    s3t39/hostility: 684056106
+    s3t39/technicality: 1240881977
+    s3t39/random: 1839711328
+    s3t40/unsteered: 1307582661
+    s3t40/hostility: 669021214
+    s3t40/technicality: 2097853311
+    s3t40/random: 2120369998
+    s3t41/unsteered: 1853851175
+    s3t41/hostility: 1157135164
+    s3t41/technicality: 1293019558
+    s3t41/random: 257151037
+    s3t42/unsteered: 723849926
+    s3t42/hostility: 1747799560
+    s3t42/technicality: 1558140576
+    s3t42/random: 1405000152
+    s3t43/unsteered: 1645657212
+    s3t43/hostility: 283714303
+    s3t43/technicality: 1848490008
+    s3t43/random: 1980620166
+    s3t44/unsteered: 246308451
+    s3t44/hostility: 42438534
+    s3t44/technicality: 1275970369
+    s3t44/random: 1442498974
+    s3t45/unsteered: 1876532842
+    s3t45/hostility: 1073484927
+    s3t45/technicality: 1598498424
+    s3t45/random: 1250923255
+    s3t46/unsteered: 937114487
+    s3t46/hostility: 2077631473
+    s3t46/technicality: 1009700744
+    s3t46/random: 768015581
+    s3t47/unsteered: 1123519067
+    s3t47/hostility: 277096484
+    s3t47/technicality: 851651443
+    s3t47/random: 1478381387
+    s3t48/unsteered: 1359844901
+    s3t48/hostility: 466530038
+    s3t48/technicality: 1771078437
+    s3t48/random: 1524967593
+    s3t49/unsteered: 1300419738
+    s3t49/hostility: 2016420096
+    s3t49/technicality: 1688123714
+    s3t49/random: 1455241755
+    s3t50/unsteered: 1623401190
+    s3t50/hostility: 1265875851
+    s3t50/technicality: 1476737270
+    s3t50/random: 692877834
+    s3t51/unsteered: 1470684566
+    s3t51/hostility: 1270138831
+    s3t51/technicality: 371849182
+    s3t51/random: 2018141408
+    s3t52/unsteered: 857010923
+    s3t52/hostility: 193847220
+    s3t52/technicality: 1128498493
+    s3t52/random: 1914272448
+    s3t53/unsteered: 718143070
+    s3t53/hostility: 1009841700
+    s3t53/technicality: 691654493
+    s3t53/random: 1375283005
+    s3t54/unsteered: 1224436050
+    s3t54/hostility: 208770771
+    s3t54/technicality: 1824630081
+    s3t54/random: 1728225601
+    s3t55/unsteered: 2093230817
+    s3t55/hostility: 1031980198
+    s3t55/technicality: 1946333553
+    s3t55/random: 1898907659
+    s3t56/unsteered: 1422014340
+    s3t56/hostility: 1842525961
+    s3t56/technicality: 196678642
+    s3t56/random: 418672217
+    s3t57/unsteered: 157867814
+    s3t57/hostility: 1128381449
+    s3t57/technicality: 1418500113
+    s3t57/random: 2081680945
+    s3t58/unsteered: 34805083
+    s3t58/hostility: 530117722
+    s3t58/technicality: 1358519460
+    s3t58/random: 1071478853
+    s3t59/unsteered: 630098007
+    s3t59/hostility: 680657908
+    s3t59/technicality: 707393814
+    s3t59/random: 1649203692
+    s3t60/unsteered: 351332599
+    s3t60/hostility: 444122294
+    s3t60/technicality: 674666736
+    s3t60/random: 1979712497
+    s3t61/unsteered: 2115181596
+    s3t61/hostility: 74571964
+    s3t61/technicality: 332070513
+    s3t61/random: 1257747627
+    s3t62/unsteered: 1035986551
+    s3t62/hostility: 380649422
+    s3t62/technicality: 1395067210
+    s3t62/random: 213509481
+    s3t63/unsteered: 1638298658
+    s3t63/hostility: 1030202246
+    s3t63/technicality: 1639580849
+    s3t63/random: 1463057141
+    s3t64/unsteered: 1551396292
+    s3t64/hostility: 722137603
+    s3t64/technicality: 1922059265
+    s3t64/random: 1999476381
+    s3t65/unsteered: 1973214771
+    s3t65/hostility: 817352024
+    s3t65/technicality: 1101037594
+    s3t65/random: 1233478754
+    s3t66/unsteered: 1258956367
+    s3t66/hostility: 905029780
+    s3t66/technicality: 600944735
+    s3t66/random: 1921707495
+    s3t67/unsteered: 315518966
+    s3t67/hostility: 1966957039
+    s3t67/technicality: 2011377626
+    s3t67/random: 1296378054
+    s3t68/unsteered: 719586024
+    s3t68/hostility: 2066373291
+    s3t68/technicality: 1983811756
+    s3t68/random: 261081682
+    s3t69/unsteered: 776650388
+    s3t69/hostility: 771319758
+    s3t69/technicality: 914035048
+    s3t69/random: 867772675
+    s3t70/unsteered: 784535766
+    s3t70/hostility: 935205176
+    s3t70/technicality: 1234624298
+    s3t70/random: 389714769
+    s3t71/unsteered: 1598076352
+    s3t71/hostility: 2085200320
+    s3t71/technicality: 746550771
+    s3t71/random: 2079715689
+    s3t72/unsteered: 2048926382
+    s3t72/hostility: 734222606
+    s3t72/technicality: 970470840
+    s3t72/random: 2136009597
+    s3t73/unsteered: 1072427964
+    s3t73/hostility: 761469396
+    s3t73/technicality: 253275051
+    s3t73/random: 1489083111
+    s3t74/unsteered: 1377613209
+    s3t74/hostility: 246523313
+    s3t74/technicality: 630433036
+    s3t74/random: 1038647411
+    s3t75/unsteered: 1690271513
+    s3t75/hostility: 1150132255
+    s3t75/technicality: 2070500737
+    s3t75/random: 342323121
+    s3t76/unsteered: 1743168618
+    s3t76/hostility: 810434006
+    s3t76/technicality: 611482686
+    s3t76/random: 563905783
+    s3t77/unsteered: 313031960
+    s3t77/hostility: 1331971712
+    s3t77/technicality: 164087907
+    s3t77/random: 752416391
+    s3t78/unsteered: 737331060
+    s3t78/hostility: 1842139467
+    s3t78/technicality: 2084592928
+    s3t78/random: 1072627168
+    s3t79/unsteered: 459854645
+    s3t79/hostility: 758423124
+    s3t79/technicality: 165931538
+    s3t79/random: 1070303358
+  main:
+    s4t00/unsteered: 1134565551
+    s4t00/hostility: 970437706
+    s4t00/technicality: 565392768
+    s4t00/random: 1225974739
+    s4t01/unsteered: 901223091
+    s4t01/hostility: 1900475257
+    s4t01/technicality: 2112952199
+    s4t01/random: 422051058
+    s4t02/unsteered: 622390311
+    s4t02/hostility: 1674300515
+    s4t02/technicality: 870662365
+    s4t02/random: 2051472361
+    s4t03/unsteered: 1721148006
+    s4t03/hostility: 368174315
+    s4t03/technicality: 781068289
+    s4t03/random: 849253017
+    s4t04/unsteered: 1808398689
+    s4t04/hostility: 1616488603
+    s4t04/technicality: 1090623483
+    s4t04/random: 646704204
+    s4t05/unsteered: 2129763360
+    s4t05/hostility: 150675893
+    s4t05/technicality: 1696491552
+    s4t05/random: 1868756364
+    s4t06/unsteered: 1067672641
+    s4t06/hostility: 475352005
+    s4t06/technicality: 1903436619
+    s4t06/random: 1066116279
+    s4t07/unsteered: 691676219
+    s4t07/hostility: 1394650817
+    s4t07/technicality: 402378128
+    s4t07/random: 1608719326
+    s4t08/unsteered: 1619063501
+    s4t08/hostility: 1105986466
+    s4t08/technicality: 786320741
+    s4t08/random: 1845678098
+    s4t09/unsteered: 1294109262
+    s4t09/hostility: 1392542733
+    s4t09/technicality: 2145255815
+    s4t09/random: 1690218830
+    s4t10/unsteered: 147380797
+    s4t10/hostility: 2020078870
+    s4t10/technicality: 1863188018
+    s4t10/random: 1686211998
+    s4t11/unsteered: 579548695
+    s4t11/hostility: 916443552
+    s4t11/technicality: 1397246406
+    s4t11/random: 104396688
+    s4t12/unsteered: 1698107713
+    s4t12/hostility: 771115105
+    s4t12/technicality: 1651778362
+    s4t12/random: 1590903768
+    s4t13/unsteered: 114453701
+    s4t13/hostility: 2038577259
+    s4t13/technicality: 1711989435
+    s4t13/random: 2008399258
+    s4t14/unsteered: 143859121
+    s4t14/hostility: 238618400
+    s4t14/technicality: 90698344
+    s4t14/random: 862358020
+    s4t15/unsteered: 1994333683
+    s4t15/hostility: 510553963
+    s4t15/technicality: 1681900419
+    s4t15/random: 1563244772
+    s4t16/unsteered: 1984566232
+    s4t16/hostility: 1972008653
+    s4t16/technicality: 757771647
+    s4t16/random: 1551719446
+    s4t17/unsteered: 305292809
+    s4t17/hostility: 714361054
+    s4t17/technicality: 794392783
+    s4t17/random: 1740246032
+    s4t18/unsteered: 939433661
+    s4t18/hostility: 1057519428
+    s4t18/technicality: 526664393
+    s4t18/random: 586812256
+    s4t19/unsteered: 2104456142
+    s4t19/hostility: 1099306350
+    s4t19/technicality: 1291792081
+    s4t19/random: 784024568
+    s4t20/unsteered: 1557907438
+    s4t20/hostility: 1509632601
+    s4t20/technicality: 1426000077
+    s4t20/random: 673832281
+    s4t21/unsteered: 567152907
+    s4t21/hostility: 725071248
+    s4t21/technicality: 440414086
+    s4t21/random: 2131174355
+    s4t22/unsteered: 1424513188
+    s4t22/hostility: 884319604
+    s4t22/technicality: 255947611
+    s4t22/random: 1066052905
+    s4t23/unsteered: 492654237
+    s4t23/hostility: 1072794313
+    s4t23/technicality: 112758411
+    s4t23/random: 191438922
+    s4t24/unsteered: 144690307
+    s4t24/hostility: 1173695206
+    s4t24/technicality: 151558703
+    s4t24/random: 1341510653
+    s4t25/unsteered: 962327277
+    s4t25/hostility: 109684974
+    s4t25/technicality: 872370855
+    s4t25/random: 344077311
+    s4t26/unsteered: 1660676936
+    s4t26/hostility: 1250888160
+    s4t26/technicality: 1750817120
+    s4t26/random: 1208994538
+    s4t27/unsteered: 479207158
+    s4t27/hostility: 180276482
+    s4t27/technicality: 1348309427
+    s4t27/random: 1654349919
+    s4t28/unsteered: 1709871690
+    s4t28/hostility: 1553297432
+    s4t28/technicality: 2025543530
+    s4t28/random: 1611797932
+    s4t29/unsteered: 1333051681
+    s4t29/hostility: 1840308267
+    s4t29/technicality: 251185621
+    s4t29/random: 1789766698
+    s4t30/unsteered: 1250755104
+    s4t30/hostility: 612523103
+    s4t30/technicality: 1722864293
+    s4t30/random: 373558101
+    s4t31/unsteered: 796428409
+    s4t31/hostility: 1511180504
+    s4t31/technicality: 1113938202
+    s4t31/random: 441003977
+    s4t32/unsteered: 908804592
+    s4t32/hostility: 1633649727
+    s4t32/technicality: 1900767288
+    s4t32/random: 1066104652
+    s4t33/unsteered: 147464341
+    s4t33/hostility: 2059403401
+    s4t33/technicality: 464166375
+    s4t33/random: 1058689411
+    s4t34/unsteered: 1318409670
+    s4t34/hostility: 1195830563
+    s4t34/technicality: 2136504173
+    s4t34/random: 1510869463
+    s4t35/unsteered: 50280168
+    s4t35/hostility: 345542072
+    s4t35/technicality: 1251976345
+    s4t35/random: 1568337787
+    s4t36/unsteered: 106911829
+    s4t36/hostility: 1071624125
+    s4t36/technicality: 2000232991
+    s4t36/random: 1828776822
+    s4t37/unsteered: 1111302442
+    s4t37/hostility: 1560634288
+    s4t37/technicality: 1821843302
+    s4t37/random: 963504286
+    s4t38/unsteered: 389345049
+    s4t38/hostility: 579950979
+    s4t38/technicality: 1202692019
+    s4t38/random: 215536323
+    s4t39/unsteered: 373811238
+    s4t39/hostility: 404193876
+    s4t39/technicality: 43662724
+    s4t39/random: 1872218128
+    s4t40/unsteered: 92273196
+    s4t40/hostility: 574405769
+    s4t40/technicality: 1026745027
+    s4t40/random: 1127157295
+    s4t41/unsteered: 1873855638
+    s4t41/hostility: 1392211940
+    s4t41/technicality: 68427898
+    s4t41/random: 1392658671
+    s4t42/unsteered: 819569798
+    s4t42/hostility: 308958810
+    s4t42/technicality: 851403486
+    s4t42/random: 1672668490
+    s4t43/unsteered: 164284970
+    s4t43/hostility: 311031868
+    s4t43/technicality: 1697816945
+    s4t43/random: 1111398488
+    s4t44/unsteered: 1232037729
+    s4t44/hostility: 517517603
+    s4t44/technicality: 321771970
+    s4t44/random: 1021870128
+    s4t45/unsteered: 1292743704
+    s4t45/hostility: 2025926226
+    s4t45/technicality: 642399731
+    s4t45/random: 973532050
+    s4t46/unsteered: 543515730
+    s4t46/hostility: 1581832336
+    s4t46/technicality: 513379910
+    s4t46/random: 1000727398
+    s4t47/unsteered: 1818227058
+    s4t47/hostility: 1428629086
+    s4t47/technicality: 2143743821
+    s4t47/random: 1935390650
+    s4t48/unsteered: 1639067865
+    s4t48/hostility: 178618575
+    s4t48/technicality: 456055831
+    s4t48/random: 196922540
+    s4t49/unsteered: 1540193350
+    s4t49/hostility: 1359981999
+    s4t49/technicality: 1472755473
+    s4t49/random: 1148305439
+    s4t50/unsteered: 98757418
+    s4t50/hostility: 341524438
+    s4t50/technicality: 463057236
+    s4t50/random: 791069142
+    s4t51/unsteered: 685420774
+    s4t51/hostility: 847141690
+    s4t51/technicality: 1721228270
+    s4t51/random: 1888292955
+    s4t52/unsteered: 369239139
+    s4t52/hostility: 642401259
+    s4t52/technicality: 39874908
+    s4t52/random: 390224241
+    s4t53/unsteered: 179692875
+    s4t53/hostility: 579710338
+    s4t53/technicality: 26438020
+    s4t53/random: 1846643226
+    s4t54/unsteered: 1810283249
+    s4t54/hostility: 2093026552
+    s4t54/technicality: 559958485
+    s4t54/random: 710647029
+    s4t55/unsteered: 1521338735
+    s4t55/hostility: 695964465
+    s4t55/technicality: 1036094151
+    s4t55/random: 1753847483
+    s4t56/unsteered: 484615478
+    s4t56/hostility: 1807629063
+    s4t56/technicality: 202950031
+    s4t56/random: 999129010
+    s4t57/unsteered: 646909177
+    s4t57/hostility: 1519469329
+    s4t57/technicality: 1737324019
+    s4t57/random: 478157769
+    s4t58/unsteered: 289277040
+    s4t58/hostility: 909260236
+    s4t58/technicality: 2075309795
+    s4t58/random: 39430939
+    s4t59/unsteered: 253184143
+    s4t59/hostility: 518593644
+    s4t59/technicality: 1985554196
+    s4t59/random: 1898209597
+    s4t60/unsteered: 1768823581
+    s4t60/hostility: 596193852
+    s4t60/technicality: 572249836
+    s4t60/random: 264164303
+    s4t61/unsteered: 1169701040
+    s4t61/hostility: 1828263294
+    s4t61/technicality: 1230148691
+    s4t61/random: 1209464823
+    s4t62/unsteered: 1812679384
+    s4t62/hostility: 2075163704
+    s4t62/technicality: 89415628
+    s4t62/random: 1083595136
+    s4t63/unsteered: 1461513708
+    s4t63/hostility: 1577003166
+    s4t63/technicality: 1391034668
+    s4t63/random: 1946774690
+    s4t64/unsteered: 1000775240
+    s4t64/hostility: 876312068
+    s4t64/technicality: 631002675
+    s4t64/random: 1256609673
+    s4t65/unsteered: 886089086
+    s4t65/hostility: 650550266
+    s4t65/technicality: 849130867
+    s4t65/random: 1796068511
+    s4t66/unsteered: 1764657475
+    s4t66/hostility: 569779227
+    s4t66/technicality: 1298115309
+    s4t66/random: 1000017686
+    s4t67/unsteered: 1537789898
+    s4t67/hostility: 1571518653
+    s4t67/technicality: 1467576172
+    s4t67/random: 2028994957
+    s4t68/unsteered: 287023657
+    s4t68/hostility: 671276575
+    s4t68/technicality: 2136413932
+    s4t68/random: 1034379916
+    s4t69/unsteered: 1267562137
+    s4t69/hostility: 2044237677
+    s4t69/technicality: 1990882496
+    s4t69/random: 1298929265
+    s4t70/unsteered: 2065013197
+    s4t70/hostility: 418869325
+    s4t70/technicality: 89251075
+    s4t70/random: 1465305938
+    s4t71/unsteered: 2099857897
+    s4t71/hostility: 1682598598
+    s4t71/technicality: 1593456491
+    s4t71/random: 1833404047
+    s4t72/unsteered: 205613562
+    s4t72/hostility: 507986483
+    s4t72/technicality: 716276409
+    s4t72/random: 587193334
+    s4t73/unsteered: 1225068303
+    s4t73/hostility: 2017288425
+    s4t73/technicality: 862589406
+    s4t73/random: 588435134
+    s4t74/unsteered: 1653275204
+    s4t74/hostility: 12356848
+    s4t74/technicality: 131701283
+    s4t74/random: 1531367579
+    s4t75/unsteered: 1887106556
+    s4t75/hostility: 1178456087
+    s4t75/technicality: 650520464
+    s4t75/random: 1891535433
+    s4t76/unsteered: 571566444
+    s4t76/hostility: 520904907
+    s4t76/technicality: 1483592475
+    s4t76/random: 1737613656
+    s4t77/unsteered: 1207589400
+    s4t77/hostility: 806547034
+    s4t77/technicality: 350031825
+    s4t77/random: 1465292127
+    s4t78/unsteered: 126930120
+    s4t78/hostility: 1180049309
+    s4t78/technicality: 1841153172
+    s4t78/random: 1907629781
+    s4t79/unsteered: 1167764007
+    s4t79/hostility: 1625309335
+    s4t79/technicality: 734266130
+    s4t79/random: 5586066
+check_ids:
+- s4t00
+- s4t04
+- s4t05
+- s4t18
+- s4t27
+- s4t29
+- s4t33
+- s4t58
+- s4t63
+- s4t69
+- s4t71
+- s4t73
+- s4t74
+- s4t75
+- s4t77
+- s4t79
+analysis:
+  resamples: 10000
+  primary_ci: 0.9833333333333333
+  secondary_ci: 0.95
+  equivalence_ci: 0.9
+  margins:
+    O1: 0.15
+    O2: 0.15
+    O2c: 0.15
+    O3: 0.15
+    O3q: 0.15
+    B1: 0.05
+    B2: 0.05
+    B3: 0.05
+  missing_policy: Missing required values render the affected estimand not interpretable;
+    no outcome-based exclusions.
+regexes:
+  apology: \b(sorry|apologi[sz]e|apologies)\b
+  politeness: \b(please|thank you|thanks|happy to help)\b
+  trace_instruction: \b(system|instruction|warm|kind|patient|hostility)\b
+validity:
+  rating_mass_min: 0.8
+  Sam_difference_min: 1.0
+  reproduction_tolerance: 0.01
+schema: study7-v0.2

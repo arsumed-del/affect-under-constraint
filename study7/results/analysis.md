@@ -1,0 +1,321 @@
+# Study 7 analysis
+
+Independent branches support instruction-dependent moderation; no causal transfer claim. Secondary intervals are 95% unadjusted. Equivalence intervals are 90% descriptive.
+
+## Full sample (n=80)
+
+EH interaction gate: False
+
+### generated
+
+Reversed, mixed and inconclusive components remain outlet-specific. Detectability and descriptive equivalence may overlap.
+
+| Test / component | Estimate | CI level | CI | Status |
+|---|---:|---:|---|---|
+| EH conjunction | | | | negligible |
+| EH/B1:G-N:unsteered | 0.004928438175556949 | 0.95 | [-0.03019787168117545, 0.03756733539017659] | negligible |
+| EH/B1:G-N:technicality | 0.013514036249398486 | 0.95 | [-0.024263130600338623, 0.050070858690723974] | negligible |
+| EH/B1:G-N:random | 0.0012932953039126005 | 0.95 | [-0.03419027035050021, 0.03294778477124051] | negligible |
+| P1 conjunction | | | | inconclusive |
+| P1/O1:G-N:unsteered | -0.2397996342280419 | 0.9833333333333333 | [-0.39782144895669946, -0.08622639990100682] | reversed |
+| P1/O1:G-N:technicality | -0.23192988067264605 | 0.9833333333333333 | [-0.4087078921809141, -0.05146348746962487] | reversed |
+| P1/O1:G-N:random | -0.11613714634426235 | 0.9833333333333333 | [-0.31270052126980835, 0.05755142400368524] | inconclusive |
+| P1/O1:N:unsteered | -0.42056170849240077 | 0.9833333333333333 | [-0.5730676905774346, -0.27275689737533554] | supported |
+| P2_core conjunction | | | | inconclusive |
+| P2_core/O2:S-N:unsteered | 0.06681412926990737 | 0.9833333333333333 | [-0.017720886174391402, 0.14973692889189516] | negligible |
+| P2_core/O2:S-N:technicality | 0.21692483003669794 | 0.9833333333333333 | [0.12756159977288506, 0.31071686872742843] | reversed |
+| P2_core/O2:S-N:random | 0.2475861338433222 | 0.9833333333333333 | [0.15670200380882118, 0.341273907932533] | reversed |
+| P2_core/O2:S:unsteered | 0.05054309939498432 | 0.9833333333333333 | [-0.03013917806233632, 0.13196391218509995] | negligible |
+| P2 conjunction | | | | inconclusive |
+| P2/O2:S-N:unsteered | 0.06681412926990737 | 0.9833333333333333 | [-0.017720886174391402, 0.14973692889189516] | negligible |
+| P2/O2:S-N:technicality | 0.21692483003669794 | 0.9833333333333333 | [0.12756159977288506, 0.31071686872742843] | reversed |
+| P2/O2:S-N:random | 0.2475861338433222 | 0.9833333333333333 | [0.15670200380882118, 0.341273907932533] | reversed |
+| P2/O2:S:unsteered | 0.05054309939498432 | 0.9833333333333333 | [-0.03013917806233632, 0.13196391218509995] | negligible |
+| P2/O2-O2c:S-N:unsteered | -0.14976951293547475 | 0.9833333333333333 | [-0.28305355380807684, -0.015868679753093657] | supported |
+| P3 conjunction | | | | reversed |
+| P3/O2:S-G:unsteered | 0.15902193116102922 | 0.9833333333333333 | [0.08889540151799004, 0.22692692971583533] | reversed |
+| P3/O2:S-G:technicality | 0.15620027164833944 | 0.9833333333333333 | [0.07497333546978666, 0.24028636390771282] | reversed |
+| P3/O2:S-G:random | 0.15232976991216943 | 0.9833333333333333 | [0.08223736974867893, 0.21864013855194459] | reversed |
+| S1 conjunction | | | | inconclusive |
+| S1/O1:S-N:unsteered | -0.18452185911739513 | 0.95 | [-0.31215734012823315, -0.06117563381122352] | reversed |
+| S1/O1:S-N:technicality | -0.07407179199544929 | 0.95 | [-0.19906824495156078, 0.05004450776346013] | inconclusive |
+| S1/O1:S-N:random | -0.05615995684507691 | 0.95 | [-0.1947518617821829, 0.07654912172887231] | inconclusive |
+| S2_G conjunction | | | | reversed |
+| S2_G/O3:G-N:unsteered | 0.3732022608464421 | 0.95 | [0.2499108347593043, 0.49893737551363165] | reversed |
+| S2_G/O3:G-N:technicality | 0.1592398850829516 | 0.95 | [0.02538098368869602, 0.28701259839706617] | reversed |
+| S2_G/O3:G-N:random | 0.3034291289854093 | 0.95 | [0.19456652362718202, 0.41219232011207124] | reversed |
+| S2_S conjunction | | | | reversed |
+| S2_S/O3:S-N:unsteered | 0.2527119612257203 | 0.95 | [0.12642901227390768, 0.38468131546783846] | reversed |
+| S2_S/O3:S-N:technicality | 0.18414304089064046 | 0.95 | [0.039061192478791376, 0.33794094394067287] | reversed |
+| S2_S/O3:S-N:random | 0.20674443657532554 | 0.95 | [0.09428421186303201, 0.3250380994323305] | reversed |
+| S2_G_net conjunction | | | | reversed |
+| S2_G_net/O3-O3q:G-N:unsteered | 0.27946145100330677 | 0.95 | [0.13827766716337, 0.4233649709757311] | reversed |
+| S2_G_net/O3-O3q:G-N:technicality | 0.1518756616201678 | 0.95 | [0.024198740545688976, 0.2808998769791455] | reversed |
+| S2_G_net/O3-O3q:G-N:random | 0.20326211943618278 | 0.95 | [0.09257699693185042, 0.31729236816711337] | reversed |
+| S2_S_net conjunction | | | | inconclusive |
+| S2_S_net/O3-O3q:S-N:unsteered | 0.12516600039302264 | 0.95 | [0.01751226872524367, 0.23487126542348952] | reversed |
+| S2_S_net/O3-O3q:S-N:technicality | 0.041941721621505224 | 0.95 | [-0.07732597219926006, 0.1583566268139925] | negligible |
+| S2_S_net/O3-O3q:S-N:random | 0.08335030436352323 | 0.95 | [-0.004207627825965818, 0.1723881620153144] | inconclusive |
+| S3 conjunction | | | | inconclusive |
+| S3/B2:G:unsteered | -0.025829783770313954 | 0.95 | [-0.07323874478905054, 0.02420553718249716] | inconclusive |
+| S3/B2:G:technicality | 0.01567348621902056 | 0.95 | [-0.04173882520903134, 0.07756066628066037] | inconclusive |
+| S3/B2:G:random | -0.030647750331263525 | 0.95 | [-0.07428994645204509, 0.012240177184903576] | inconclusive |
+
+### fixed
+
+Reversed, mixed and inconclusive components remain outlet-specific. Detectability and descriptive equivalence may overlap.
+
+| Test / component | Estimate | CI level | CI | Status |
+|---|---:|---:|---|---|
+| P1 conjunction | | | | inconclusive |
+| P1/O1:G-N:unsteered | -0.14650194498756833 | 0.95 | [-0.2451368710924833, -0.04542175732304526] | reversed |
+| P1/O1:G-N:technicality | -0.4394371028387544 | 0.95 | [-0.5932539783462286, -0.30235890411910327] | reversed |
+| P1/O1:G-N:random | -0.16917352141619482 | 0.95 | [-0.28998994602642336, -0.059416181190066635] | reversed |
+| P1/O1:N:unsteered | -0.4997691647736254 | 0.95 | [-0.6149745622078362, -0.3847671173898691] | supported |
+| P2_core conjunction | | | | inconclusive |
+| P2_core/O2:S-N:unsteered | 0.05367537685695924 | 0.95 | [0.0071516214430295336, 0.10094412078559457] | small but detectable |
+| P2_core/O2:S-N:technicality | 0.07710649647443923 | 0.95 | [0.016641335359787283, 0.13647548272616056] | small but detectable |
+| P2_core/O2:S-N:random | 0.14337469464523406 | 0.95 | [0.09479692029442578, 0.19310920366185708] | reversed |
+| P2_core/O2:S:unsteered | -0.02920959185771822 | 0.95 | [-0.07889694327666986, 0.019696361647713573] | negligible |
+| P2 conjunction | | | | inconclusive |
+| P2/O2:S-N:unsteered | 0.05367537685695924 | 0.95 | [0.0071516214430295336, 0.10094412078559457] | small but detectable |
+| P2/O2:S-N:technicality | 0.07710649647443923 | 0.95 | [0.016641335359787283, 0.13647548272616056] | small but detectable |
+| P2/O2:S-N:random | 0.14337469464523406 | 0.95 | [0.09479692029442578, 0.19310920366185708] | reversed |
+| P2/O2:S:unsteered | -0.02920959185771822 | 0.95 | [-0.07889694327666986, 0.019696361647713573] | negligible |
+| P2/O2-O2c:S-N:unsteered | -0.059103225985563335 | 0.95 | [-0.1244622958877948, 0.004593834390251515] | negligible |
+| P3 conjunction | | | | reversed |
+| P3/O2:S-G:unsteered | 0.12061632869568442 | 0.95 | [0.08719307633422477, 0.15384895024321388] | small but detectable |
+| P3/O2:S-G:technicality | 0.12336505258739186 | 0.95 | [0.08926094078065955, 0.156607928390298] | reversed |
+| P3/O2:S-G:random | 0.12330421101803365 | 0.95 | [0.09185869058014733, 0.15431234104249528] | small but detectable |
+| S1 conjunction | | | | reversed |
+| S1/O1:S-N:unsteered | -0.13036432414088087 | 0.95 | [-0.21490660303358666, -0.04778033656116103] | reversed |
+| S1/O1:S-N:technicality | -0.31568527918754424 | 0.95 | [-0.43469168607829667, -0.20966785130022852] | reversed |
+| S1/O1:S-N:random | -0.1000462937537165 | 0.95 | [-0.21045040449350821, -0.002987194930681008] | reversed |
+| S2_G conjunction | | | | inconclusive |
+| S2_G/O3:G-N:unsteered | 0.22428785915435423 | 0.95 | [0.1543244861411771, 0.29882533809354705] | reversed |
+| S2_G/O3:G-N:technicality | -0.2201197038319108 | 0.95 | [-0.32961572782755927, -0.11351769798810238] | supported |
+| S2_G/O3:G-N:random | 0.13246941965049822 | 0.95 | [0.06792868989706809, 0.19925471841012252] | reversed |
+| S2_S conjunction | | | | inconclusive |
+| S2_S/O3:S-N:unsteered | 0.12009130104269601 | 0.95 | [0.06304993788110375, 0.17658555480516636] | reversed |
+| S2_S/O3:S-N:technicality | -0.12458175303941603 | 0.95 | [-0.21400588364496623, -0.0468511757850135] | supported |
+| S2_S/O3:S-N:random | 0.07181735949335744 | 0.95 | [0.01860337117804952, 0.11972990006847462] | small but detectable |
+| S2_G_net conjunction | | | | inconclusive |
+| S2_G_net/O3-O3q:G-N:unsteered | 0.13504510096573613 | 0.95 | [0.047259857503773595, 0.2268870050437016] | reversed |
+| S2_G_net/O3-O3q:G-N:technicality | 0.06668912155856624 | 0.95 | [-0.03524833350159278, 0.1664604852337414] | negligible |
+| S2_G_net/O3-O3q:G-N:random | 0.03427565526006152 | 0.95 | [-0.05197727508884037, 0.12211279832780716] | negligible |
+| S2_S_net conjunction | | | | negligible |
+| S2_S_net/O3-O3q:S-N:unsteered | -0.007687958288366481 | 0.95 | [-0.07192242723399594, 0.060075481845868424] | negligible |
+| S2_S_net/O3-O3q:S-N:technicality | -0.062467357359840506 | 0.95 | [-0.14198982641576458, 0.013050661782971278] | negligible |
+| S2_S_net/O3-O3q:S-N:random | -0.050786915329159 | 0.95 | [-0.11117474428906908, 0.008742188224077987] | negligible |
+
+## E5 (n=37)
+
+EH interaction gate: False
+
+### generated
+
+Reversed, mixed and inconclusive components remain outlet-specific. Detectability and descriptive equivalence may overlap.
+
+| Test / component | Estimate | CI level | CI | Status |
+|---|---:|---:|---|---|
+| EH conjunction | | | | inconclusive |
+| EH/B1:G-N:unsteered | -0.007739911757321474 | 0.95 | [-0.04127363884543081, 0.024420638102408784] | negligible |
+| EH/B1:G-N:technicality | 0.02723345624100467 | 0.95 | [-0.01782690413926281, 0.07862698020577916] | inconclusive |
+| EH/B1:G-N:random | -0.01582217250629706 | 0.95 | [-0.054207253006304225, 0.01580216041262689] | negligible |
+| P1 conjunction | | | | inconclusive |
+| P1/O1:G-N:unsteered | -0.2455681954172882 | 0.9833333333333333 | [-0.4633587885688219, -0.03924786754131279] | reversed |
+| P1/O1:G-N:technicality | -0.23584663017392335 | 0.9833333333333333 | [-0.5115080301862726, 0.03163737972043208] | inconclusive |
+| P1/O1:G-N:random | -0.0009762823065196185 | 0.9833333333333333 | [-0.195087811271463, 0.18832760952589347] | negligible |
+| P1/O1:N:unsteered | -0.3820986538344707 | 0.9833333333333333 | [-0.5812785590596937, -0.17260006673641784] | supported |
+| P2_core conjunction | | | | inconclusive |
+| P2_core/O2:S-N:unsteered | 0.016559849606010184 | 0.9833333333333333 | [-0.10308239529733433, 0.13881137195805443] | negligible |
+| P2_core/O2:S-N:technicality | 0.2177230377174198 | 0.9833333333333333 | [0.0816385502141371, 0.3682884627918924] | reversed |
+| P2_core/O2:S-N:random | 0.2205768047706477 | 0.9833333333333333 | [0.09518790376730728, 0.3509290786728885] | reversed |
+| P2_core/O2:S:unsteered | -0.03004041966845418 | 0.9833333333333333 | [-0.15813238925547207, 0.10217606023498672] | negligible |
+| P2 conjunction | | | | inconclusive |
+| P2/O2:S-N:unsteered | 0.016559849606010184 | 0.9833333333333333 | [-0.10308239529733433, 0.13881137195805443] | negligible |
+| P2/O2:S-N:technicality | 0.2177230377174198 | 0.9833333333333333 | [0.0816385502141371, 0.3682884627918924] | reversed |
+| P2/O2:S-N:random | 0.2205768047706477 | 0.9833333333333333 | [0.09518790376730728, 0.3509290786728885] | reversed |
+| P2/O2:S:unsteered | -0.03004041966845418 | 0.9833333333333333 | [-0.15813238925547207, 0.10217606023498672] | negligible |
+| P2/O2-O2c:S-N:unsteered | -0.1097102893040619 | 0.9833333333333333 | [-0.2692715038184006, 0.054732088341407116] | inconclusive |
+| P3 conjunction | | | | inconclusive |
+| P3/O2:S-G:unsteered | 0.12759594752355966 | 0.9833333333333333 | [0.023932951442450494, 0.2244680675320602] | reversed |
+| P3/O2:S-G:technicality | 0.06512480536603328 | 0.9833333333333333 | [-0.0500469884057612, 0.18962121819485248] | negligible |
+| P3/O2:S-G:random | 0.14730806492310217 | 0.9833333333333333 | [0.0523578838570761, 0.2377038060871063] | reversed |
+| S1 conjunction | | | | inconclusive |
+| S1/O1:S-N:unsteered | -0.11501305132332089 | 0.95 | [-0.281843489895284, 0.03996851241292192] | inconclusive |
+| S1/O1:S-N:technicality | -0.11199681540336547 | 0.95 | [-0.27938639089937695, 0.050497570432309714] | inconclusive |
+| S1/O1:S-N:random | 0.015279151662555314 | 0.95 | [-0.12364109700664024, 0.14950616584095383] | negligible |
+| S2_G conjunction | | | | inconclusive |
+| S2_G/O3:G-N:unsteered | 0.20102309021205075 | 0.95 | [0.07390009880334537, 0.34329081625539554] | reversed |
+| S2_G/O3:G-N:technicality | -0.011403135274353224 | 0.95 | [-0.19028271078527617, 0.1446238007378051] | inconclusive |
+| S2_G/O3:G-N:random | 0.18426199529537765 | 0.95 | [0.05458668795784033, 0.32196464158653537] | reversed |
+| S2_S conjunction | | | | inconclusive |
+| S2_S/O3:S-N:unsteered | 0.12070862781482392 | 0.95 | [0.022539737452430823, 0.23445088901023112] | reversed |
+| S2_S/O3:S-N:technicality | -0.053403233432358414 | 0.95 | [-0.1916552555022409, 0.07868517480408446] | inconclusive |
+| S2_S/O3:S-N:random | 0.15855238902825677 | 0.95 | [0.05301635886675712, 0.2671745253346576] | reversed |
+| S2_G_net conjunction | | | | inconclusive |
+| S2_G_net/O3-O3q:G-N:unsteered | 0.23455168509238913 | 0.95 | [0.026969321149403133, 0.44681202851763435] | reversed |
+| S2_G_net/O3-O3q:G-N:technicality | 0.11201289700279937 | 0.95 | [-0.09243943857642399, 0.3137958870619801] | inconclusive |
+| S2_G_net/O3-O3q:G-N:random | 0.1549948473722694 | 0.95 | [0.01455003714943473, 0.296062958777106] | reversed |
+| S2_S_net conjunction | | | | inconclusive |
+| S2_S_net/O3-O3q:S-N:unsteered | 0.059061485211719354 | 0.95 | [-0.06015972067219407, 0.18305447840679662] | inconclusive |
+| S2_S_net/O3-O3q:S-N:technicality | -0.08287854461739382 | 0.95 | [-0.24787723378436796, 0.06744271432077197] | inconclusive |
+| S2_S_net/O3-O3q:S-N:random | 0.048433361419804886 | 0.95 | [-0.049391190891703414, 0.1446703913386267] | negligible |
+| S3 conjunction | | | | inconclusive |
+| S3/B2:G:unsteered | -0.011419481682792507 | 0.95 | [-0.0798298281664658, 0.06105722029672972] | inconclusive |
+| S3/B2:G:technicality | -0.0066933821622483635 | 0.95 | [-0.09414494178317663, 0.08815469344530402] | inconclusive |
+| S3/B2:G:random | -0.023639974398286762 | 0.95 | [-0.07022838837095864, 0.017645626676401023] | inconclusive |
+
+### fixed
+
+Reversed, mixed and inconclusive components remain outlet-specific. Detectability and descriptive equivalence may overlap.
+
+| Test / component | Estimate | CI level | CI | Status |
+|---|---:|---:|---|---|
+| P1 conjunction | | | | inconclusive |
+| P1/O1:G-N:unsteered | -0.0688993205484102 | 0.95 | [-0.1976466236731194, 0.05857267242440454] | inconclusive |
+| P1/O1:G-N:technicality | -0.4111727872900025 | 0.95 | [-0.6718293398547733, -0.20049522388432486] | reversed |
+| P1/O1:G-N:random | -0.03893308263407199 | 0.95 | [-0.16739059628402625, 0.08715790411872706] | negligible |
+| P1/O1:N:unsteered | -0.46603529035199837 | 0.95 | [-0.639795651896479, -0.29554534111793074] | supported |
+| P2_core conjunction | | | | inconclusive |
+| P2_core/O2:S-N:unsteered | 0.022777499313348347 | 0.95 | [-0.04684057277005624, 0.0937545975479396] | negligible |
+| P2_core/O2:S-N:technicality | -0.008746707902021691 | 0.95 | [-0.08745912236892915, 0.07106606478691284] | negligible |
+| P2_core/O2:S-N:random | 0.09583625785316223 | 0.95 | [0.03174134116522022, 0.1679739746420054] | reversed |
+| P2_core/O2:S:unsteered | -0.07896727665579463 | 0.95 | [-0.16184056348303413, 0.003424355074918025] | negligible |
+| P2 conjunction | | | | inconclusive |
+| P2/O2:S-N:unsteered | 0.022777499313348347 | 0.95 | [-0.04684057277005624, 0.0937545975479396] | negligible |
+| P2/O2:S-N:technicality | -0.008746707902021691 | 0.95 | [-0.08745912236892915, 0.07106606478691284] | negligible |
+| P2/O2:S-N:random | 0.09583625785316223 | 0.95 | [0.03174134116522022, 0.1679739746420054] | reversed |
+| P2/O2:S:unsteered | -0.07896727665579463 | 0.95 | [-0.16184056348303413, 0.003424355074918025] | negligible |
+| P2/O2-O2c:S-N:unsteered | -0.038651143056955814 | 0.95 | [-0.14935502850697688, 0.0703411398043904] | negligible |
+| P3 conjunction | | | | small but detectable |
+| P3/O2:S-G:unsteered | 0.09336455129660537 | 0.95 | [0.044001803657386374, 0.14167932736987024] | small but detectable |
+| P3/O2:S-G:technicality | 0.07891471122807109 | 0.95 | [0.03349856618924217, 0.12746978729370456] | small but detectable |
+| P3/O2:S-G:random | 0.09535892244645273 | 0.95 | [0.04738935041724758, 0.1443545559870949] | small but detectable |
+| S1 conjunction | | | | inconclusive |
+| S1/O1:S-N:unsteered | -0.11570883504211069 | 0.95 | [-0.25306746068261415, 0.011679572993863975] | inconclusive |
+| S1/O1:S-N:technicality | -0.3941575963748622 | 0.95 | [-0.6014398996216678, -0.2268009975668105] | reversed |
+| S1/O1:S-N:random | -0.08898523150067321 | 0.95 | [-0.2025788362230269, 0.015475484457195142] | inconclusive |
+| S2_G conjunction | | | | inconclusive |
+| S2_G/O3:G-N:unsteered | 0.1910400520259468 | 0.95 | [0.11117196545790332, 0.2825563062076535] | reversed |
+| S2_G/O3:G-N:technicality | -0.2463640412578194 | 0.95 | [-0.39690579805496656, -0.11416092692593437] | supported |
+| S2_G/O3:G-N:random | 0.1389773963869707 | 0.95 | [0.06847552910378737, 0.21069913167599216] | reversed |
+| S2_S conjunction | | | | inconclusive |
+| S2_S/O3:S-N:unsteered | 0.1297897097622945 | 0.95 | [0.06801789759630983, 0.20030811401097023] | reversed |
+| S2_S/O3:S-N:technicality | -0.12347846236160288 | 0.95 | [-0.21552177805442033, -0.037534367829460805] | supported |
+| S2_S/O3:S-N:random | 0.10444616922568943 | 0.95 | [0.05163444500793033, 0.16088432943418782] | reversed |
+| S2_G_net conjunction | | | | inconclusive |
+| S2_G_net/O3-O3q:G-N:unsteered | 0.12430855135433705 | 0.95 | [0.0012115297156367632, 0.25076758996960896] | reversed |
+| S2_G_net/O3-O3q:G-N:technicality | 0.045602688727864805 | 0.95 | [-0.09923689320783545, 0.19112982526973035] | inconclusive |
+| S2_G_net/O3-O3q:G-N:random | 0.045972009641142515 | 0.95 | [-0.07834616455772962, 0.15522088733052056] | negligible |
+| S2_S_net conjunction | | | | negligible |
+| S2_S_net/O3-O3q:S-N:unsteered | -7.964031072960364e-05 | 0.95 | [-0.08121301422067552, 0.08392335721421054] | negligible |
+| S2_S_net/O3-O3q:S-N:technicality | -0.04181396542760324 | 0.95 | [-0.15523839764002115, 0.06400636644042512] | negligible |
+| S2_S_net/O3-O3q:S-N:random | -0.00290910675334946 | 0.95 | [-0.08942233291599455, 0.07903638206275565] | negligible |
+
+## natural_trace_closure (n=22)
+
+EH interaction gate: False
+
+### generated
+
+Reversed, mixed and inconclusive components remain outlet-specific. Detectability and descriptive equivalence may overlap.
+
+| Test / component | Estimate | CI level | CI | Status |
+|---|---:|---:|---|---|
+| EH conjunction | | | | negligible |
+| EH/B1:G-N:unsteered | -0.004474714961940084 | 0.95 | [-0.04944860730478963, 0.03637620075804243] | negligible |
+| EH/B1:G-N:technicality | -0.012861641994359988 | 0.95 | [-0.05174742909611351, 0.02740083582234959] | negligible |
+| EH/B1:G-N:random | -0.002828101646049287 | 0.95 | [-0.05981941471453119, 0.03761587967264032] | negligible |
+| P1 conjunction | | | | inconclusive |
+| P1/O1:G-N:unsteered | -0.40196583224954 | 0.9833333333333333 | [-0.6892456490713419, -0.1377085770393604] | reversed |
+| P1/O1:G-N:technicality | -0.2653194840595577 | 0.9833333333333333 | [-0.5566687326219479, 0.027713549009595936] | inconclusive |
+| P1/O1:G-N:random | -0.12514619208904065 | 0.9833333333333333 | [-0.39067030988472773, 0.14880087352752186] | inconclusive |
+| P1/O1:N:unsteered | -0.15571726759102364 | 0.9833333333333333 | [-0.4389216311890614, 0.12957013176686605] | inconclusive |
+| P2_core conjunction | | | | inconclusive |
+| P2_core/O2:S-N:unsteered | -0.06103032930168719 | 0.9833333333333333 | [-0.2130289572574985, 0.07888601877409547] | inconclusive |
+| P2_core/O2:S-N:technicality | 0.27360795474339056 | 0.9833333333333333 | [0.13375664069527568, 0.4408502646496119] | reversed |
+| P2_core/O2:S-N:random | 0.14482095883200785 | 0.9833333333333333 | [0.022775500085263512, 0.25326262816972556] | reversed |
+| P2_core/O2:S:unsteered | -0.0006410258915629266 | 0.9833333333333333 | [-0.171111048537788, 0.17880598570874454] | negligible |
+| P2 conjunction | | | | inconclusive |
+| P2/O2:S-N:unsteered | -0.06103032930168719 | 0.9833333333333333 | [-0.2130289572574985, 0.07888601877409547] | inconclusive |
+| P2/O2:S-N:technicality | 0.27360795474339056 | 0.9833333333333333 | [0.13375664069527568, 0.4408502646496119] | reversed |
+| P2/O2:S-N:random | 0.14482095883200785 | 0.9833333333333333 | [0.022775500085263512, 0.25326262816972556] | reversed |
+| P2/O2:S:unsteered | -0.0006410258915629266 | 0.9833333333333333 | [-0.171111048537788, 0.17880598570874454] | negligible |
+| P2/O2-O2c:S-N:unsteered | -0.09567929877773866 | 0.9833333333333333 | [-0.30616536061244193, 0.11094183089649592] | inconclusive |
+| P3 conjunction | | | | inconclusive |
+| P3/O2:S-G:unsteered | 0.11237204575214811 | 0.9833333333333333 | [-0.003020487119283322, 0.21641932748486767] | inconclusive |
+| P3/O2:S-G:technicality | 0.22514941022514118 | 0.9833333333333333 | [0.06389343130182674, 0.3964511424246068] | reversed |
+| P3/O2:S-G:random | 0.14037618768179927 | 0.9833333333333333 | [0.05325566202129302, 0.22009684586385447] | reversed |
+| S1 conjunction | | | | inconclusive |
+| S1/O1:S-N:unsteered | -0.2722258263083665 | 0.95 | [-0.49036627647473485, -0.05042116113697739] | reversed |
+| S1/O1:S-N:technicality | -0.1336049744240468 | 0.95 | [-0.3874973184298914, 0.11484693874923815] | inconclusive |
+| S1/O1:S-N:random | -0.17118485672796105 | 0.95 | [-0.38976786296190574, 0.05699434433370633] | inconclusive |
+| S2_G conjunction | | | | inconclusive |
+| S2_G/O3:G-N:unsteered | 0.26427021433815084 | 0.95 | [0.06720972598241577, 0.49411844902566365] | reversed |
+| S2_G/O3:G-N:technicality | 0.07514165837096246 | 0.95 | [-0.12053712906810836, 0.2728069085042769] | inconclusive |
+| S2_G/O3:G-N:random | 0.16487688914971868 | 0.95 | [0.000878745551994735, 0.35030323992208595] | reversed |
+| S2_S conjunction | | | | inconclusive |
+| S2_S/O3:S-N:unsteered | 0.15703409926147538 | 0.95 | [-0.004634419752738009, 0.3363589524214439] | inconclusive |
+| S2_S/O3:S-N:technicality | 0.03239919909261408 | 0.95 | [-0.1528394783296639, 0.22714823622449523] | inconclusive |
+| S2_S/O3:S-N:random | 0.04528467340866615 | 0.95 | [-0.08438717125572305, 0.19504194403983058] | inconclusive |
+| S2_G_net conjunction | | | | inconclusive |
+| S2_G_net/O3-O3q:G-N:unsteered | 0.16242579730323412 | 0.95 | [-0.10269226921101728, 0.4215524255792859] | inconclusive |
+| S2_G_net/O3-O3q:G-N:technicality | -0.01641983910388799 | 0.95 | [-0.28420620556369297, 0.26295491154907574] | inconclusive |
+| S2_G_net/O3-O3q:G-N:random | 0.09923564158328559 | 0.95 | [-0.09424013008562038, 0.280404432350499] | inconclusive |
+| S2_S_net conjunction | | | | inconclusive |
+| S2_S_net/O3-O3q:S-N:unsteered | -0.019054531114159726 | 0.95 | [-0.19392099766279158, 0.14816308433162598] | inconclusive |
+| S2_S_net/O3-O3q:S-N:technicality | -0.10427069740351858 | 0.95 | [-0.3572470053063906, 0.12005376935331286] | inconclusive |
+| S2_S_net/O3-O3q:S-N:random | 0.050262835378177044 | 0.95 | [-0.08759787787677581, 0.19259409045883102] | inconclusive |
+| S3 conjunction | | | | inconclusive |
+| S3/B2:G:unsteered | -0.03677938782758164 | 0.95 | [-0.17568971588810778, 0.10185778958296973] | inconclusive |
+| S3/B2:G:technicality | 0.11510227890473536 | 0.95 | [-0.04634378189961847, 0.28632313998902864] | inconclusive |
+| S3/B2:G:random | -0.017386210913007908 | 0.95 | [-0.13747100693475328, 0.10203895580727304] | inconclusive |
+
+### fixed
+
+Reversed, mixed and inconclusive components remain outlet-specific. Detectability and descriptive equivalence may overlap.
+
+| Test / component | Estimate | CI level | CI | Status |
+|---|---:|---:|---|---|
+| P1 conjunction | | | | inconclusive |
+| P1/O1:G-N:unsteered | -0.3562478343641292 | 0.95 | [-0.5230954625866763, -0.1847593097469787] | reversed |
+| P1/O1:G-N:technicality | -0.6426028834259512 | 0.95 | [-1.0293075565566838, -0.3560965204449924] | reversed |
+| P1/O1:G-N:random | -0.22468634076687136 | 0.95 | [-0.3952198218152097, -0.057779038549666914] | reversed |
+| P1/O1:N:unsteered | -0.23301864084375204 | 0.95 | [-0.4475778789372163, -0.015148996685381512] | supported |
+| P2_core conjunction | | | | inconclusive |
+| P2_core/O2:S-N:unsteered | -0.12420978401858837 | 0.95 | [-0.1869963846104309, -0.05810368167513598] | supported |
+| P2_core/O2:S-N:technicality | -0.12165566354484088 | 0.95 | [-0.24793622452001557, -0.007667580870354378] | supported |
+| P2_core/O2:S-N:random | -0.021216389522045187 | 0.95 | [-0.08318277609508984, 0.03966843645181758] | negligible |
+| P2_core/O2:S:unsteered | -0.08212037098139424 | 0.95 | [-0.19655449363677405, 0.03528397480159322] | inconclusive |
+| P2 conjunction | | | | inconclusive |
+| P2/O2:S-N:unsteered | -0.12420978401858837 | 0.95 | [-0.1869963846104309, -0.05810368167513598] | supported |
+| P2/O2:S-N:technicality | -0.12165566354484088 | 0.95 | [-0.24793622452001557, -0.007667580870354378] | supported |
+| P2/O2:S-N:random | -0.021216389522045187 | 0.95 | [-0.08318277609508984, 0.03966843645181758] | negligible |
+| P2/O2:S:unsteered | -0.08212037098139424 | 0.95 | [-0.19655449363677405, 0.03528397480159322] | inconclusive |
+| P2/O2-O2c:S-N:unsteered | -0.14636425718999166 | 0.95 | [-0.2894669205442141, -0.004615221339133079] | supported |
+| P3 conjunction | | | | reversed |
+| P3/O2:S-G:unsteered | 0.10572909244535568 | 0.95 | [0.05274205809054994, 0.16384908534376177] | reversed |
+| P3/O2:S-G:technicality | 0.10036725863281314 | 0.95 | [0.04576659655673492, 0.15953146709501448] | small but detectable |
+| P3/O2:S-G:random | 0.09641539860507775 | 0.95 | [0.03753848389575271, 0.15668358959257012] | small but detectable |
+| S1 conjunction | | | | reversed |
+| S1/O1:S-N:unsteered | -0.334101447459911 | 0.95 | [-0.4623833399561657, -0.19883720787974313] | reversed |
+| S1/O1:S-N:technicality | -0.4742874916579958 | 0.95 | [-0.8051144259831848, -0.21818274525801054] | reversed |
+| S1/O1:S-N:random | -0.19196146631242914 | 0.95 | [-0.3355998463785107, -0.0576303174607736] | reversed |
+| S2_G conjunction | | | | inconclusive |
+| S2_G/O3:G-N:unsteered | 0.1862502816245736 | 0.95 | [0.06273755146030938, 0.32218110488590873] | reversed |
+| S2_G/O3:G-N:technicality | -0.3536772040389973 | 0.95 | [-0.5545535088085697, -0.1732154307128696] | supported |
+| S2_G/O3:G-N:random | 0.11264525772712916 | 0.95 | [-0.00393704129698563, 0.23860861022944455] | inconclusive |
+| S2_S conjunction | | | | inconclusive |
+| S2_S/O3:S-N:unsteered | 0.07785297188472114 | 0.95 | [-0.019243243654039108, 0.18941837541965578] | inconclusive |
+| S2_S/O3:S-N:technicality | -0.24281652183242314 | 0.95 | [-0.3630156294678146, -0.12620307615159362] | supported |
+| S2_S/O3:S-N:random | 0.07185380646108493 | 0.95 | [-0.011133672514671959, 0.16506495053621723] | negligible |
+| S2_G_net conjunction | | | | inconclusive |
+| S2_G_net/O3-O3q:G-N:unsteered | 0.03208401137814802 | 0.95 | [-0.13448930744795762, 0.19940238773827804] | inconclusive |
+| S2_G_net/O3-O3q:G-N:technicality | -0.0025682858599169137 | 0.95 | [-0.21234771915216635, 0.2126037967764588] | inconclusive |
+| S2_G_net/O3-O3q:G-N:random | -0.09804075555942408 | 0.95 | [-0.2792324736161481, 0.05432180046791221] | inconclusive |
+| S2_S_net conjunction | | | | inconclusive |
+| S2_S_net/O3-O3q:S-N:unsteered | -0.06335294612632043 | 0.95 | [-0.1744446680190774, 0.05934570702361556] | inconclusive |
+| S2_S_net/O3-O3q:S-N:technicality | -0.139149783980878 | 0.95 | [-0.34819310908772805, 0.05584094377464706] | inconclusive |
+| S2_S_net/O3-O3q:S-N:random | -0.07819804679815624 | 0.95 | [-0.1967931709044097, 0.0320423465891748] | inconclusive |

@@ -1,0 +1,8 @@
+{
+  "schema": "study7-v0.2",
+  "key": ["prompt_id", "source", "level", "arm"],
+  "required": ["schema", "mode", "cell_key", "prompt_id", "source", "level", "arm", "answer_prefix_ids", "trace_ids", "trace_bounds", "trace_sha256", "forced_closure", "answer_ids", "answer_text", "answer_seed", "answer_length", "answer_truncated", "ratings", "branch_ids", "checks", "check_ids", "answer_classifier", "outcomes", "markers", "replay_assertions", "seconds", "peak_driver_memory_bytes", "warnings", "manifest_sha256", "row_sha256"],
+  "ratings": {"keys": ["O1", "O2", "O2c", "O3", "O3q"], "fields": ["expected", "probabilities", "valid_mass", "argmax", "low_mass"]},
+  "outcomes": {"both_arms": ["O1", "O2", "O2c", "O3", "O3q"], "generated_only": ["B1", "B2", "B3"], "classifier_failure": null},
+  "checksum": "SHA-256 of canonical JSON with sorted keys and separators comma/colon, excluding row_sha256; nonfinite floats forbidden"
+}

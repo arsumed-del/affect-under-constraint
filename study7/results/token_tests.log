@@ -1,0 +1,33 @@
+test_N_template (study7.tests.test_build.Build.test_N_template) ... ok
+test_counts_seeds (study7.tests.test_build.Build.test_counts_seeds) ... ok
+test_real_rows (study7.tests.test_build.Build.test_real_rows) ... ERROR
+test_reproduction_stops (study7.tests.test_build.Build.test_reproduction_stops) ... ERROR
+
+======================================================================
+ERROR: test_real_rows (study7.tests.test_build.Build.test_real_rows)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/arthursu/Projects/affect-suppression-steering/study7/tests/test_build.py", line 14, in test_real_rows
+    prompts,traces,orig,clamps=load(self.c,mode)
+                               ^^^^^^^^^^^^^^^^^
+  File "/Users/arthursu/Projects/affect-suppression-steering/study7/src/runner.py", line 29, in load
+    if abs(r['ratings']['sender']['expected']-q['ratings']['sender']['expected'])>.01: raise RuntimeError('Study 4/5 reference rating disagreement')
+                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Study 4/5 reference rating disagreement
+
+======================================================================
+ERROR: test_reproduction_stops (study7.tests.test_build.Build.test_reproduction_stops)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/arthursu/Projects/affect-suppression-steering/study7/tests/test_build.py", line 34, in test_reproduction_stops
+    p,t,o,c=load(self.c,'pilot');k=next(iter(o));r=dict(level='G',prompt_id=k[0],source=k[1],arm='generated',answer_ids=[],ratings={'O1':{'expected':0}},cell_key=[])
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/arthursu/Projects/affect-suppression-steering/study7/src/runner.py", line 29, in load
+    if abs(r['ratings']['sender']['expected']-q['ratings']['sender']['expected'])>.01: raise RuntimeError('Study 4/5 reference rating disagreement')
+                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Study 4/5 reference rating disagreement
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.994s
+
+FAILED (errors=2)

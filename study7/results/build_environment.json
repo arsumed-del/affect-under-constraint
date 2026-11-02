@@ -1,0 +1,14 @@
+{
+  "python": "3.12.13",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "packages": {
+    "torch": "2.14.1",
+    "transformers": "5.18.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "PyYAML": "6.0.3",
+    "tokenizers": "0.23.2",
+    "safetensors": "0.8.0",
+    "accelerate": "1.15.0"
+  }
+}

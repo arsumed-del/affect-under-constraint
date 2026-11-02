@@ -1,0 +1,425 @@
+{
+  "null": {
+    "passed": true,
+    "hypotheses": {
+      "EH": {
+        "supported": false,
+        "reversed": false,
+        "negligible": true,
+        "mixed_components": false,
+        "status": "negligible"
+      },
+      "P1": {
+        "supported": false,
+        "reversed": false,
+        "negligible": true,
+        "mixed_components": false,
+        "status": "negligible",
+        "interpretation_status": "not interpretable"
+      },
+      "P2_core": {
+        "supported": false,
+        "reversed": false,
+        "negligible": true,
+        "mixed_components": false,
+        "status": "negligible"
+      },
+      "P2": {
+        "supported": false,
+        "reversed": false,
+        "negligible": true,
+        "mixed_components": false,
+        "status": "negligible"
+      },
+      "P3": {
+        "supported": false,
+        "reversed": false,
+        "negligible": true,
+        "mixed_components": false,
+        "status": "negligible"
+      },
+      "S1": {
+        "supported": false,
+        "reversed": false,
+        "negligible": true,
+        "mixed_components": false,
+        "status": "negligible",
+        "interpretation_status": "not interpretable"
+      },
+      "S2_G": {
+        "supported": false,
+        "reversed": false,
+        "negligible": true,
+        "mixed_components": false,
+        "status": "negligible"
+      },
+      "S2_S": {
+        "supported": false,
+        "reversed": false,
+        "negligible": true,
+        "mixed_components": false,
+        "status": "negligible"
+      },
+      "S2_G_net": {
+        "supported": false,
+        "reversed": false,
+        "negligible": true,
+        "mixed_components": false,
+        "status": "negligible"
+      },
+      "S2_S_net": {
+        "supported": false,
+        "reversed": false,
+        "negligible": true,
+        "mixed_components": false,
+        "status": "negligible"
+      },
+      "S3": {
+        "supported": false,
+        "reversed": false,
+        "negligible": true,
+        "mixed_components": false,
+        "status": "negligible"
+      }
+    }
+  },
+  "planted": {
+    "passed": true,
+    "hypotheses": {
+      "EH": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "P1": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported",
+        "interpretation_status": "supported"
+      },
+      "P2_core": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "P2": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "P3": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "S1": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported",
+        "interpretation_status": "supported"
+      },
+      "S2_G": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "S2_S": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "S2_G_net": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "S2_S_net": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "S3": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      }
+    }
+  },
+  "generalized": {
+    "passed": true,
+    "hypotheses": {
+      "EH": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "P1": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported",
+        "interpretation_status": "supported"
+      },
+      "P2_core": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "P2": {
+        "supported": false,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "inconclusive"
+      },
+      "P3": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "S1": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported",
+        "interpretation_status": "supported"
+      },
+      "S2_G": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "S2_S": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "S2_G_net": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "S2_S_net": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "S3": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      }
+    }
+  },
+  "reversed": {
+    "passed": true,
+    "hypotheses": {
+      "EH": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "P1": {
+        "supported": false,
+        "reversed": true,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "reversed",
+        "interpretation_status": "reversed"
+      },
+      "P2_core": {
+        "supported": false,
+        "reversed": true,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "reversed"
+      },
+      "P2": {
+        "supported": false,
+        "reversed": true,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "reversed"
+      },
+      "P3": {
+        "supported": false,
+        "reversed": true,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "reversed"
+      },
+      "S1": {
+        "supported": false,
+        "reversed": true,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "reversed",
+        "interpretation_status": "reversed"
+      },
+      "S2_G": {
+        "supported": false,
+        "reversed": true,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "reversed"
+      },
+      "S2_S": {
+        "supported": false,
+        "reversed": true,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "reversed"
+      },
+      "S2_G_net": {
+        "supported": false,
+        "reversed": true,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "reversed"
+      },
+      "S2_S_net": {
+        "supported": false,
+        "reversed": true,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "reversed"
+      },
+      "S3": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      }
+    }
+  },
+  "mixed": {
+    "passed": true,
+    "hypotheses": {
+      "EH": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "P1": {
+        "supported": false,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": true,
+        "status": "inconclusive",
+        "interpretation_status": "inconclusive"
+      },
+      "P2_core": {
+        "supported": false,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": true,
+        "status": "inconclusive"
+      },
+      "P2": {
+        "supported": false,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": true,
+        "status": "inconclusive"
+      },
+      "P3": {
+        "supported": false,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": true,
+        "status": "inconclusive"
+      },
+      "S1": {
+        "supported": false,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": true,
+        "status": "inconclusive",
+        "interpretation_status": "inconclusive"
+      },
+      "S2_G": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "S2_S": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "S2_G_net": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "S2_S_net": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      },
+      "S3": {
+        "supported": true,
+        "reversed": false,
+        "negligible": false,
+        "mixed_components": false,
+        "status": "supported"
+      }
+    }
+  },
+  "missing": {
+    "passed": true
+  }
+}

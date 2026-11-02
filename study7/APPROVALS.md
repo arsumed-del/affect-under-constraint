@@ -1,0 +1,2 @@
+- 2026-10-28 15:21: Arthur approved v0.2 for build.
+- 2026-10-28 17:53: Arthur approved keeping ±0.15 margins for O2–O3q and proceeding to deposit/main run ("Ok").

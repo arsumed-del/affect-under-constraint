@@ -37,6 +37,8 @@ A hostility direction, extracted by a generation-based difference-of-means proce
 | Study 4 preregistration (v0.6) | [10.5281/zenodo.23629525](https://doi.org/10.5281/zenodo.23629525) |
 | Study 5 preregistration (v0.3) | [10.5281/zenodo.23674222](https://doi.org/10.5281/zenodo.23674222) |
 | Study 6 preregistration (v0.2) | [10.5281/zenodo.23737377](https://doi.org/10.5281/zenodo.23737377) |
+| Study 7 preregistration (v0.2) | [10.5281/zenodo.23750381](https://doi.org/10.5281/zenodo.23750381) |
+| Study 8 preregistration (v0.3) | [10.5281/zenodo.23826290](https://doi.org/10.5281/zenodo.23826290) |
 | Studies 4–6 preprint | [10.5281/zenodo.23747766](https://doi.org/10.5281/zenodo.23747766) |
 | Studies 4–6 code and data, including raw cells | [10.5281/zenodo.23747764](https://doi.org/10.5281/zenodo.23747764) |
 
@@ -51,6 +53,8 @@ study3/   Study 3 (Qwen3-4B, reasoning on vs. off; see study3/README.md)
 study4/   Study 4 (authorship of the carried state)
 study5/   Study 5 (placement ladder)
 study6/   Study 6 (answer clamp)
+study7/   Study 7 (warmth constraints)
+study8/   Study 8 (social evaluation and opposite-valence warmth)
 figures/  Figures from the paper
 ```
 
