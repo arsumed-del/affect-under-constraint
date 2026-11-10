@@ -3,6 +3,7 @@
 Code, specifications and results for a series of preregistered activation-steering studies on whether an instruction removes the influence of a conflicting affect-associated representation in a language model, or only masks its expression.
 
 **Papers:**
+- Su, A. (2026). *Affect Under Constraint: Examining Expression and Persisting Influence in Language Models.* Synthesis of Studies 1–8, with an exploratory analysis of reasoning-trace length. [doi:10.5281/zenodo.24096561](https://doi.org/10.5281/zenodo.24096561) (all versions: [10.5281/zenodo.24095358](https://doi.org/10.5281/zenodo.24095358)); reviews on [aiXiv](https://aixiv.science/abs/aixiv.261110.000001).
 - Su, A. (2026). *Affect Under Constraint: Persistence of a Steered Affective Representation in Instruction-Tuned Language Models.* Preprint (Studies 1 and 2). [doi:10.5281/zenodo.23182205](https://doi.org/10.5281/zenodo.23182205)
 - Su, A. (2026). *Affect Under Constraint: A Steered Affective State Carries Forward Through a Language Model's Own Reasoning.* Preprint (Study 3). [doi:10.5281/zenodo.23323489](https://doi.org/10.5281/zenodo.23323489) (all versions; current v2: [10.5281/zenodo.23354704](https://doi.org/10.5281/zenodo.23354704))
 - Su, A. (2026). *Affect Under Constraint: Conversational Placement and Fixed-Answer Tests of Hostility-Related Carryover Through a Language Model's Reasoning.* Preprint (Studies 4–6). [doi:10.5281/zenodo.23747766](https://doi.org/10.5281/zenodo.23747766)
@@ -18,6 +19,7 @@ A hostility direction, extracted by a generation-based difference-of-means proce
 
 - **Studies 4–6: whose words, where, and how.** Replaying the same stored traces, the hostility effect on the later judgment appeared only when the trace sat in the model's own turn, not when quoted by the user (Study 4); persisted, attenuated, when moved into a previous assistant turn, whether as visible reply or retained thinking (Study 5); and was unchanged when the answer was held fixed, so it did not run through the answer the trace produced (Study 6). See the Studies 4–6 preprint.
 - **Studies 7–8: constraint.** Under warmth instructions or a kindness-focused social stake, the hostility trace's effect on later liking of the user persisted while its pattern across other evaluations changed: smaller effects on unrelated evaluations under warmth (Study 7), and a warmer answer surface that did not depend on the trace while liking of the user stayed lower (Study 8). See the Studies 7–8 preprint.
+- **Synthesis and trace length.** Across Studies 1–8, the influence was carried by text in the model's own reasoning positions rather than by hidden state alone. In an exploratory analysis, hostility-steered reasoning traces were much longer than control traces, more so under evaluative contexts, and longer traces went with lower liking of the user. See `synthesis/`.
 
 ![Standardized latent hostile-opener preference slopes under the warmth instruction, by model and direction](figures/fig1_persistence.png)
 
@@ -43,6 +45,8 @@ A hostility direction, extracted by a generation-based difference-of-means proce
 | Studies 7–8 preprint | [10.5281/zenodo.23876548](https://doi.org/10.5281/zenodo.23876548) |
 | Studies 7–8 code and data | [10.5281/zenodo.23876550](https://doi.org/10.5281/zenodo.23876550) |
 | Studies 4–6 preprint | [10.5281/zenodo.23747766](https://doi.org/10.5281/zenodo.23747766) |
+| Synthesis of Studies 1–8 (version of record, v1.3) | [10.5281/zenodo.24096561](https://doi.org/10.5281/zenodo.24096561) |
+| Synthesis, all versions | [10.5281/zenodo.24095358](https://doi.org/10.5281/zenodo.24095358) |
 | Studies 4–6 code and data, including raw cells | [10.5281/zenodo.23747764](https://doi.org/10.5281/zenodo.23747764) |
 
 The Zenodo records are the archival versions. This repository mirrors the code, specifications and results for browsing; raw main-run generations are on Zenodo only.
@@ -58,6 +62,7 @@ study5/   Study 5 (placement ladder)
 study6/   Study 6 (answer clamp)
 study7/   Study 7 (warmth constraints)
 study8/   Study 8 (social evaluation and opposite-valence warmth)
+synthesis/ Synthesis paper and exploratory trace-length analyses
 figures/  Figures from the paper
 ```
 
